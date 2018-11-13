@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+=======
 This is rklinic project developed by rkanjel
+>>>>>>> d190662912a80ae22fd59e19a374750ef8504abb
 
 ## Available Scripts
 
@@ -42,3 +47,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+=======
+# rklinic-react
+rklinic react
+>>>>>>> f408d6dcd9514f788fa2eb75c664d088fe13e43a

@@ -38,7 +38,7 @@ class Home extends Component{
 
                 <Services />
 
-                <Doctors doctors={ this.state.doctors }  />
+                <Doctors />
 
                 <Statistics />
 

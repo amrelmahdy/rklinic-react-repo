@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Doctors = ({ doctors }) => {
+const Doctors = ( ) => {
 
     var docImageStyle = {
         backgroundImage: 'url(images/doctor-1.jpg)'

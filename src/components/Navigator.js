@@ -15,19 +15,19 @@ class Navigator extends Component {
                     <div className="collapse navbar-collapse" id="ftco-nav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item active">
-                                <NavLink className="nav-link" to="/">home</NavLink>
+                                <NavLink className="nav-link" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/about">about</NavLink>
+                                <NavLink className="nav-link" to="/about">About</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/specialities">specialities</NavLink>
+                                <NavLink className="nav-link" to="/specialities">Specialities</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/doctors">doctors</NavLink>
+                                <NavLink className="nav-link" to="/doctors">Doctors</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/contact">contact</NavLink>
+                                <NavLink className="nav-link" to="/contact">Contact</NavLink>
                             </li>
 
                             <li className="nav-item">

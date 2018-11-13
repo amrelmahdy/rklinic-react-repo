@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route} from "react-router-dom";
-import Navigator from "./comonents/Navigator"
+import Navigator from "./components/Navigator"
 import Home from "./views/Home";
-import Footer from "./comonents/Footer"
+import Footer from "./components/Footer"
 import About from "./views/About";
 
 
@@ -16,7 +16,6 @@ class App extends Component {
                   <Navigator />
                   <Route exact path="/" component={ Home } />
                   <Route  path="/about" component={ About } />
-                  <Route  path="/tantmnal" component={ Home } />
               </div>
           </BrowserRouter>
 

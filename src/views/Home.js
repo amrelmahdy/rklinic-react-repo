@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Head from "./../components/Head";
+import Head from "../components/Head";
 import MiniCategory from "../components/MiniCategories";
 import Services from "../components/Services";
 import Doctors from "../components/Doctors";
@@ -21,6 +21,7 @@ class Home extends Component{
                this.setState({
                    doctors: res.data.Response,
                });
+
            } else {
 
            }
@@ -30,6 +31,9 @@ class Home extends Component{
     }
 
     render() {
+
+        const { doctors } = this.state;
+
         return (
             <div className="home">
                 <Head />
@@ -41,7 +45,6 @@ class Home extends Component{
                 <Doctors />
 
                 <Statistics />
-
 
                 <Testimonials />
 

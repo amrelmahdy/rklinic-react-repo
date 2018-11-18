@@ -1,6 +1,6 @@
 import React from "react";
 
-const Head = () => {
+const Head = ({ title, desc, links }) => {
     var headStyle = {
         backgroundImage: 'url(images/bg_1.jpg)',
         backgroundAttachment: 'fixed',
@@ -13,8 +13,8 @@ const Head = () => {
                 <div className="row no-gutters slider-text align-items-center justify-content-center"
                      data-scrollax-parent="true">
                     <div className="col-md-8 ftco-animate text-center">
-                        <h1 className="mb-4">rKlinic Medical Care</h1>
-                        <p>Help people save lives.</p>
+                        <h1 className="mb-4">{ title }</h1>
+                        <p>{ desc }</p>
                     </div>
                 </div>
             </div>

@@ -1,57 +1,61 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Head from "../components/Head";
 import MiniCategory from "../components/MiniCategories";
 import Services from "../components/Services";
 import Doctors from "../components/Doctors";
-import axios from "axios";
 import Statistics from "../components/Statistics";
 import Testimonials from "../components/Testimonials";
 import Subscribe from "../components/Subscribe";
+import { getDoctorsList } from "../store/actions/doctorActions";
+import { getSpecialtiesList } from "../store/actions/specialtyActions";
+import {connect} from "react-redux";
 
 
-class Home extends Component{
-
-    state = {
-        doctors: []
-    }
+class Home extends Component {
 
     componentDidMount() {
-        axios.post("https://rklinic-admin.com/api/doctors/all").then(res => {
-           if (res.data.status !== true){
-               this.setState({
-                   doctors: res.data.Response,
-               });
-
-           } else {
-
-           }
-        }).catch(err => {
-            console.log(err)
-        });
+        // fetch doctors from database
+        this.props.getDoctorsList();
+        this.props.getSpecialtiesList();
     }
 
+
     render() {
-
-        const { doctors } = this.state;
-
         return (
             <div className="home">
-                <Head />
+                <Head title="The ultimate medical meeting point!" desc="A Doctor or a patient, cut the distance short, and get your application now!
+" links=""/>
 
-                <MiniCategory />
+                <MiniCategory/>
 
-                <Services />
+                <Services/>
 
-                <Doctors />
+                <Doctors doctors={this.props.doctors}/>
 
-                <Statistics />
+                <Statistics/>
 
-                <Testimonials />
+                <Testimonials/>
 
-                <Subscribe />
+                <Subscribe/>
             </div>
         )
     }
 }
 
-export default Home
+
+const mapStateToProps = (state) => {
+    return {
+        doctors: state.doctor.doctors,
+        specialities: state.speciality.specialities
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getDoctorsList: () => dispatch(getDoctorsList()),
+        getSpecialtiesList: () => dispatch(getSpecialtiesList()),
+    }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)

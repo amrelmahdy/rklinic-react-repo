@@ -1,10 +1,6 @@
 import React from "react";
 
 const Subscribe = () => {
-    var headStyle = {
-        backgroundImage: 'url(images/bg_1.jpg)',
-        backgroundAttachment: 'fixed',
-    }
 
     return (
         <section className="ftco-section-parallax">

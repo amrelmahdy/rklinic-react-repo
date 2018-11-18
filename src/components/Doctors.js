@@ -1,17 +1,49 @@
 import React from "react";
 
 
-const Doctors = ( ) => {
-
-    var docImageStyle = {
-        backgroundImage: 'url(images/doctor-1.jpg)'
+function setDoctorImage(url) {
+    return {
+        backgroundImage: 'url(' +  url  +')',
     }
+}
 
 
+const Doctors = ({doctors}) => {
 
+    const doctorList = doctors.map(doctor => {
+        return doctors.length ? (
+            <div className="col-md-6 col-lg-3 ftco-animate" key={doctor.id}>
+                <div className="block-2">
+                    <div className="flipper">
+                        <div className="front" style={ setDoctorImage(doctor.image) }>
+                            <div className="box">
+                                <h2>{doctor.name}</h2>
+                                <p>Neurologist</p>
+                            </div>
+                        </div>
+                        <div className="back">
+                            <blockquote>
+                                <p>{ doctor.bio.length > 200 ?  doctor.bio.slice(0, 200) + " ..." : doctor.bio  }</p>
+                            </blockquote>
+                            <div className="author d-flex">
+                                <div className="image mr-3 align-self-center">
+                                    <div className="img" style={ setDoctorImage(doctor.image) }></div>
+                                </div>
+                                <div className="name align-self-center">{doctor.name}<span
+                                    className="position">{doctor.speciality}</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        ) : (
+            <p>Our doctors are shown here ... </p>
+        )
+    });
 
     return (
+
         <section className="ftco-section">
             <div className="container">
                 <div className="row justify-content-center mb-5 pb-3">
@@ -20,38 +52,13 @@ const Doctors = ( ) => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-6 col-lg-3 ftco-animate">
-                        <div className="block-2">
-                            <div className="flipper">
-                                <div className="front" style={ docImageStyle }>
-                                    <div className="box">
-                                        <h2>Aldin Powell</h2>
-                                        <p>Neurologist</p>
-                                    </div>
-                                </div>
-                                <div className="back">
-                                    <blockquote>
-                                        <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it
-                                            is an almost unorthographic life One day however a small line of blind text
-                                            by the name of Lorem&rdquo;</p>
-                                    </blockquote>
-                                    <div className="author d-flex">
-                                        <div className="image mr-3 align-self-center">
-                                            <div className="img" style={ docImageStyle }></div>
-                                        </div>
-                                        <div className="name align-self-center">Aldin Powell <span
-                                            className="position">Neurologist</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {doctorList}
+
                 </div>
                 <div className="row">
                     <div className="col-md-9 ftco-animate">
                         <h4>We are well experienced doctors</h4>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                            It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <p>Our application was made for doctors who care, work and strive to help people and people alone! That alone will help doctors to create a more comfortable environment for patients to feel closer and more related to the entire medical process.</p>
                     </div>
                 </div>
             </div>

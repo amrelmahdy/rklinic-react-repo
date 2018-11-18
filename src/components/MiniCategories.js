@@ -47,16 +47,10 @@ const MiniCategory = () => {
                             <div className="tab-pane fade show active py-5" id="v-pills-master" role="tabpanel"
                                  aria-labelledby="v-pills-master-tab">
                                 <span className="icon mb-3 d-block flaticon-cardiogram"></span>
-                                <h2 className="mb-4">Cardiology Department</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate,
-                                    quibusdam sunt
-                                    iste dolores consequatur</p>
-                                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto
-                                    facilis
-                                    officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem
-                                    vitae
-                                    deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                                <p><a href="/" className="btn btn-primary">Learn More</a></p>
+                                <h2 className="mb-4">Dermatology Department</h2>
+                                <p>With thousands of repeated questions pouring at dermatologists every single day from different people.</p>
+                                <p>it’s always a challenge to maintain the attention given to patients while managing the clinic at the same time. that being said, we know very well how hard dermatologists work, and rKlinic is just an answer to their efforts.</p>
+                                <p><a href="/" className="btn btn-primary">Show Doctors</a></p>
                             </div>
 
                             <div className="tab-pane fade py-5" id="v-pills-buffet" role="tabpanel"

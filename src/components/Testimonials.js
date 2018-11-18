@@ -5,6 +5,8 @@ const Testimonials = () => {
         backgroundImage: 'url(images/person_1.jpg)',
     }
 
+
+
     return (
         <section className="ftco-section testimony-section">
             <div className="container">

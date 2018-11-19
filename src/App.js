@@ -7,6 +7,9 @@ import Navigator from "./components/Navigator"
 import Home from "./views/Home";
 import Footer from "./components/Footer"
 import About from "./views/About";
+import Doctor from "./views/Doctor";
+
+import Contact from "./views/ContactUs";
 
 /*
 const fakeAuth = {
@@ -28,6 +31,8 @@ class App extends Component {
                   <Navigator />
                   <Route exact path="/" component={ Home } />
                   <Route  path="/about" component={ About }  />
+                  <Route  path="/doctors" component={ Doctor }  />
+                  <Route  path="/contact" component={ Contact }  />
               </div>
           </Router>
           <Footer/>
@@ -35,5 +40,8 @@ class App extends Component {
     );
   }
 }
+
+
+
 
 export default App;

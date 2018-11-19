@@ -7435,7 +7435,7 @@ h1, h2, h3, h4, h5,
       padding-top: 0.9rem !important;
       padding-bottom: 0.9rem !important;
       color: #39345a !important; }
-      .ftco-navbar-light.scrolled .nav-link.active {
+      .ftco-navbar-light.scrolled .nav-link.active, .ftco-navbar-light .navbar-nav > .nav-item > .nav-link.active {
         color: #167ce9 !important; }
     .ftco-navbar-light.scrolled.awake {
       margin-top: 0px;

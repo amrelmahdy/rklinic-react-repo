@@ -10,7 +10,6 @@ import {getDoctorsList} from "../store/actions/doctorActions";
 import {getSpecialtiesList} from "../store/actions/specialtyActions";
 import {connect} from "react-redux";
 
-
 class Home extends Component {
 
     componentDidMount() {
@@ -26,11 +25,11 @@ class Home extends Component {
                 <Head title="The ultimate medical meeting point!" desc="A Doctor or a patient, cut the distance short, and get your application now!
 " links=""/>
 
-                <MiniCategory specialties={ this.props.specialities } />
+                <MiniCategory specialtyListIsLoading={ this.props.specialtyListIsLoading } specialties={ this.props.specialities } />
 
                 <Services/>
 
-                <Doctors doctors={this.props.doctors}/>
+                <Doctors doctors={this.props.doctors} doctorsListIsLoading={this.props.doctorsListIsLoading} />
 
                 <Statistics/>
 
@@ -46,7 +45,9 @@ class Home extends Component {
 const mapStateToProps = (state) => {
     return {
         doctors: state.doctor.doctors,
-        specialities: state.speciality.specialities
+        doctorsListIsLoading: state.doctor.doctorsListIsLoading,
+        specialities: state.speciality.specialities,
+        specialtyListIsLoading: state.speciality.specialtyListIsLoading
     }
 }
 

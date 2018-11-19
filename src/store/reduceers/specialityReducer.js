@@ -1,5 +1,7 @@
 const initState = {
-    specialities: []
+    specialities: [],
+    specialtyListIsLoading: true
+
 };
 
 
@@ -8,7 +10,8 @@ const specialityReducer = (state = initState, action) => {
         case "GET_SPECIALITIES_LIST" :
             state = {
                 ...state,
-                specialities: action.payload
+                specialities: action.payload,
+                specialtyListIsLoading: false
             }
             break;
         default:

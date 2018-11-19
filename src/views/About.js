@@ -10,8 +10,8 @@ class About extends Component{
     render() {
         return (
             <div className="About">
-               <Head />
-                <AboutRklinic/>
+                <Head title="About Us"
+                      desc="A Doctor or a patient, cut the distance short, and get your application now!"/>                <AboutRklinic/>
                 <Subscribe />
             </div>
         )

@@ -6,7 +6,9 @@ class Navigator extends Component {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
                 <div className="container">
-                    <a className="navbar-brand" href="/"><i className="flaticon-pharmacy"></i><span>rKlinic</span></a>
+                    <a className="navbar-brand" href="/">
+                        <img src="images/logo.png" alt="rklinic logo" />
+                    </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                             aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="oi oi-menu"></span> Menu
@@ -14,8 +16,8 @@ class Navigator extends Component {
 
                     <div className="collapse navbar-collapse" id="ftco-nav">
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item active">
-                                <NavLink className="nav-link" to="/">Home</NavLink>
+                            <li className="nav-item">
+                                <NavLink exact className="nav-link" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/about">About</NavLink>
@@ -31,12 +33,12 @@ class Navigator extends Component {
                             </li>
 
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/contact">Login</NavLink>
+                                <a href="https://rklinic-admin.com/login" target="_blank" className="nav-link" >Login</a>
                             </li>
 
                             <li className="nav-item cta">
-                                <a href="contact.html" className="nav-link" data-toggle="modal"
-                                   data-target="#modalAppointment">
+                                <a target="_blank" href="https://rklinic-admin.com/register" className="nav-link">
+
                                     <span>get started</span>
                                 </a>
                             </li>

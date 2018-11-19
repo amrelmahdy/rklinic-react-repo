@@ -6,8 +6,8 @@ import Doctors from "../components/Doctors";
 import Statistics from "../components/Statistics";
 import Testimonials from "../components/Testimonials";
 import Subscribe from "../components/Subscribe";
-import { getDoctorsList } from "../store/actions/doctorActions";
-import { getSpecialtiesList } from "../store/actions/specialtyActions";
+import {getDoctorsList} from "../store/actions/doctorActions";
+import {getSpecialtiesList} from "../store/actions/specialtyActions";
 import {connect} from "react-redux";
 
 
@@ -26,7 +26,7 @@ class Home extends Component {
                 <Head title="The ultimate medical meeting point!" desc="A Doctor or a patient, cut the distance short, and get your application now!
 " links=""/>
 
-                <MiniCategory/>
+                <MiniCategory specialties={ this.props.specialities } />
 
                 <Services/>
 
@@ -55,7 +55,7 @@ const mapDispatchToProps = (dispatch) => {
         getDoctorsList: () => dispatch(getDoctorsList()),
         getSpecialtiesList: () => dispatch(getSpecialtiesList()),
     }
-}
+};
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)

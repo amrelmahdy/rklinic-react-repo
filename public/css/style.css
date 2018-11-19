@@ -9496,3 +9496,16 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+/*  STYLE */
+.error-msg{
+  color: #bd313f;
+  display: block;
+  margin-top: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+

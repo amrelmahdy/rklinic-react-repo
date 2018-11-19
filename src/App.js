@@ -8,7 +8,7 @@ import Home from "./views/Home";
 import Footer from "./components/Footer"
 import About from "./views/About";
 
-
+/*
 const fakeAuth = {
     isAuthenticated: false,
     login(cb){
@@ -17,7 +17,7 @@ const fakeAuth = {
     logout(cb){
         this.isAuthenticated = false
     },
-}
+}*/
 
 class App extends Component {
   render() {

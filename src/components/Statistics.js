@@ -19,32 +19,32 @@ const Statistics = () => {
                             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                                 <div className="block-18 text-center">
                                     <div className="text">
-                                        <strong className="number" data-number="60">0</strong>
-                                        <span>Hospital</span>
+                                        <strong className="number" data-number="1">0</strong>
+                                        <span>Physical checkup</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                                 <div className="block-18 text-center">
                                     <div className="text">
-                                        <strong className="number" data-number="200">0</strong>
-                                        <span>Doctors</span>
+                                        <strong className="number" data-number="3">0</strong>
+                                        <span>Cancer Checkup</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                                 <div className="block-18 text-center">
                                     <div className="text">
-                                        <strong className="number" data-number="100">0</strong>
-                                        <span>Clinics</span>
+                                        <strong className="number" data-number="1">0</strong>
+                                        <span>Blood Checkup</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                                 <div className="block-18 text-center">
                                     <div className="text">
-                                        <strong className="number" data-number="200">0</strong>
-                                        <span>Reviews</span>
+                                        <strong className="number" data-number="2">0</strong>
+                                        <span>Teeth Checkup</span>
                                     </div>
                                 </div>
                             </div>

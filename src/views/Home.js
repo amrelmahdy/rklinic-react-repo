@@ -22,7 +22,7 @@ class Home extends Component {
     render() {
         return (
             <div className="home">
-                <Head title="The ultimate medical meeting point!" desc="A Doctor or a patient, cut the distance short, and get your application now!
+                <Head title="rklinc" desc="A Doctor or a patient, cut the distance short, and get your application now!
 " links=""/>
 
                 <MiniCategory specialtyListIsLoading={ this.props.specialtyListIsLoading } specialties={ this.props.specialities } />

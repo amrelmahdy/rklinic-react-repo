@@ -315,7 +315,7 @@ h2, .h2 {
   font-size: 2rem; }
 
 h3, .h3 {
-  font-size: 1.75rem; }
+  font-size: 1.5rem; }
 
 h4, .h4 {
   font-size: 1.5rem; }
@@ -7463,7 +7463,7 @@ h1, h2, h3, h4, h5,
 
 .hero-wrap {
   width: 100%;
-  height: 650px;
+  height: 300px;
   position: relative; }
   .hero-wrap .overlay {
     position: absolute;
@@ -7484,7 +7484,7 @@ h1, h2, h3, h4, h5,
 
 .slider-text {
   color: #fff;
-  height: 650px; }
+  height: 300px; }
   .slider-text h1 {
     font-size: 60px;
     color: #fff;
@@ -7779,9 +7779,9 @@ h1, h2, h3, h4, h5,
         height: 250px;
         display: block; } }
   .dept .text {
-    width: 55%;
+    width: 100%;
     bordeR: 1px solid #d0e5fb;
-    border-left: 1px solid transparent; }
+  }
     @media (max-width: 767.98px) {
       .dept .text {
         width: 100%;

@@ -10,6 +10,7 @@ import About from "./views/About";
 import Doctor from "./views/Doctor";
 
 import Contact from "./views/ContactUs";
+import Speciality from "./views/Speciality";
 
 /*
 const fakeAuth = {
@@ -33,6 +34,7 @@ class App extends Component {
                   <Route  path="/about" component={ About }  />
                   <Route  path="/doctors" component={ Doctor }  />
                   <Route  path="/contact" component={ Contact }  />
+                  <Route  path="/specialities" component={ Speciality }  />
               </div>
           </Router>
           <Footer/>

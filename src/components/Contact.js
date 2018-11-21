@@ -2,42 +2,52 @@ import React, {Component} from "react";
 import axios from "axios";
 import izitoast from "izitoast";
 import './../../node_modules/izitoast/dist/css/iziToast.min.css';
-import { sendSubscribeEmail } from "../config";
-
-
+import MapContainer from "./MapContainer";
 
 
 class Contact extends Component {
+
     state = {
+        name: null,
         email: null,
-        errors: null
+        mobile: null,
+        message: null,
+        errors: null,
     };
 
 
-    handleEmailChange = (e) => {
-        const email = e.target.value;
+
+
+
+    handleInputChange = (e) => {
         this.setState({
-            email : email
-        })
+            [e.target.id]: e.target.value
+        });
     };
+
 
     handleFormSubmission = (e) => {
         // prevent default behavior
         e.preventDefault();
         console.log("handling form");
         // send data to server
-        axios.post(sendSubscribeEmail, this.state).then(res => {
-            if (res.data.Error.status === true){
+        axios.post("https://rklinic-admin.com/api/system/contact-mail", this.state).then(res => {
+            if (res.data.Error.status === true) {
                 // Reset errors
                 this.resetErrors();
                 // show success toast
-                this.showToast("Subscribed", "You have subscribed");
+                this.showToast("Sent", "Mail send");
 
-                document.getElementById("subscribe-form").reset();
+                //document.getElementById("subscribe-form").reset();
 
                 this.setState({
-                    email : null
+                    name: null,
+                    email: null,
+                    mobile: null,
+                    message: null,
                 });
+
+                console.log(res)
                 // show success message
             } else {
                 const errors = res.data.Error.validation;
@@ -50,11 +60,11 @@ class Contact extends Component {
     };
 
 
-    handleErrors(field){
-        if (this.state.errors){
+    handleErrors(field) {
+        if (this.state.errors) {
             return this.state.errors[field]
         }
-        return  false
+        return false
     }
 
     handleRecordErrors = (errors) => {
@@ -63,14 +73,14 @@ class Contact extends Component {
         });
     };
 
-    resetErrors= () => {
+    resetErrors = () => {
         this.setState({
             errors: null
         })
     }
 
 
-    showToast(title, msg){
+    showToast(title, msg) {
         izitoast.show({
             title: title,
             message: msg,
@@ -94,6 +104,7 @@ class Contact extends Component {
         });
     }
 
+
     render() {
         return (
             <section className="ftco-section contact-section ftco-degree-bg">
@@ -103,49 +114,71 @@ class Contact extends Component {
                             <h2 className="h4">Contact Information</h2>
                         </div>
                         <div className="w-100"></div>
-                        <div className="col-md-3">
-                            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                        <div className="col-md-4">
+                            <p><span>Address:</span> 21 Ibrahim El-Refaey, Nasr City, Egypt.
+
+                            </p>
                         </div>
-                        <div className="col-md-3">
-                            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                        <div className="col-md-4">
+                            <p><span>Phone:</span> <a href="tel://1234567920">(+02) 22713871 - (+02) 22713872</a></p>
                         </div>
-                        <div className="col-md-3">
-                            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                        <div className="col-md-4">
+                            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@rklinic.com</a></p>
                         </div>
-                        <div className="col-md-3">
-                            <p><span>Website</span> <a href="#">yoursite.com</a></p>
-                        </div>
+
                     </div>
                     <div className="row block-9">
                         <div className="col-md-6 pr-md-5">
-                            <form action="#">
+                            <form action="#" onSubmit={this.handleFormSubmission}>
                                 <div className="form-group">
-                                    <input type="text" className="form-control" placeholder="Your Name" />
+                                    <input type="text" id="name" onChange={this.handleInputChange}
+                                           className="form-control" placeholder="Your Name"/>
+                                    <span style={ errorLinkStyle } className="error-msg">{this.handleErrors("name")}</span>
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className="form-control" placeholder="Your Email" />
+                                    <input type="text" id="email" onChange={this.handleInputChange}
+                                           className="form-control" placeholder="Your Email"/>
+                                    <span className="error-msg">{this.handleErrors("email")}</span>
                                 </div>
+
+
                                 <div className="form-group">
-                                    <input type="text" className="form-control" placeholder="Subject" />
+                                    <input type="text" id="mobile" onChange={this.handleInputChange}
+                                           className="form-control" placeholder="Your Mobile"/>
+                                    <span className="error-msg">{this.handleErrors("mobile")}</span>
                                 </div>
+
+
                                 <div className="form-group">
-                                    <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Message">
+                                    <textarea id="message" onChange={this.handleInputChange} cols="30" rows="7"
+                                              className="form-control" placeholder="Message">
 
                                     </textarea>
+                                    <span className="error-msg">{this.handleErrors("message")}</span>
                                 </div>
                                 <div className="form-group">
-                                    <input type="submit" value="Send Message" className="btn btn-primary py-3 px-5" />
+                                    <input type="submit" value="Send Message" className="btn btn-primary py-3 px-5"/>
                                 </div>
                             </form>
 
                         </div>
 
-                        <div className="col-md-6" id="map"></div>
+                        <div className="col-md-6" id="map">
+                            <MapContainer/>
+                        </div>
                     </div>
                 </div>
             </section>
         )
     }
+}
+
+
+const errorLinkStyle = {
+    position: 'absolute',
+    bottom: 0,
+    fontSize: '10px',
+    left: '15px',
 }
 
 

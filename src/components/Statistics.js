@@ -10,7 +10,7 @@ const Statistics = () => {
                 <div className="row justify-content-center mb-5 pb-3">
                     <div className="col-md-7 text-center heading-section heading-section-white ftco-animate">
                         <h2 className="mb-4">Some fun facts</h2>
-                        <span className="subheading">Far far away, behind the word mountains, far from the countries</span>
+                        <span className="subheading">Fun Facts About the Health You Don\’t Know</span>
                     </div>
                 </div>
                 <div className="row justify-content-center">
@@ -19,7 +19,7 @@ const Statistics = () => {
                             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                                 <div className="block-18 text-center">
                                     <div className="text">
-                                        <strong className="number" data-number="1">0</strong>
+                                        <strong className="number" data-number="1">1</strong>
                                         <span>Physical checkup</span>
                                     </div>
                                 </div>
@@ -27,7 +27,7 @@ const Statistics = () => {
                             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                                 <div className="block-18 text-center">
                                     <div className="text">
-                                        <strong className="number" data-number="3">0</strong>
+                                        <strong className="number" data-number="3">3</strong>
                                         <span>Cancer Checkup</span>
                                     </div>
                                 </div>
@@ -35,7 +35,7 @@ const Statistics = () => {
                             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                                 <div className="block-18 text-center">
                                     <div className="text">
-                                        <strong className="number" data-number="1">0</strong>
+                                        <strong className="number" data-number="1">1</strong>
                                         <span>Blood Checkup</span>
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@ const Statistics = () => {
                             <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                                 <div className="block-18 text-center">
                                     <div className="text">
-                                        <strong className="number" data-number="2">0</strong>
+                                        <strong className="number" data-number="1">1</strong>
                                         <span>Teeth Checkup</span>
                                     </div>
                                 </div>

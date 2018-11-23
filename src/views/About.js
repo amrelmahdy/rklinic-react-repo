@@ -10,9 +10,17 @@ class About extends Component{
 
 
     render() {
+
+        const history = [
+            {
+                page: 'Home',
+                to: "/"
+            }
+        ]
+
         return (
             <div className="About">
-                <Head title="About Us" desc="A Doctor or a patient, cut the distance short, and get your application now!"/>
+                <Head title="About Us" history={ history } />
                 <AboutRklinic/>
                 <Subscribe />
             </div>

@@ -8,15 +8,24 @@ import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
 
 class Doctor extends Component {
 
+
     componentDidMount() {
         this.props.getDoctorsList();
     }
 
 
     render() {
+
+        const history = [
+            {
+                page: 'Home',
+                to: "/"
+            }
+        ]
+
+
         const doctorsList = this.props.doctors.length ? (
             <div className="col-md-6 col-lg-3 ftco-animate">
-
                 <div className="block-2">
                     <div className="flipper">
                         <div className="front" style={{backgroundImage: 'url(images/doctor-1.jpg)'}}>
@@ -50,8 +59,7 @@ class Doctor extends Component {
 
         return (
             <div className="About">
-                <Head title="Doctors"
-                      desc="A Doctor or a patient, cut the distance short, and get your application now!"/>
+                <Head title="Doctors" history={ history } />
 
                 <section className="ftco-section">
                     <div className="container">

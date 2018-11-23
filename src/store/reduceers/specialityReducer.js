@@ -1,17 +1,28 @@
 const initState = {
-    specialities: [],
-    specialtyListIsLoading: true
+    specialties: [],
+    specialtyListIsLoading: true,
+    specialtyDetailsIsLoading: true,
+    current: null,
 
 };
 
 
-const specialityReducer = (state = initState, action) => {
+const specialtyReducer = (state = initState, action) => {
     switch (action.type) {
         case "GET_SPECIALITIES_LIST" :
             state = {
                 ...state,
-                specialities: action.payload,
+                specialties: action.payload,
                 specialtyListIsLoading: false
+            }
+            break;
+
+        case "GET_SPECIALTY_DETAILS" :
+            console.log(action.payload);
+            state = {
+                ...state,
+                current: action.payload,
+                specialtyDetailsIsLoading: false
             }
             break;
         default:
@@ -20,4 +31,4 @@ const specialityReducer = (state = initState, action) => {
     return state;
 };
 
-export default specialityReducer
+export default specialtyReducer

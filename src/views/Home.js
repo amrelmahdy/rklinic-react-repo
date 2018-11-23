@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Head from "../components/Head";
 import MiniCategory from "../components/MiniCategories";
 import Services from "../components/Services";
 import Doctors from "../components/Doctors";
@@ -9,6 +8,7 @@ import Subscribe from "../components/Subscribe";
 import {getDoctorsList} from "../store/actions/doctorActions";
 import {getSpecialtiesList} from "../store/actions/specialtyActions";
 import {connect} from "react-redux";
+import Slider from "../components/Slider";
 
 class Home extends Component {
 
@@ -22,10 +22,10 @@ class Home extends Component {
     render() {
         return (
             <div className="home">
-                <Head title="rklinc" desc="A Doctor or a patient, cut the distance short, and get your application now!
-" links=""/>
 
-                <MiniCategory specialtyListIsLoading={ this.props.specialtyListIsLoading } specialties={ this.props.specialities } />
+                <Slider />
+
+                <MiniCategory specialtyListIsLoading={ this.props.specialtyListIsLoading } specialties={ this.props.specialties } />
 
                 <Services/>
 
@@ -46,8 +46,8 @@ const mapStateToProps = (state) => {
     return {
         doctors: state.doctor.doctors,
         doctorsListIsLoading: state.doctor.doctorsListIsLoading,
-        specialities: state.speciality.specialities,
-        specialtyListIsLoading: state.speciality.specialtyListIsLoading
+        specialties: state.specialty.specialties,
+        specialtyListIsLoading: state.specialty.specialtyListIsLoading
     }
 }
 

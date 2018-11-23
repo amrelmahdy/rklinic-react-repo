@@ -6,10 +6,20 @@ import Contact from "../components/Contact";
 
 class ContactUs extends Component{
 
+
     render() {
+
+        const history = [
+            {
+                page: 'Home',
+                to: "/"
+            }
+        ]
+
+
         return (
             <div className="contact">
-                <Head title="Contact" desc="A Doctor or a patient, cut the distance short, and get your application now!"/>
+                <Head title="Contact"history={ history }  />
                 <Contact />
                 <Subscribe />
             </div>

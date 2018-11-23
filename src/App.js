@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
     BrowserRouter as Router,
     Route,
+    Switch
 } from "react-router-dom";
 import Navigator from "./components/Navigator"
 import Home from "./views/Home";
@@ -10,7 +11,8 @@ import About from "./views/About";
 import Doctor from "./views/Doctor";
 
 import Contact from "./views/ContactUs";
-import Speciality from "./views/Speciality";
+import Specialty from "./views/Specialty";
+import SingleSpecialty from "./views/SingleSpecialty";
 
 /*
 const fakeAuth = {
@@ -30,11 +32,14 @@ class App extends Component {
           <Router>
               <div>
                   <Navigator />
-                  <Route exact path="/" component={ Home } />
-                  <Route  path="/about" component={ About }  />
-                  <Route  path="/doctors" component={ Doctor }  />
-                  <Route  path="/contact" component={ Contact }  />
-                  <Route  path="/specialities" component={ Speciality }  />
+                  <Switch>
+                      <Route exact path="/" component={ Home } />
+                      <Route  path="/about" component={ About }  />
+                      <Route  path="/doctors" component={ Doctor }  />
+                      <Route  path="/contact" component={ Contact }  />
+                      <Route  path="/specialties" component={ Specialty }  />
+                      <Route  path="/specialty/:id"  component={ SingleSpecialty }  />
+                  </Switch>
               </div>
           </Router>
           <Footer/>

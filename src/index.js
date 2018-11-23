@@ -8,9 +8,7 @@ import {Provider} from "react-redux"
 import rootReducer from "./store/reduceers/rootReducer";
 import thunk from "redux-thunk"
 import logger from "redux-logger";
-import $ from 'jquery';
-window.jQuery = $;
-window.$ = $;
+
 
 
 const store = createStore(

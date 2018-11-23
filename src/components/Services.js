@@ -12,7 +12,7 @@ const Services = () => {
                     <div className="col-md-6">
                         <div className="row">
                             <div className="col-md-12">
-                                <a  className="services-wrap ftco-animate">
+                                <a href="/" className="services-wrap ftco-animate">
                                     <div className="icon d-flex justify-content-center align-items-center">
                                         <span className="ion-ios-arrow-back"></span>
                                         <span className="ion-ios-arrow-forward"></span>
@@ -21,7 +21,7 @@ const Services = () => {
                                     <p>rKlinic was made to honor every doctor that keeps on trying, winning and still going.
                                     </p>
                                 </a>
-                                <a  className="services-wrap ftco-animate">
+                                <a href="/" className="services-wrap ftco-animate">
                                     <div className="icon d-flex justify-content-center align-items-center">
                                         <span className="ion-ios-arrow-back"></span>
                                         <span className="ion-ios-arrow-forward"></span>
@@ -30,7 +30,7 @@ const Services = () => {
                                     <p>An appreciation for those who work day and night just to help people get better!
                                     </p>
                                 </a>
-                                <a  className="services-wrap ftco-animate">
+                                <a href="/" className="services-wrap ftco-animate">
                                     <div className="icon d-flex justify-content-center align-items-center">
                                         <span className="ion-ios-arrow-back"></span>
                                         <span className="ion-ios-arrow-forward"></span>
@@ -38,7 +38,7 @@ const Services = () => {
                                     <h2>Appreciation</h2>
                                     <p>A Gratitude for fighting even the losing fights with and for people!</p>
                                 </a>
-                                <a  className="services-wrap ftco-animate">
+                                <a href="/" className="services-wrap ftco-animate">
                                     <div className="icon d-flex justify-content-center align-items-center">
                                         <span className="ion-ios-arrow-back"></span>
                                         <span className="ion-ios-arrow-forward"></span>

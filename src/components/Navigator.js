@@ -1,3 +1,4 @@
+/* eslint-plugin-disable angular, react */
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -23,7 +24,7 @@ class Navigator extends Component {
                                 <NavLink className="nav-link" to="/about">About</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/specialities">Specialities</NavLink>
+                                <NavLink className="nav-link" to="/specialties">Specialties</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/doctors">Doctors</NavLink>
@@ -33,13 +34,12 @@ class Navigator extends Component {
                             </li>
 
                             <li className="nav-item">
-                                <a href="https://rklinic-admin.com/login" target="_blank" className="nav-link" >Login</a>
+                                <a href="/" target="_blank" className="nav-link" >Arabic</a>
                             </li>
 
                             <li className="nav-item cta">
-                                <a target="_blank" href="https://rklinic-admin.com/register" className="nav-link">
-
-                                    <span>get started</span>
+                                <a target="_blank" href="https://rklinic-admin.com/login" className="nav-link">
+                                    <span>Login</span>
                                 </a>
                             </li>
                         </ul>

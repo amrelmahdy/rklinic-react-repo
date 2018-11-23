@@ -133,7 +133,7 @@ class Contact extends Component {
                                 <div className="form-group">
                                     <input type="text" id="name" onChange={this.handleInputChange}
                                            className="form-control" placeholder="Your Name"/>
-                                    <span style={ errorLinkStyle } className="error-msg">{this.handleErrors("name")}</span>
+                                    <span  className="error-msg">{this.handleErrors("name")}</span>
                                 </div>
                                 <div className="form-group">
                                     <input type="text" id="email" onChange={this.handleInputChange}
@@ -173,13 +173,6 @@ class Contact extends Component {
     }
 }
 
-
-const errorLinkStyle = {
-    position: 'absolute',
-    bottom: 0,
-    fontSize: '10px',
-    left: '15px',
-}
 
 
 export default Contact;

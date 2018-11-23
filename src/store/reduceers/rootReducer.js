@@ -4,7 +4,7 @@ import specialityReducer from "./specialityReducer";
 
 const rootReducer = combineReducers({
     doctor: doctorReducer,
-    speciality: specialityReducer
+    specialty: specialityReducer
 })
 
 export default rootReducer

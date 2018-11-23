@@ -1,5 +1,6 @@
 import React from "react";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
+import { Link } from "react-router-dom"
 
 const MiniCategory = ({specialties, specialtyListIsLoading}) => {
 
@@ -25,7 +26,7 @@ const MiniCategory = ({specialties, specialtyListIsLoading}) => {
 
                 <h2 className="mb-4">{ specialty.speciality }</h2>
                 <p>{specialty.desc}</p>
-                <p><a href="/" className="btn btn-primary">Show Doctors</a></p>
+                <p><Link to={ '/specialty/' + specialty.id  } className="btn btn-primary">Show Doctors</Link></p>
             </div>
         )
     });

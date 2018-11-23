@@ -4,36 +4,37 @@ import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
 import Subscribe from "../components/Subscribe";
 import {connect} from "react-redux"
 import {getSpecialtiesList} from "./../store/actions/specialtyActions"
+import {Link} from "react-router-dom";
 
-class Speciality extends Component {
-
+class Specialty extends Component {
     componentDidMount() {
-        this.props.getSpecialtiesList();
+        this.props.getSpecialtiesList(0);
     }
 
     render() {
 
-        const {specialities, specialtyListIsLoading} = this.props;
-        const speciatiesList = specialities.length ?
-            specialities.map(speciality => {
+        const {specialties, specialtyListIsLoading} = this.props;
+        const specialtiesList = specialties.length ?
+            specialties.map(specialty => {
                 return (
                     <div className="col-lg-4 d-flex ftco-animate">
                         <div className="dept d-md-flex">
                             <div className="text p-4">
-                                <h3><a href="department-single.html">{ speciality.speciality }</a></h3>
+                                <h3><a href="department-single.html">{specialty.speciality}</a></h3>
                                 <p>
-                                    { speciality.desc.slice(0, 120) }
+                                    {specialty.desc.length > 120 ? specialty.desc.slice(0, 120) + " ..." : specialty.desc}
                                 </p>
-
-
-                                <button  className="btn btn-primary">{ speciality.doctors.length } Doctor(s)</button>
+                                <span className="doc">{specialty.doctors.length} Doctors</span>
+                                <Link style={{ marginLeft: '10px' }} to={"/specialty/" + specialty.id}>Show more</Link>
 
                             </div>
                         </div>
                     </div>
                 )
             }) :
-            null;
+            (
+                <p>No data</p>
+            );
 
         return (
             <div className="About">
@@ -48,52 +49,52 @@ class Speciality extends Component {
                             (
                                 specialtyListIsLoading === false ?
                                     <div className="row">
+
                                         {
-                                            speciatiesList
+                                            specialtiesList
                                         }
 
-                                    </div> :   <div className="row">
+                                    </div> : <div className="row">
                                         <div className="col-md-3">
                                             <Skeleton amount={5} bigBone={true}/>
-                                            <Bone width={40} height={20} />
+                                            <Bone width={40} height={20}/>
                                         </div>
 
                                         <div className="col-md-3">
                                             <Skeleton amount={5} bigBone={true}/>
-                                             <Bone width={40} height={20} />
+                                            <Bone width={40} height={20}/>
                                         </div>
                                         <div className="col-md-3">
                                             <Skeleton amount={5} bigBone={true}/>
-                                             <Bone width={40} height={20} />
-                                        </div>
-
-                                        <div className="col-md-3">
-                                            <Skeleton amount={5} bigBone={true}/>
-                                             <Bone width={40} height={20} />
+                                            <Bone width={40} height={20}/>
                                         </div>
 
                                         <div className="col-md-3">
                                             <Skeleton amount={5} bigBone={true}/>
-                                             <Bone width={40} height={20} />
+                                            <Bone width={40} height={20}/>
                                         </div>
 
                                         <div className="col-md-3">
                                             <Skeleton amount={5} bigBone={true}/>
-                                             <Bone width={40} height={20} />
-                                        </div>
-                                        <div className="col-md-3">
-                                            <Skeleton amount={5} bigBone={true}/>
-                                             <Bone width={40} height={20} />
+                                            <Bone width={40} height={20}/>
                                         </div>
 
                                         <div className="col-md-3">
                                             <Skeleton amount={5} bigBone={true}/>
-                                             <Bone width={40} height={20} />
+                                            <Bone width={40} height={20}/>
+                                        </div>
+                                        <div className="col-md-3">
+                                            <Skeleton amount={5} bigBone={true}/>
+                                            <Bone width={40} height={20}/>
+                                        </div>
+
+                                        <div className="col-md-3">
+                                            <Skeleton amount={5} bigBone={true}/>
+                                            <Bone width={40} height={20}/>
                                         </div>
                                     </div>
                             )
                         }
-
 
 
                         {/*  skeleton */}
@@ -109,16 +110,16 @@ class Speciality extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        specialities: state.speciality.specialities,
-        specialtyListIsLoading: state.speciality.specialtyListIsLoading,
+        specialties: state.specialty.specialties,
+        specialtyListIsLoading: state.specialty.specialtyListIsLoading,
     }
 };
 
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        getSpecialtiesList: () => dispatch(getSpecialtiesList())
+        getSpecialtiesList: (featured) => dispatch(getSpecialtiesList(featured))
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Speciality)
+export default connect(mapStateToProps, mapDispatchToProps)(Specialty)

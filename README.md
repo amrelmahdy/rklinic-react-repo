@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-=======
+
 This is rklinic project developed by rkanjel
 >>>>>>> d190662912a80ae22fd59e19a374750ef8504abb
 

@@ -41,7 +41,7 @@ class SingleSpecialty extends Component {
                             </div>
                             <div className="back">
                                 <blockquote>
-                                    <p>{}</p>
+                                    <p>{doc.bio.length > 200 ? doc.bio.slice(0, 200) + " ..." : doc.bio}</p>
                                 </blockquote>
                                 <div className="author d-flex">
                                     <div className="image mr-3 align-self-center">

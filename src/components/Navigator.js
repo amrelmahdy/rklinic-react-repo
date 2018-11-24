@@ -34,7 +34,7 @@ class Navigator extends Component {
                             </li>
 
                             <li className="nav-item">
-                                <a href="/" target="_blank" className="nav-link" >Arabic</a>
+                                <a href="/" target="_blank" className="nav-link" >العربية</a>
                             </li>
 
                             <li className="nav-item cta">

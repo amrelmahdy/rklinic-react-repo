@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e14d8a08-5b0e-45d2-b5e6-dab5bbbbc67b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/SingleDoctor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SingleDoctor.js" afterDir="false" />
-    </list>
+    <list default="true" id="e14d8a08-5b0e-45d2-b5e6-dab5bbbbc67b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -61,7 +57,7 @@
           <entry key="css" value="471" />
           <entry key="dummy" value="1" />
           <entry key="html" value="74" />
-          <entry key="js" value="17254" />
+          <entry key="js" value="17257" />
           <entry key="json" value="3" />
           <entry key="md" value="1" />
         </counts>
@@ -71,7 +67,7 @@
           <entry key="CSS" value="471" />
           <entry key="HTML" value="74" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="17254" />
+          <entry key="JavaScript" value="17257" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -82,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/SingleDoctor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+            <state relative-caret-position="297">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -246,17 +242,6 @@
               <item name="rklinic-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="rklinic-react" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="rklinic-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rklinic-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rklinic-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rklinic-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -317,16 +302,15 @@
       <workItem from="1542016686546" duration="19553000" />
       <workItem from="1542367541584" duration="246000" />
       <workItem from="1542379028341" duration="70424000" />
-      <workItem from="1542901937893" duration="29509000" />
+      <workItem from="1542901937893" duration="29775000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124437000" />
+    <option name="totallyTimeSpent" value="124703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="23" width="1387" height="831" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24377745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -722,8 +706,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/SingleDoctor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+        <state relative-caret-position="297">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { getSpecialtiesLink, getSpecialtyDeatailsLink } from "./../../config";
+import { getSpecialtiesLink, getSpecialtyDetailsLink } from "./../../config";
 
 export const getSpecialtiesList = (featured = 1) => {
     return (dispatch, getState) => {
@@ -21,7 +21,7 @@ export const getSpecialtiesList = (featured = 1) => {
 
 export const getSpecialtyDetails = (id) => {
     return (dispatch, getState) => {
-        axios.post(getSpecialtyDeatailsLink, { speciality_id: id}).then(res => {
+        axios.post(getSpecialtyDetailsLink, { speciality_id: id}).then(res => {
             if (res.data.Error.status === true){
                 const currentSpecialty = res.data.Response;
                 dispatch({

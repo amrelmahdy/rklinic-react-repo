@@ -1,4 +1,5 @@
 import React from "react";
+import { Bone} from "react-loading-skeleton-placeholders";
 
 const Head = ({ title, history }) => {
     var headStyle = {

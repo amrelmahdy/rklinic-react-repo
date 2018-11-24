@@ -13,6 +13,7 @@ import Doctor from "./views/Doctor";
 import Contact from "./views/ContactUs";
 import Specialty from "./views/Specialty";
 import SingleSpecialty from "./views/SingleSpecialty";
+import SingleDoctor from "./views/SingleDoctor";
 
 /*
 const fakeAuth = {
@@ -39,6 +40,7 @@ class App extends Component {
                       <Route  path="/contact" component={ Contact }  />
                       <Route  path="/specialties" component={ Specialty }  />
                       <Route  path="/specialty/:id"  component={ SingleSpecialty }  />
+                      <Route  path="/doctor/:id"  component={ SingleDoctor }  />
                   </Switch>
               </div>
           </Router>

@@ -4,6 +4,7 @@ import Subscribe from "../components/Subscribe";
 import {connect} from "react-redux";
 import {getSpecialtyDetails} from "../store/actions/specialtyActions";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
+import { Link } from "react-router-dom";
 
 
 class SingleSpecialty extends Component {
@@ -24,10 +25,9 @@ class SingleSpecialty extends Component {
                 page: 'Specialties',
                 to: "/specialties"
             }
-        ]
+        ];
 
         const doctorsList = this.props.specialty && this.props.specialty.doctors.length ? this.props.specialty.doctors.map(doc => {
-
 
             return (
                 <div className="col-md-6 col-lg-3 ftco-animate">
@@ -41,14 +41,15 @@ class SingleSpecialty extends Component {
                             </div>
                             <div className="back">
                                 <blockquote>
-                                    <p>{doc.bio.length > 200 ? doc.bio.slice(0, 200) + " ..." : doc.bio}</p>
+                                    <p>{doc.bio && doc.bio.length > 200 ? doc.bio.slice(0, 200) + " ..." : doc.bio}</p>
                                 </blockquote>
                                 <div className="author d-flex">
                                     <div className="image mr-3 align-self-center">
                                         <div className="img" style={setDoctorImage(doc.image)}></div>
                                     </div>
-                                    <div className="name align-self-center">{doc.name}<span
-                                        className="position">{doc.speciality}</span></div>
+                                    <div className="name align-self-center">
+                                        <Link to={ "/doctor/" + doc.id }>{doc.name}</Link>
+                                        <span className="position">{doc.speciality}</span></div>
                                 </div>
                             </div>
                         </div>

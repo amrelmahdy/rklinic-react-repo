@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e14d8a08-5b0e-45d2-b5e6-dab5bbbbc67b" name="Default Changelist" comment="" />
+    <list default="true" id="e14d8a08-5b0e-45d2-b5e6-dab5bbbbc67b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -26,6 +28,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="13" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="9" />
           <entry key="jpg" value="20" />
           <entry key="js" value="196" />
@@ -42,7 +45,7 @@
           <entry key="Image" value="20" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="196" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="SCSS" value="2" />
           <entry key="SVG" value="1" />
         </counts>
@@ -75,7 +78,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/SingleDoctor.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
@@ -83,6 +86,15 @@
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -153,7 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/comonents/MiniCategories.js" />
         <option value="$PROJECT_DIR$/src/comonents/Navigator.js" />
         <option value="$PROJECT_DIR$/src/comonents/Statistics.js" />
         <option value="$PROJECT_DIR$/src/comonents/Testimonials.js" />
@@ -204,6 +215,7 @@
         <option value="$PROJECT_DIR$/src/store/actions/doctorActions.js" />
         <option value="$PROJECT_DIR$/src/components/Navigator.js" />
         <option value="$PROJECT_DIR$/src/views/SingleDoctor.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -302,15 +314,16 @@
       <workItem from="1542016686546" duration="19553000" />
       <workItem from="1542367541584" duration="246000" />
       <workItem from="1542379028341" duration="70424000" />
-      <workItem from="1542901937893" duration="29775000" />
+      <workItem from="1542901937893" duration="30273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124703000" />
+    <option name="totallyTimeSpent" value="125201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="23" width="1387" height="831" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24377745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -353,9 +366,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/dept-2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/dept-1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -711,6 +721,13 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>

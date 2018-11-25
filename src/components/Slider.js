@@ -3,8 +3,9 @@ import OwlCarousel from 'react-owl-carousel';
 import ProgressiveImage from "react-progressive-image-loading";
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { withTranslate } from "react-redux-multilingual"
 
-const Slider = () => {
+const Slider = ({ translate }) => {
 
     window.$(".owl-item").css({
         'height': "50px !important"
@@ -27,7 +28,9 @@ const Slider = () => {
                 <div className="item">
                     <div className="item-content">
                         <div className="text-over-slider">
-                            <h1 className="title-over">Welcome To rKlinik</h1>
+                            <h1 className="title-over">
+                                { translate("slider_title_1") }
+                            </h1>
                             <p>The ultimate medical gate</p>
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary"> Get Started</a>
 
@@ -44,9 +47,8 @@ const Slider = () => {
                 <div className="item">
                     <div className="item-content">
                         <div className="text-over-slider">
-                            <h1 className="title-over">Our Mission</h1>
-                            <p>
-                                Become the ultimate Doctor-Patient meeting point.
+                            <h1 className="title-over">{  translate("slider_title_2") }</h1>
+                            <p>Become the ultimate Doctor-Patient meeting point.
                             </p>
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary"> Get Started</a>
 
@@ -64,7 +66,7 @@ const Slider = () => {
                 <div className="item">
                     <div className="item-content">
                         <div className="text-over-slider">
-                            <h1 className="title-over">Our Vision</h1>
+                            <h1 className="title-over">{ translate("slider_title_3") }</h1>
                             <p>Create a better, smoother and faster Doctor-patient communication.</p>
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary"> Get Started</a>
 
@@ -86,7 +88,7 @@ const Slider = () => {
 }
 
 
-export default Slider;
+export default withTranslate(Slider);
 
 
 

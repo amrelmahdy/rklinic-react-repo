@@ -39,11 +39,7 @@ class SingleDoctor extends Component {
 
         return (
             <div className="Home">
-                <Head title={
-                    doctor ?
-                        doctor.name :
-                        <Bone/>} history={history
-                }/>
+                <Head title={ doctor ? doctor.name : <Bone/> } history={history}/>
 
                 <section className="ftco-section">
                     <div className="container">

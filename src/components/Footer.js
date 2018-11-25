@@ -3,7 +3,6 @@ import React from "react";
 export default () => {
   return (
       <footer className="ftco-footer ftco-bg-dark ftco-section img">
-          <div className="overlay"></div>
           <div className="container">
               <div className="row mb-5">
                   <div className="col-md">

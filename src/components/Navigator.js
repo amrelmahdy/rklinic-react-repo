@@ -1,6 +1,9 @@
 /* eslint-plugin-disable angular, react */
 import React, {Component} from "react";
 import {NavLink} from "react-router-dom";
+import { connect } from 'react-redux'
+import { withTranslate, IntlActions } from 'react-redux-multilingual'
+
 
 class Navigator extends Component {
 
@@ -8,7 +11,10 @@ class Navigator extends Component {
         //console.log(e.target);
         e.preventDefault();
         localStorage.setItem("lang", e.target.id);
-        window.location.reload();
+        this.props.dispatch(IntlActions.setLocale(e.target.id))
+
+
+        //window.location.reload();
     }
 
 
@@ -27,19 +33,37 @@ class Navigator extends Component {
                     <div className="collapse navbar-collapse" id="ftco-nav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <NavLink exact className="nav-link" to="/">Home</NavLink>
+                                <NavLink exact className="nav-link" to="/">{
+                                    this.props.translate("home")
+                                }</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/about">About</NavLink>
+                                <NavLink className="nav-link" to="/about">
+                                    {
+                                        this.props.translate("about")
+                                    }
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/specialties">Specialties</NavLink>
+                                <NavLink className="nav-link" to="/specialties">
+                                    {
+                                        this.props.translate("specialties")
+                                    }
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/doctors">Doctors</NavLink>
+                                <NavLink className="nav-link" to="/doctors">
+                                    {
+                                        this.props.translate("doctors")
+                                    }
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/contact">Contact</NavLink>
+                                <NavLink className="nav-link" to="/contact">
+                                    {
+                                        this.props.translate("contact")
+                                    }
+                                </NavLink>
                             </li>
 
                             <li className="nav-item">
@@ -65,4 +89,4 @@ class Navigator extends Component {
     }
 }
 
-export default Navigator;
+export default connect()(withTranslate(Navigator));

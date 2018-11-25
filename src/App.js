@@ -14,6 +14,7 @@ import Contact from "./views/ContactUs";
 import Specialty from "./views/Specialty";
 import SingleSpecialty from "./views/SingleSpecialty";
 import SingleDoctor from "./views/SingleDoctor";
+import rtl from "./rtl.css";
 
 /*
 const fakeAuth = {
@@ -27,6 +28,14 @@ const fakeAuth = {
 }*/
 
 class App extends Component {
+
+
+    componentDidMount(){
+        if(localStorage.getItem("lang")  === "ar"){
+            require("./rtl.css");
+        }
+    }
+
   render() {
     return (
       <div className="App">

@@ -9588,6 +9588,7 @@ textarea.form-control {
     max-height: 50px !important;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -9597,3 +9598,21 @@ textarea.form-control {
 
 
 
+=======
+/*********************custom style***********************/
+.section-img{
+  position: relative;
+  display: block;
+  max-height: 580px;
+  overflow: hidden;
+}
+.section-content{
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.section-img{
+  height: 100%;
+  width: 100%;
+}
+>>>>>>> bf56f23e110daa02bf8df0fb6c7b523ec41496c5

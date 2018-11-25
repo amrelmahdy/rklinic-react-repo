@@ -6,6 +6,8 @@ import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
 import Subscribe from "../components/Subscribe";
 
 
+
+
 class SingleDoctor extends Component {
     componentDidMount() {
         const id = this.props.match.params.id;

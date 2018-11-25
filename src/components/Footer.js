@@ -5,7 +5,7 @@ import { Bone } from"react-loading-skeleton-placeholders"
 
 class Footer extends Component{
     componentDidMount(){
-        this.props.getSpecialtiesList();
+        this.props.getSpecialtiesList(0);
     }
 
     render(){
@@ -38,7 +38,7 @@ class Footer extends Component{
                                     <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
                                                                     target="_blank"><span className="icon-instagram"></span></a>
                                     </li>
-                                   
+
                                 </ul>
                             </div>
                         </div>

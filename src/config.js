@@ -3,3 +3,5 @@ export const getSpecialtiesLink = "https://rklinic-admin.com/api/specialities/li
 export  const sendSubscribeEmail = "https://rklinic-admin.com/api/system/subscription";
 export const getSpecialtyDetailsLink = "https://rklinic-admin.com/api/speciality/doctors";
 export const getDoctorDetailsLink = "https://rklinic-admin.com/api/doctor/profile";
+
+

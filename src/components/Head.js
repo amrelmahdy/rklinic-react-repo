@@ -1,11 +1,13 @@
 import React from "react";
-import {Bone} from "react-loading-skeleton-placeholders";
 import ProgressiveImage from "react-progressive-image-loading";
 
+
+
+
 const Head = ({title, history}) => {
-    const hsitoryList = history ? history.map(h => {
+    const hsitoryList = history ? history.map((h, index) => {
         return (
-            <span className="mr-2"><a href={h.to}>{h.page}</a></span>
+            <span key={index} className="mr-2"><a href={h.to}>{h.page}</a></span>
         )
     }) : null
 
@@ -25,9 +27,9 @@ const Head = ({title, history}) => {
                         <div className="row no-gutters slider-text align-items-center justify-content-center"
                              data-scrollax-parent="true">
                             <div className="col-md-8 ftco-animate text-center">
-                                <p className="breadcrumbs">
+                                <div className="breadcrumbs">
                                     {hsitoryList}
-                                    <span>{title}</span></p>
+                                    <span>{title}</span></div>
                                 <h1 className="mb-4">{title}</h1>
                             </div>
                         </div>

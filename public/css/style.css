@@ -10412,6 +10412,7 @@ h1, h2, h3, h4, h5,
 .slider-text {
     color: #fff;
     height: 300px;
+
 }
 
 .slider-text h1 {
@@ -13246,7 +13247,7 @@ textarea.form-control {
     z-index: 1000;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: center !important;
 
 }
 
@@ -13257,6 +13258,7 @@ textarea.form-control {
     font-weight: bold;
     /* margin: 0; */
     line-height: .9;
+    text-align: center !important;
 
 }
 
@@ -13267,6 +13269,7 @@ textarea.form-control {
     font-weight: bold;
     text-transform: capitalize;
     letter-spacing: 5px;
+    text-align: center !important;
 }
 
 .slider-sec .item-content .text-over-slider a {

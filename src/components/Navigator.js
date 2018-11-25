@@ -19,7 +19,7 @@ class Navigator extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-                <div className="container">
+                <div className="container rtl">
                     <a className="navbar-brand" href="/">
                         <img src="images/logo.png" alt="rklinic logo"/>
                     </a>

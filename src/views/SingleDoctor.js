@@ -32,9 +32,9 @@ class SingleDoctor extends Component {
 
 
         const servicesList = doctor && doctor.services.length ?
-            doctor.services.map(service => {
+            doctor.services.map((service, index) => {
                 return (
-                    <a  className="tag-cloud-link">{service}</a>
+                    <a key={ index } className="tag-cloud-link">{service}</a>
                 )
             }) : null
 
@@ -42,7 +42,6 @@ class SingleDoctor extends Component {
         return (
             <div className="Home">
                 <Head title={ doctor ? doctor.name : <Bone/> } history={history}/>
-
                 <section className="ftco-section">
                     <div className="container">
                         <div className="row">

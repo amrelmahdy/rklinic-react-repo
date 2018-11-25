@@ -1,10 +1,12 @@
 const initState = {
+    all_specialties: [],
     specialties: [],
     specialtyListIsLoading: true,
     specialtyDetailsIsLoading: true,
     current: null,
-
 };
+
+
 
 
 const specialtyReducer = (state = initState, action) => {
@@ -16,15 +18,21 @@ const specialtyReducer = (state = initState, action) => {
                 specialtyListIsLoading: false
             }
             break;
+        case "GET_ALL_SPECIALITIES_LIST" :
+            state = {
+                ...state,
+                all_specialties: action.payload,
+            }
+            break;
 
         case "GET_SPECIALTY_DETAILS" :
-            console.log(action.payload);
             state = {
                 ...state,
                 current: action.payload,
                 specialtyDetailsIsLoading: false
             }
             break;
+
         default:
     }
 

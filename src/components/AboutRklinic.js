@@ -8,6 +8,7 @@ import ProgressiveImage from "react-progressive-image-loading";
 
 class AboutRklinic extends Component {
 
+
     state = {
         isOpen: false,
     }
@@ -23,7 +24,9 @@ class AboutRklinic extends Component {
                 <div className="container-fluid d-flex no-padding">
 
                     <div className="section-2-blocks-wrapper row no-gutters">
+
                         <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='L61p2uyiMSo' onClose={() => this.setState({isOpen: false})} />
+
                         <div className="img col-sm-12 col-lg-6">
                             <ProgressiveImage
                                 preview="/images/about.png"

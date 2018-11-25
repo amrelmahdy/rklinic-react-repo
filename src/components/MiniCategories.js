@@ -35,7 +35,7 @@ const MiniCategory = ({specialties, specialtyListIsLoading}) => {
     return (
         specialties.length ?
             (<section className="ftco-services">
-                <div className="container">
+                <div className="container rtl">
                     {
                         (
                             specialtyListIsLoading === false ?

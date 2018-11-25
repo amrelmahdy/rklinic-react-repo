@@ -3,6 +3,7 @@ import axios from "axios";
 import izitoast from "izitoast";
 import './../../node_modules/izitoast/dist/css/iziToast.min.css';
 import MapContainer from "./MapContainer";
+import {withTranslate} from "react-redux-multilingual"
 
 
 class Contact extends Component {
@@ -14,9 +15,6 @@ class Contact extends Component {
         message: null,
         errors: null,
     };
-
-
-
 
 
     handleInputChange = (e) => {
@@ -111,7 +109,11 @@ class Contact extends Component {
                 <div className="container">
                     <div className="row d-flex mb-5 contact-info">
                         <div className="col-md-12 mb-4">
-                            <h2 className="h4">Contact Information</h2>
+                            <h2 className="h4">
+                                {
+                                    this.props.translate("Contact_Information")
+                                }
+                            </h2>
                         </div>
                         <div className="w-100"></div>
                         <div className="col-md-4">
@@ -133,7 +135,7 @@ class Contact extends Component {
                                 <div className="form-group">
                                     <input type="text" id="name" onChange={this.handleInputChange}
                                            className="form-control" placeholder="Your Name"/>
-                                    <span  className="error-msg">{this.handleErrors("name")}</span>
+                                    <span className="error-msg">{this.handleErrors("name")}</span>
                                 </div>
                                 <div className="form-group">
                                     <input type="text" id="email" onChange={this.handleInputChange}
@@ -174,8 +176,7 @@ class Contact extends Component {
 }
 
 
-
-export default Contact;
+export default withTranslate(Contact);
 
 
 /// References ////////

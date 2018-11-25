@@ -58,7 +58,6 @@ html {
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
 }
-
 body {
     margin: 0;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -10612,26 +10611,26 @@ h1, h2, h3, h4, h5,
 }
 
 .btn.btn-primary {
-    background: #009DE7;
-    border: 1px solid #009DE7;
+    background: #35c7e0;
+    border: 1px solid #35c7e0;
     color: #fff;
 }
 
 .btn.btn-primary:hover {
-    border: 1px solid #009DE7;
+    border: 1px solid #35c7e0;
     background: transparent;
-    color: #009DE7;
+    color: #35c7e0;
 }
 
 .btn.btn-primary.btn-outline-primary {
-    border: 1px solid #009DE7;
+    border: 1px solid #35c7e0;
     background: transparent;
     color: #009DE7;
 }
 
 .btn.btn-primary.btn-outline-primary:hover {
     border: 1px solid transparent;
-    background: #009DE7;
+    background: #35c7e0;
     color: #fff;
 }
 
@@ -13194,6 +13193,15 @@ textarea.form-control {
     left: 0;
     right: 0;
 }
+.styled-error-msg{
+    left: 24%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #999696;
+    width: 215px;
+    /* padding: 10px; */
+    font-weight: 500;
+}
 
 /*.testimony-wrap .mb-5 {
     min-height: 135px;
@@ -13211,8 +13219,8 @@ textarea.form-control {
 }
 
 .btn.btn-primary {
-    background: #009DE7;
-    border: 1px solid #009DE7;
+    background: #35c7e0;
+    border: 1px solid #35c7e0;
     color: #fff;
     border-radius: 50px !important;
     max-height: 36px;
@@ -13276,21 +13284,25 @@ textarea.form-control {
     height: 100%;
     width: 100%;
 }
-.head-section-img{
+
+.head-section-img {
     position: relative;
     overflow: hidden;
     height: 100%;
     width: 100%;
 }
-.head-section-content{
+
+.head-section-content {
     top: 0;
     z-index: 1;
 }
+
 .section-content {
     top: 0;
     width: 100%;
     height: 100%;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -13309,12 +13321,14 @@ textarea.form-control {
     background: linear-gradient(45deg, #009DE7 0%, #05BBC2 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009DE7', endColorstr='#05BBC2', GradientType=1);
 }
-.section-counter{
+
+.section-counter {
     padding: 10em 0;
     width: 100%;
     display: block;
     z-index: 1;
 }
+
 .section-counter .text strong.number {
     font-weight: 400;
     font-size: 40px;
@@ -13344,6 +13358,7 @@ textarea.form-control {
     text-transform: uppercase;
     letter-spacing: .1em;
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 7px;
@@ -13365,3 +13380,5 @@ textarea.form-control {
 ::-webkit-scrollbar-thumb:hover {
     background: #35c7e0;
 }
+
+

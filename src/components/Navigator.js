@@ -1,14 +1,23 @@
 /* eslint-plugin-disable angular, react */
-import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import React, {Component} from "react";
+import {NavLink} from "react-router-dom";
 
 class Navigator extends Component {
+
+    changeLang = (e) => {
+        //console.log(e.target);
+        e.preventDefault();
+        localStorage.setItem("lang", e.target.id);
+        window.location.reload();
+    }
+
+
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
                 <div className="container">
                     <a className="navbar-brand" href="/">
-                        <img src="images/logo.png" alt="rklinic logo" />
+                        <img src="images/logo.png" alt="rklinic logo"/>
                     </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                             aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,9 +43,15 @@ class Navigator extends Component {
                             </li>
 
                             <li className="nav-item">
-                                <a href="/" target="_blank" className="nav-link" >العربية</a>
+                                {
+                                    localStorage.getItem("lang") === "en" ?
+                                        <a href="/" onClick={this.changeLang} target="_blank" className="nav-link"
+                                           id="ar">العربية</a>
+                                        :
+                                        <a href="/" onClick={this.changeLang} target="_blank" className="nav-link"
+                                           id="en">English</a>
+                                }
                             </li>
-
                             <li className="nav-item cta">
                                 <a target="_blank" href="https://rklinic-admin.com/login" className="nav-link">
                                     <span>Login</span>
@@ -49,4 +64,5 @@ class Navigator extends Component {
         )
     }
 }
+
 export default Navigator;

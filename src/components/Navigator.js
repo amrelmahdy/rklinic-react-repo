@@ -12,9 +12,7 @@ class Navigator extends Component {
         e.preventDefault();
         localStorage.setItem("lang", e.target.id);
         this.props.dispatch(IntlActions.setLocale(e.target.id))
-
-
-        //window.location.reload();
+        window.location.reload();
     }
 
 

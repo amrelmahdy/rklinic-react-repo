@@ -13257,6 +13257,7 @@ textarea.form-control {
     font-weight: bold;
     /* margin: 0; */
     line-height: .9;
+
 }
 
 .slider-sec .item-content .text-over-slider p {
@@ -13323,7 +13324,24 @@ textarea.form-control {
     background: linear-gradient(45deg, #009DE7 0%, #05BBC2 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009DE7', endColorstr='#05BBC2', GradientType=1);
 }
-
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    z-index: 1;
+    opacity: .2;
+    background: #009DE7;
+    background: -moz-linear-gradient(45deg, #009DE7 0%, #05BBC2 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #009DE7), color-stop(100%, #05BBC2));
+    background: -webkit-linear-gradient(45deg, #009DE7 0%, #05BBC2 100%);
+    background: -o-linear-gradient(45deg, #009DE7 0%, #05BBC2 100%);
+    background: -ms-linear-gradient(45deg, #009DE7 0%, #05BBC2 100%);
+    background: linear-gradient(45deg, #009DE7 0%, #05BBC2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009DE7', endColorstr='#05BBC2', GradientType=1);
+}
 .section-counter {
     padding: 10em 0;
     width: 100%;

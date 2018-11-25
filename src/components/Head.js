@@ -13,8 +13,8 @@ const Head = ({title, history}) => {
         <div className="hero-wrap">
             <div className="head-section-img">
                 <ProgressiveImage
-                    preview="/images/bg_1.jpg"
-                    src="/images/bg_1.jpg"
+                    preview="/images/banner.png"
+                    src="/images/banner.png"
                     render={(src, style) => <img alt="image-slider" src={src} style={style}/>}
                 />
 

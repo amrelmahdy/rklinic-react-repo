@@ -38,12 +38,7 @@ class Footer extends Component{
                                     <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
                                                                     target="_blank"><span className="icon-instagram"></span></a>
                                     </li>
-                                    <li className="ftco-animate"><a
-                                        href="https://itunes.apple.com/us/app/rklinic-manager/id1382204506?mt=8"
-                                        target="_blank"><span className="icon-apple"></span></a></li>
-                                    <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
-                                                                    target="_blank"><span
-                                        className="icon-android"></span></a></li>
+                                   
                                 </ul>
                             </div>
                         </div>

@@ -14,7 +14,6 @@ import Contact from "./views/ContactUs";
 import Specialty from "./views/Specialty";
 import SingleSpecialty from "./views/SingleSpecialty";
 import SingleDoctor from "./views/SingleDoctor";
-import rtl from "./rtl.css";
 
 /*
 const fakeAuth = {

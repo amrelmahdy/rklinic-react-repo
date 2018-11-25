@@ -44,8 +44,10 @@ const Slider = () => {
                 <div className="item">
                     <div className="item-content">
                         <div className="text-over-slider">
-                            <h1 className="title-over">Welcome To rKlinik</h1>
-                            <p>The ultimate medical gate</p>
+                            <h1 className="title-over">Our Mission</h1>
+                            <p>
+                                Become the ultimate Doctor-Patient meeting point.
+                            </p>
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary"> Get Started</a>
 
 
@@ -62,8 +64,8 @@ const Slider = () => {
                 <div className="item">
                     <div className="item-content">
                         <div className="text-over-slider">
-                            <h1 className="title-over">Welcome To rKlinik</h1>
-                            <p>The ultimate medical gate</p>
+                            <h1 className="title-over">Our Vision</h1>
+                            <p>Create a better, smoother and faster Doctor-patient communication.</p>
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary"> Get Started</a>
 
 

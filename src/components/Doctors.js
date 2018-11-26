@@ -1,5 +1,6 @@
 import React from "react";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
+import {Link} from "react-router-dom";
 
 
 function setDoctorImage(url) {
@@ -10,7 +11,6 @@ function setDoctorImage(url) {
 
 
 const Doctors = ({doctors, doctorsListIsLoading}) => {
-    console.log(doctors);
     const doctorList = doctors.map(doctor => {
         return doctors.length ? (
             <div className="col-md-6 col-lg-3 ftco-animate" key={doctor.id}>
@@ -19,19 +19,19 @@ const Doctors = ({doctors, doctorsListIsLoading}) => {
                         <div className="front" style={setDoctorImage(doctor.image)}>
                             <div className="box">
                                 <h2>{doctor.name}</h2>
-                                <p>Neurologist</p>
+                                <p>{ doctor.speciality }</p>
                             </div>
                         </div>
                         <div className="back">
                             <blockquote>
-                                <p>{doctor.bio.length > 200 ? doctor.bio.slice(0, 200) + " ..." : doctor.bio}</p>
+                                <p>{doctor.bio && doctor.bio.length > 200 ? doctor.bio.slice(0, 200) + " ..." : doctor.bio}</p>
                             </blockquote>
                             <div className="author d-flex">
                                 <div className="image mr-3 align-self-center">
                                     <div className="img" style={setDoctorImage(doctor.image)}></div>
                                 </div>
-                                <div className="name align-self-center">{doctor.name}<span
-                                    className="position">{doctor.speciality}</span></div>
+                                <div className="name align-self-center"><Link to={"/doctor/" + doctor.id}>{doctor.name}</Link>
+                                    <span className="position">{doctor.speciality}</span></div>
                             </div>
                         </div>
                     </div>

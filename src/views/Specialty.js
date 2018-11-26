@@ -22,7 +22,7 @@ class Specialty extends Component {
         const specialtiesList = specialties.length ?
             specialties.map(specialty => {
                 return (
-                    <div className="col-lg-4 d-flex ftco-animate">
+                    <div className="col-lg-4 d-flex ftco-animate" key={specialty.id}>
                         <div className="dept d-md-flex">
                             <div className="text p-4">
                                 <h3><a href="department-single.html">{specialty.speciality}</a></h3>

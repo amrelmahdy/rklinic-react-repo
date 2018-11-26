@@ -18,8 +18,12 @@ export const translations = {
             get_started: "Get Started",
             // specialties
 
-            /*****************About Us*********************/
+            /*****************Contact Us*********************/
             Contact_Information : "Contact Information",
+            address: "Address : ",
+            address_details: "21 Ibrahim El-Refaey, Nasr City, Egypt"
+
+
         }
     },
     ar: {
@@ -39,8 +43,10 @@ export const translations = {
             slider_title_3: "رؤيتنا",
             slider_body_3: "أقم علاقة جيدة مع مريضك",
             get_started: "آبدا",
-            /*****************About Us*********************/
+            /*****************Contact Us*********************/
             Contact_Information : "بيانات التواصل",
+            address: "العنوان : ",
+            address_details: "21 ابراهيم الرفاعي مدينة نصر"
         }
     }
 };

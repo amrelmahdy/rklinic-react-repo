@@ -11,6 +11,13 @@ const initState = {
 
 const specialtyReducer = (state = initState, action) => {
     switch (action.type) {
+        case "GET_All_SPECIALITIES_LIST" :
+            state = {
+                ...state,
+                all_specialties: action.payload,
+            }
+            break;
+
         case "GET_SPECIALITIES_LIST" :
             state = {
                 ...state,
@@ -18,12 +25,7 @@ const specialtyReducer = (state = initState, action) => {
                 specialtyListIsLoading: false
             }
             break;
-        case "GET_ALL_SPECIALITIES_LIST" :
-            state = {
-                ...state,
-                all_specialties: action.payload,
-            }
-            break;
+
 
         case "GET_SPECIALTY_DETAILS" :
             state = {

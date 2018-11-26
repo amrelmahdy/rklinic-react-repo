@@ -117,7 +117,7 @@ class Contact extends Component {
                         </div>
                         <div className="w-100"></div>
                         <div className="col-md-4">
-                            <p><span>{ this.props.translate("address") }</span> 21 Ibrahim El-Refaey, Nasr City, Egypt.</p>
+                            <p><span>{ this.props.translate("address") }</span>{ this.props.translate("address_details") }</p>
                         </div>
                         <div className="col-md-4">
                             <p><span>Phone:</span> <a href="tel://1234567920">(+02) 22713871 - (+02) 22713872</a></p>

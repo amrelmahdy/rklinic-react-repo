@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import {connect} from "react-redux"
-import {getSpecialtiesList} from "../store/actions/specialtyActions";
+import {getAllSpecialtiesList} from "../store/actions/specialtyActions";
 import { Bone } from"react-loading-skeleton-placeholders"
 
 class Footer extends Component{
     componentDidMount(){
-        this.props.getSpecialtiesList(0);
+        this.props.getAllSpecialtiesList();
+
     }
 
     render(){
@@ -144,15 +145,15 @@ class Footer extends Component{
 
 const mapStateToProps = (state) => {
     return {
-        specialties: state.specialty.specialties,
-        specialtyListIsLoading: state.specialty.specialtyListIsLoading,
+        specialties: state.specialty.all_specialties,
+
     }
 };
 
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        getSpecialtiesList: (featured) => dispatch(getSpecialtiesList(featured))
+        getAllSpecialtiesList: () => dispatch(getAllSpecialtiesList())
     }
 };
 

@@ -12,7 +12,12 @@ class Specialty extends Component {
     }
 
     render() {
-
+        const history = [
+            {
+                page: 'Home',
+                to: "/"
+            }
+        ]
         const {specialties, specialtyListIsLoading} = this.props;
         const specialtiesList = specialties.length ?
             specialties.map(specialty => {
@@ -39,7 +44,7 @@ class Specialty extends Component {
         return (
             <div className="About">
                 <Head title="Specialties"
-                      desc="A Doctor or a patient, cut the distance short, and get your application now!"/>
+                      desc="A Doctor or a patient, cut the distance short, and get your application now!" history={ history }/>
 
 
                 <section className="ftco-section">

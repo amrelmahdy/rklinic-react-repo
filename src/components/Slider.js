@@ -37,10 +37,11 @@ const Slider = ({ translate }) => {
 
                         </div>
                         <ProgressiveImage
-                            preview="/images/bg_1.jpg"
-                            src="/images/bg_1.jpg"
+                            preview="/images/slider.png"
+                            src="/images/slider.png"
                             render={(src, style) => <img  alt="image-slider" src={src} style={style} />}
                         />
+                        <div className="slider-overlay"></div>
                     </div>
                 </div>
 
@@ -55,10 +56,12 @@ const Slider = ({ translate }) => {
 
                         </div>
                         <ProgressiveImage
-                            preview="/images/bg_1.jpg"
-                            src="/images/bg_1.jpg"
+                            preview="/images/slider4.png"
+                            src="/images/slider4.png"
                             render={(src, style) => <img  alt="image-slider" src={src} style={style} />}
                         />
+                        <div className="slider-overlay"></div>
+
                     </div>
                 </div>
 
@@ -73,10 +76,12 @@ const Slider = ({ translate }) => {
 
                         </div>
                         <ProgressiveImage
-                            preview="/images/bg_1.jpg"
-                            src="/images/bg_1.jpg"
+                            preview="/images/slider3.png"
+                            src="/images/slider3.png"
                             render={(src, style) => <img  alt="image-slider" src={src} style={style} />}
                         />
+                        <div className="slider-overlay"></div>
+
                     </div>
                 </div>
 

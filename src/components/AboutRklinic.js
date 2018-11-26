@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import ModalVideo from 'react-modal-video'
 import "./../../node_modules/react-modal-video/scss/modal-video.scss"
+import ProgressiveImage from "react-progressive-image-loading";
 
 
 
@@ -11,29 +12,27 @@ class AboutRklinic extends Component {
     state = {
         isOpen: false,
     }
-
-
-
-
     openModal =  () => {
         this.setState({
             isOpen: true
         })
     }
-
-
-
-
-
     render() {
         return (
         <section className="ftco-section-2">
 
-                <div className="container-fluid d-flex">
+                <div className="container-fluid d-flex no-padding">
 
                     <div className="section-2-blocks-wrapper row no-gutters">
+
                         <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='L61p2uyiMSo' onClose={() => this.setState({isOpen: false})} />
-                        <div className="img col-sm-12 col-lg-6" style={{backgroundImage: 'url(images/about.jpg)'}}>
+
+                        <div className="img col-sm-12 col-lg-6">
+                            <ProgressiveImage
+                                preview="/images/about.png"
+                                src="/images/about.png"
+                                render={(src, style) => <img alt="image-slider" src={src} style={style}/>}
+                            />
                             <button onClick={ this.openModal } className="button video-popup" style={{ cursor: 'pointer' }}><span
                                 className="ion-ios-play"></span></button>
                         </div>

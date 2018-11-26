@@ -1,0 +1,35 @@
+.rtl{
+    direction: rtl;
+}
+
+
+body{
+    font-family: 'Cairo', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+p,
+.nav-pills a
+{
+    text-align: right;
+}
+
+
+.flaticon-cardiogram{
+    float: right;
+}
+
+
+.flaticon-cardiogram{
+    margin-left: 10px;
+}
+
+
+
+.slider-sec .item-content .text-over-slider h1 {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+

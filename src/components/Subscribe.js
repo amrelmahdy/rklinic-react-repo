@@ -115,7 +115,7 @@ class Subscribe extends Component {
                                                 <input type="submit" value="Subscribe" className="submit px-3"/>
                                             </div>
                                             {
-                                                (this.handleErrors("email") ? <span className="error-msg">{ this.handleErrors("email") }</span> : "")
+                                                (this.handleErrors("email") ? <span className="error-msg styled-error-msg">{ this.handleErrors("email") }</span> : "")
                                             }
                                         </form>
                                     </div>

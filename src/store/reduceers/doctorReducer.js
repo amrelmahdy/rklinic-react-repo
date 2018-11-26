@@ -2,7 +2,12 @@ const initState = {
     doctors: [],
     doctorsListIsLoading: true,
     current: null,
+
 };
+
+
+
+
 
 
 const doctorReducer = (state = initState, action) => {

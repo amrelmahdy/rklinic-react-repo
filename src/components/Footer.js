@@ -5,7 +5,7 @@ import { Bone } from"react-loading-skeleton-placeholders"
 
 class Footer extends Component{
     componentDidMount(){
-        this.props.getSpecialtiesList();
+        this.props.getSpecialtiesList(0);
     }
 
     render(){
@@ -21,7 +21,6 @@ class Footer extends Component{
 
         return (
             <footer className="ftco-footer ftco-bg-dark ftco-section img">
-                <div className="overlay"></div>
                 <div className="container">
                     <div className="row mb-5">
                         <div className="col-md">
@@ -39,12 +38,7 @@ class Footer extends Component{
                                     <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
                                                                     target="_blank"><span className="icon-instagram"></span></a>
                                     </li>
-                                    <li className="ftco-animate"><a
-                                        href="https://itunes.apple.com/us/app/rklinic-manager/id1382204506?mt=8"
-                                        target="_blank"><span className="icon-apple"></span></a></li>
-                                    <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
-                                                                    target="_blank"><span
-                                        className="icon-android"></span></a></li>
+
                                 </ul>
                             </div>
                         </div>
@@ -145,12 +139,6 @@ class Footer extends Component{
             </footer>
         )
     }
-
-
-
-
-
-
 }
 
 

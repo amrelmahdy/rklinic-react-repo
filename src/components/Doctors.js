@@ -10,7 +10,7 @@ function setDoctorImage(url) {
 
 
 const Doctors = ({doctors, doctorsListIsLoading}) => {
-
+    console.log(doctors);
     const doctorList = doctors.map(doctor => {
         return doctors.length ? (
             <div className="col-md-6 col-lg-3 ftco-animate" key={doctor.id}>
@@ -47,7 +47,7 @@ const Doctors = ({doctors, doctorsListIsLoading}) => {
     return (
 
         <section className="ftco-section">
-            <div className="container">
+            <div className="container rtl">
                 <div className="row justify-content-center mb-5 pb-3">
                     <div className="col-md-7 heading-section ftco-animate text-center">
                         <h2 className="mb-4">Our Experienced Doctors</h2>

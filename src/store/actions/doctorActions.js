@@ -37,3 +37,11 @@ export const getDoctorDetails = (id) => {
 
     }
 };
+
+
+export const getHamada = (id) => {
+    return (dispatch, getState) => {
+
+
+    }
+};

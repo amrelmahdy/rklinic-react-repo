@@ -31,7 +31,7 @@ class App extends Component {
 
     componentDidMount(){
         if(localStorage.getItem("lang")  === "ar"){
-            require("./rtl.css");
+            require("./css/rtl.css");
         }
     }
 

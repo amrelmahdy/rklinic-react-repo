@@ -17,7 +17,7 @@ const Services = () => {
                             <div className="col-md-6">
                                 <div className="row">
                                     <div className="col-md-12">
-                                        <a href="/" className="services-wrap ftco-animate">
+                                        <div className="services-wrap ftco-animate transition-ease">
                                             <div className="icon d-flex justify-content-center align-items-center">
                                                 <span className="ion-ios-arrow-back"></span>
                                                 <span className="ion-ios-arrow-forward"></span>
@@ -26,8 +26,8 @@ const Services = () => {
                                             <p>rKlinic was made to honor every doctor that keeps on trying, winning and
                                                 still going.
                                             </p>
-                                        </a>
-                                        <a href="/" className="services-wrap ftco-animate">
+                                        </div>
+                                        <div className="services-wrap ftco-animate transition-ease">
                                             <div className="icon d-flex justify-content-center align-items-center">
                                                 <span className="ion-ios-arrow-back"></span>
                                                 <span className="ion-ios-arrow-forward"></span>
@@ -36,16 +36,16 @@ const Services = () => {
                                             <p>An appreciation for those who work day and night just to help people get
                                                 better!
                                             </p>
-                                        </a>
-                                        <a href="/" className="services-wrap ftco-animate">
+                                        </div>
+                                        <div className="services-wrap ftco-animate transition-ease">
                                             <div className="icon d-flex justify-content-center align-items-center">
                                                 <span className="ion-ios-arrow-back"></span>
                                                 <span className="ion-ios-arrow-forward"></span>
                                             </div>
                                             <h2>Appreciation</h2>
                                             <p>A Gratitude for fighting even the losing fights with and for people!</p>
-                                        </a>
-                                        <a href="/" className="services-wrap ftco-animate">
+                                        </div>
+                                        <div className="services-wrap ftco-animate transition-ease">
                                             <div className="icon d-flex justify-content-center align-items-center">
                                                 <span className="ion-ios-arrow-back"></span>
                                                 <span className="ion-ios-arrow-forward"></span>
@@ -54,7 +54,7 @@ const Services = () => {
                                             <p>Sending love to all those who worked hard not for the title but for the
                                                 purpose!
                                             </p>
-                                        </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

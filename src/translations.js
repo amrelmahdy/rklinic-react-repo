@@ -15,7 +15,10 @@ export const translations = {
             slider_body_2: "Become the ultimate Doctor-Patient meeting point.",
             slider_title_3: "Our Vision",
             slider_body_3: "Create a better, smoother and faster Doctor-patient communication",
-            // Contact us page
+            get_started: "Get Started",
+            // specialties
+
+            /*****************About Us*********************/
             Contact_Information : "Contact Information",
         }
     },
@@ -35,7 +38,8 @@ export const translations = {
             slider_body_2: "كن أنت البيب الاول في مصر",
             slider_title_3: "رؤيتنا",
             slider_body_3: "أقم علاقة جيدة مع مريضك",
-            // Contact us page
+            get_started: "آبدا",
+            /*****************About Us*********************/
             Contact_Information : "بيانات التواصل",
         }
     }

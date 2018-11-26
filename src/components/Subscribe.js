@@ -3,7 +3,7 @@ import axios from "axios";
 import izitoast from "izitoast";
 import './../../node_modules/izitoast/dist/css/iziToast.min.css';
 import {sendSubscribeEmail} from "../config";
-
+import { withTranslate } from "react-redux-multilingual"
 
 
 
@@ -101,10 +101,8 @@ class Subscribe extends Component {
                     <div className="container">
                         <div className="row d-flex justify-content-center">
                             <div className="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                                <h2>Subscribe to our Newsletter</h2>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia,
-                                    there live the blind texts. Separated they live in</p>
+                                <h2>{this.props.translate ("subscribe")} </h2>
+                                <p>{this.props.translate("subscribe_Text")}</p>
                                 <div className="row d-flex justify-content-center mt-5">
                                     <div className="col-md-8">
                                         <form action="#" onSubmit={ this.handleFormSubmission }  className="subscribe-form" id="subscribe-form">
@@ -130,7 +128,7 @@ class Subscribe extends Component {
 }
 
 
-export default Subscribe;
+export default withTranslate(Subscribe);
 
 
 /// References ////////

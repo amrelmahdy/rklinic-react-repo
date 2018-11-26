@@ -1,6 +1,6 @@
 import React from "react";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
-
+import { withTranslate } from "react-redux-multilingual"
 
 function setDoctorImage(url) {
     return {
@@ -9,7 +9,7 @@ function setDoctorImage(url) {
 }
 
 
-const Doctors = ({doctors, doctorsListIsLoading}) => {
+const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
     console.log(doctors);
     const doctorList = doctors.map(doctor => {
         return doctors.length ? (
@@ -50,7 +50,7 @@ const Doctors = ({doctors, doctorsListIsLoading}) => {
             <div className="container rtl">
                 <div className="row justify-content-center mb-5 pb-3">
                     <div className="col-md-7 heading-section ftco-animate text-center">
-                        <h2 className="mb-4">Our Experienced Doctors</h2>
+                        <h2 className="mb-4">{translate ("doctors_header_1")}</h2>
                     </div>
                 </div>
 
@@ -65,11 +65,8 @@ const Doctors = ({doctors, doctorsListIsLoading}) => {
                                     </div>
                                     <div className="row">
                                         <div className="col-md-9 ftco-animate">
-                                            <h4>We are well experienced doctors</h4>
-                                            <p>Our application was made for doctors who care, work and strive to help
-                                                people and people alone! That alone will help doctors to create a more
-                                                comfortable environment for patients to feel closer and more related to
-                                                the entire medical process.</p>
+                                            <h4>{translate ("doctors_header_2")}</h4>
+                                            <p> {translate ("doctors_paragragh")}</p>
                                         </div>
 
                                     </div>
@@ -114,7 +111,7 @@ const Doctors = ({doctors, doctorsListIsLoading}) => {
 }
 
 
-export default Doctors;
+export default withTranslate (Doctors);
 
 
 

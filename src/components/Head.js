@@ -26,11 +26,11 @@ const Head = ({title, history}) => {
                     <div className="container">
                         <div className="row no-gutters slider-text align-items-center justify-content-center"
                              data-scrollax-parent="true">
-                            <div className="col-md-8 ftco-animate text-center">
-                                <div className="breadcrumbs">
+                            <div className="col-md-8 ftco-animate">
+                                <div className="breadcrumbs text-center">
                                     {hsitoryList}
                                     <span>{title}</span></div>
-                                <h1 className="mb-4">{title}</h1>
+                                <h1 className="mb-4 text-center">{title}</h1>
                             </div>
                         </div>
                     </div>

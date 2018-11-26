@@ -15,7 +15,7 @@ const Statistics = () => {
                     <div className="container">
                         <div className="row justify-content-center mb-5 pb-3">
                             <div className="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                                <h2 className="mb-4">Some fun facts</h2>
+                                <h2 className="mb-4 text-center">Some fun facts</h2>
                                 <span className="subheading">Fun Facts About the Health You Don’t Know</span>
                             </div>
                         </div>

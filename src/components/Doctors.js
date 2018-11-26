@@ -49,8 +49,8 @@ const Doctors = ({doctors, doctorsListIsLoading}) => {
         <section className="ftco-section">
             <div className="container rtl">
                 <div className="row justify-content-center mb-5 pb-3">
-                    <div className="col-md-7 heading-section ftco-animate text-center">
-                        <h2 className="mb-4">Our Experienced Doctors</h2>
+                    <div className="col-md-7 heading-section ftco-animate">
+                        <h2 className="mb-4  text-center">Our Experienced Doctors</h2>
                     </div>
                 </div>
 

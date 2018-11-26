@@ -100,9 +100,9 @@ class Subscribe extends Component {
                 <div className="parallax-img d-flex align-items-center">
                     <div className="container">
                         <div className="row d-flex justify-content-center">
-                            <div className="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                                <h2>Subscribe to our Newsletter</h2>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                            <div className="col-md-7 heading-section heading-section-white ftco-animate">
+                                <h2 className="text-center">Subscribe to our Newsletter</h2>
+                                <p className="text-center">Far far away, behind the word mountains, far from the countries Vokalia and
                                     Consonantia,
                                     there live the blind texts. Separated they live in</p>
                                 <div className="row d-flex justify-content-center mt-5">

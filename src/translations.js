@@ -19,6 +19,7 @@ export const translations = {
 
             /*********** */
             // MiniCategories Will be loaded Dynamically from the Server.
+            show_Doctors:" Show Doctors ",
             /*** *****/
 
             //Services
@@ -91,6 +92,7 @@ export const translations = {
             get_started: "ابـــدأ",
             /*************** */
             // MiniCategories Will be loaded Dynamically from the Server.
+            show_Doctors:" ألق نظرة على اﻷطباء ",
             /*** *****/
 
             //Services

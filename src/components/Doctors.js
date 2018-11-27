@@ -112,9 +112,3 @@ const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
 
 export default withTranslate(Doctors);
 
-
-
-
-
-
-

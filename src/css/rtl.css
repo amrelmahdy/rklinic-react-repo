@@ -24,12 +24,13 @@ p,
 .flaticon-cardiogram{
     margin-left: 10px;
 }
-
-
-
 .slider-sec .item-content .text-over-slider h1 {
     font-family: 'Cairo', sans-serif;
 
 }
-
-
+.ftco-services .tab-content .tab-pane .icon{
+    text-align: right !important;
+}
+.align-right-rtl{
+    text-align: right !important;
+}

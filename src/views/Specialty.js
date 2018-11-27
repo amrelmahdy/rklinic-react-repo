@@ -5,6 +5,7 @@ import Subscribe from "../components/Subscribe";
 import {connect} from "react-redux"
 import {getSpecialtiesList} from "./../store/actions/specialtyActions"
 import {Link} from "react-router-dom";
+import {withTranslate} from "react-redux-multilingual";
 
 class Specialty extends Component {
     componentDidMount() {
@@ -14,7 +15,7 @@ class Specialty extends Component {
     render() {
         const history = [
             {
-                page: 'Home',
+                page: this.props.translate("home"),
                 to: "/"
             }
         ]
@@ -29,8 +30,8 @@ class Specialty extends Component {
                                 <p>
                                     {specialty.desc.length > 120 ? specialty.desc.slice(0, 120) + " ..." : specialty.desc}
                                 </p>
-                                <span className="doc align-right-rtl">{specialty.doctors.length} Doctors</span>
-                                <Link className="align-right-rtl" style={{ marginLeft: '10px' }} to={"/specialty/" + specialty.id}>Show more</Link>
+                                <span className="doc float-right-rtl">{specialty.doctors.length} Doctors</span>
+                                <Link className="float-right-rtl show-more-style" style={{ marginLeft: '10px' }} to={"/specialty/" + specialty.id}>Show more</Link>
 
                             </div>
                         </div>
@@ -43,7 +44,7 @@ class Specialty extends Component {
 
         return (
             <div className="About">
-                <Head title="Specialties"
+                <Head title={ this.props.translate("specialities") }
                       desc="A Doctor or a patient, cut the distance short, and get your application now!" history={ history }/>
 
 
@@ -127,4 +128,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Specialty)
+export default connect(mapStateToProps, mapDispatchToProps)(withTranslate(Specialty))

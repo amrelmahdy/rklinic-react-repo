@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import axios from "axios";
 import izitoast from "izitoast";
 import './../../node_modules/izitoast/dist/css/iziToast.min.css';
-import {sendSubscribeEmail} from "../config";
+import {getHeader, sendSubscribeEmail} from "../config";
 import {withTranslate} from "react-redux-multilingual"
 
 
@@ -25,7 +25,7 @@ class Subscribe extends Component {
         e.preventDefault();
         console.log("handling form");
         // send data to server
-        axios.post(sendSubscribeEmail, this.state).then(res => {
+        axios.post(sendSubscribeEmail, this.state, { headers: getHeader() }).then(res => {
             if (res.data.Error.status === true) {
                 // Reset errors
                 this.resetErrors();
@@ -99,20 +99,20 @@ class Subscribe extends Component {
                 <div className="parallax-img d-flex align-items-center">
                     <div className="container">
                         <div className="row d-flex justify-content-center">
-                            <div className="col-md-7 heading-section heading-section-white ftco-animate">
-                                <h2 className="text-center">{this.props.translate("subscribe")} </h2>
-                                <p className="text-center">{this.props.translate("subscribe_Text")}</p>
+                            <div className="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                                <h2>{this.props.translate("subscribe")} </h2>
+                                <p>{this.props.translate("subscribe_Text")}</p>
 
                                 <div className="row d-flex justify-content-center mt-5">
                                     <div className="col-md-8">
-                                        <form action="#" onSubmit={this.handleFormSubmission}
-                                              className="subscribe-form" id="subscribe-form">
+                                        <form action="#" onSubmit={this.handleFormSubmission} className="subscribe-form"
+                                              id="subscribe-form">
                                             <div className="form-group d-flex">
-                                                <input id="email" type="text" className="form-control"
-                                                       placeholder="Enter email address"
+                                                <input id="email" type="text" className="form-control align-right-rtl"
+                                                       placeholder={this.props.translate("enter_your_email_address")}
                                                        onChange={this.handleEmailChange}/>
 
-                                                <input type="submit" value="Subscribe" className="submit px-3"/>
+                                                <input type="submit" value={this.props.translate("subscribe")} className="submit px-3"/>
                                             </div>
                                             {
                                                 (this.handleErrors("email") ? <span
@@ -120,31 +120,22 @@ class Subscribe extends Component {
                                             }
                                         </form>
                                     </div>
-                                    <div
-                                        className="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                                        <h2>{this.props.translate("subscribe")} </h2>
-                                        <p>{this.props.translate("subscribe_Text")}</p>
-
-                                        <div className="row d-flex justify-content-center mt-5">
-                                            <div className="col-md-8">
-                                                <form action="#" onSubmit={this.handleFormSubmission}
-                                                      className="subscribe-form" id="subscribe-form">
-                                                    <div className="form-group d-flex">
-                                                        <input id="email" type="text" className="form-control"
-                                                               placeholder="Enter email address"
-                                                               onChange={this.handleEmailChange}/>
-
-                                                        <input type="submit" value="Subscribe" className="submit px-3"/>
-                                                    </div>
-                                                    {
-                                                        (this.handleErrors("email") ? <span
-                                                            className="error-msg styled-error-msg">{this.handleErrors("email")}</span> : "")
-                                                    }
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
+
+
+                                <div className="store-download text-center">
+                                    <p>
+                                        <a href="https://itunes.apple.com/us/app/rklinic-manager/id1382204506?mt=8" target="_blank" className="btn btn-store">
+                                            <span className="fa fa-apple fa-3x pull-left"></span>
+                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.rkanjel.rklinicmanager&hl=en" target="_blank" className="btn btn-store">
+                                            <span className="fa fa-android fa-3x pull-left"></span>
+                                        </a>
+
+                                    </p>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>

@@ -4,6 +4,7 @@ import {getDoctorDetails} from "./../store/actions/doctorActions"
 import Head from "../components/Head";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
 import Subscribe from "../components/Subscribe";
+import {withTranslate} from "react-redux-multilingual";
 
 
 
@@ -18,11 +19,11 @@ class SingleDoctor extends Component {
 
         const history = [
             {
-                page: 'Home',
+                page: this.props.translate("home"),
                 to: "/"
             },
             {
-                page: 'Doctors',
+                page: this.props.translate("doctors"),
                 to: "/doctors"
             }
         ]
@@ -154,4 +155,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(SingleDoctor)
+export default connect(mapStateToProps, mapDispatchToProps)(withTranslate(SingleDoctor))

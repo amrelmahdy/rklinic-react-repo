@@ -13406,4 +13406,11 @@ textarea.form-control {
     background: #35c7e0;
 }
 
+.store-download .btn-store{
+    color: #FFF;
+}
+
+.store-download p{
+    margin-top: 50px;
+}
 

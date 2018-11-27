@@ -132,28 +132,28 @@ class Contact extends Component {
                             <form action="#" onSubmit={this.handleFormSubmission}>
                                 <div className="form-group">
                                     <input type="text" id="name" onChange={this.handleInputChange}
-                                           className="form-control" placeholder="Your Name"/>
+                                           className="form-control align-right-rtl" placeholder={ this.props.translate("name") }/>
                                     <span className="error-msg">{this.handleErrors("name")}</span>
                                 </div>
                                 <div className="form-group">
                                     <input type="text" id="email" onChange={this.handleInputChange}
-                                           className="form-control" placeholder="Your Email"/>
+                                           className="form-control align-right-rtl" placeholder={ this.props.translate("email") }/>
                                     <span className="error-msg">{this.handleErrors("email")}</span>
                                 </div>
                                 <div className="form-group">
                                     <input type="text" id="mobile" onChange={this.handleInputChange}
-                                           className="form-control" placeholder="Your Mobile"/>
+                                           className="form-control align-right-rtl" placeholder={ this.props.translate("mobile") }/>
                                     <span className="error-msg">{this.handleErrors("mobile")}</span>
                                 </div>
                                 <div className="form-group">
                                     <textarea id="message" onChange={this.handleInputChange} cols="30" rows="7"
-                                              className="form-control" placeholder="Message">
+                                              className="form-control align-right-rtl" placeholder={ this.props.translate("message") }>
 
                                     </textarea>
                                     <span className="error-msg">{this.handleErrors("message")}</span>
                                 </div>
-                                <div className="form-group">
-                                    <input type="submit" value="Send Message" className="btn btn-primary py-3 px-5"/>
+                                <div className="form-group align-right-rtl">
+                                    <input type="submit" value={ this.props.translate("send_message") } className="btn btn-primary py-3 px-5"/>
                                 </div>
                             </form>
 

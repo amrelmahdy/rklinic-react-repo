@@ -128,9 +128,9 @@ class Footer extends Component{
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-12 text-center">
+                        <div className="col-md-12">
 
-                            <p>Copyright &copy;
+                            <p className="text-center">Copyright &copy;
                                 {new Date().getFullYear()} All rights to &nbsp;
                                 <a href="https://rkanjel.com">RK Anjel Group</a>
                             </p>

@@ -1,7 +1,8 @@
 import React from "react";
 import ProgressiveImage from "react-progressive-image-loading";
+import { withTranslate } from "react-redux-multilingual";
 
-const Services = () => {
+const Services = ({ translate }) => {
 
     return (
         <section className="ftco-section-2 img">
@@ -22,9 +23,8 @@ const Services = () => {
                                                 <span className="ion-ios-arrow-back"></span>
                                                 <span className="ion-ios-arrow-forward"></span>
                                             </div>
-                                            <h2>Honor</h2>
-                                            <p>rKlinic was made to honor every doctor that keeps on trying, winning and
-                                                still going.
+                                            <h2>{translate ("honor")}</h2>
+                                            <p> {translate ("honor_text")}
                                             </p>
                                         </div>
                                         <div className="services-wrap ftco-animate transition-ease">
@@ -32,9 +32,8 @@ const Services = () => {
                                                 <span className="ion-ios-arrow-back"></span>
                                                 <span className="ion-ios-arrow-forward"></span>
                                             </div>
-                                            <h2>Gratitude</h2>
-                                            <p>An appreciation for those who work day and night just to help people get
-                                                better!
+                                            <h2>{translate ("gratitude")}</h2>
+                                            <p> {translate ("gratitude_text")}
                                             </p>
                                         </div>
                                         <div className="services-wrap ftco-animate transition-ease">
@@ -42,17 +41,16 @@ const Services = () => {
                                                 <span className="ion-ios-arrow-back"></span>
                                                 <span className="ion-ios-arrow-forward"></span>
                                             </div>
-                                            <h2>Appreciation</h2>
-                                            <p>A Gratitude for fighting even the losing fights with and for people!</p>
+                                            <h2>{translate ("appreciation")}</h2>
+                                            <p>{translate ("appreciation_text")}</p>
                                         </div>
                                         <div className="services-wrap ftco-animate transition-ease">
                                             <div className="icon d-flex justify-content-center align-items-center">
                                                 <span className="ion-ios-arrow-back"></span>
                                                 <span className="ion-ios-arrow-forward"></span>
                                             </div>
-                                            <h2>Love</h2>
-                                            <p>Sending love to all those who worked hard not for the title but for the
-                                                purpose!
+                                            <h2>{translate ("love")}</h2>
+                                            <p> {translate ("love_text")}
                                             </p>
                                         </div>
                                     </div>
@@ -68,11 +66,4 @@ const Services = () => {
 }
 
 
-export default Services;
-
-
-
-
-
-
-
+export default withTranslate(Services);

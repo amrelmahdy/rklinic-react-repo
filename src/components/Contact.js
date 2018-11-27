@@ -4,6 +4,9 @@ import izitoast from "izitoast";
 import './../../node_modules/izitoast/dist/css/iziToast.min.css';
 import MapContainer from "./MapContainer";
 import {withTranslate} from "react-redux-multilingual"
+import ReCAPTCHA from "react-google-recaptcha";
+import {getHeader} from "../config";
+
 
 
 class Contact extends Component {
@@ -24,12 +27,19 @@ class Contact extends Component {
     };
 
 
+
+
+
     handleFormSubmission = (e) => {
         // prevent default behavior
         e.preventDefault();
-        console.log("handling form");
+
+        const serialize = require('form-serialize');
+        const form = document.querySelector('#contact-form');
+        const serialized_data = serialize(form);
+
         // send data to server
-        axios.post("https://rklinic-admin.com/api/system/contact-mail", this.state).then(res => {
+        axios.post("https://rklinic-admin.com/api/system/contact-mail", serialized_data, { headers:getHeader }).then(res => {
             if (res.data.Error.status === true) {
                 // Reset errors
                 this.resetErrors();
@@ -45,12 +55,12 @@ class Contact extends Component {
                     message: null,
                 });
 
-                console.log(res)
+                console.log("response", res)
                 // show success message
             } else {
                 const errors = res.data.Error.validation;
                 this.handleRecordErrors(errors);
-                console.log(errors);
+                console.log("errors", errors);
             }
         }).catch(error => {
 
@@ -62,6 +72,7 @@ class Contact extends Component {
         if (this.state.errors) {
             return this.state.errors[field]
         }
+
         return false
     }
 
@@ -117,52 +128,76 @@ class Contact extends Component {
                         </div>
                         <div className="w-100"></div>
                         <div className="col-md-4">
-                            <p><span>{this.props.translate("address")} :</span>{this.props.translate("address_details")}
+                            <p><span>{this.props.translate("address")}</span>{this.props.translate("address_details")}
                             </p>
                         </div>
                         <div className="col-md-4">
-                            <p><span>{this.props.translate("mobile")} :</span> <a href="tel://1234567920">(+02) 22713871
-                                - (+02) 22713872</a></p>
+                            <p><span>Phone:</span> <a href="tel://1234567920">(+02) 22713871 - (+02) 22713872</a></p>
                         </div>
                         <div className="col-md-4">
-                            <p><span>{this.props.translate("email")} :</span> <a
-                                href="mailto:info@yoursite.com">info@rklinic.com</a></p>
+                            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@rklinic.com</a></p>
                         </div>
 
                     </div>
                     <div className="row block-9">
                         <div className="col-md-6 pr-md-5">
-                            <form action="#" onSubmit={this.handleFormSubmission}>
+                            <form action="#" id="contact-form" onSubmit={this.handleFormSubmission}>
                                 <div className="form-group">
-                                    <input type="text" id="name" onChange={this.handleInputChange}
+                                    <input type="text" id="name"
+                                           onChange={this.handleInputChange}
                                            className="form-control align-right-rtl"
+                                           name="name"
                                            placeholder={this.props.translate("name")}/>
                                     <span className="error-msg">{this.handleErrors("name")}</span>
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" id="email" onChange={this.handleInputChange}
+                                    <input type="text" id="email"
+                                           onChange={this.handleInputChange}
                                            className="form-control align-right-rtl"
+                                           name="email"
                                            placeholder={this.props.translate("email")}/>
                                     <span className="error-msg">{this.handleErrors("email")}</span>
                                 </div>
                                 <div className="form-group">
                                     <input type="text" id="mobile" onChange={this.handleInputChange}
                                            className="form-control align-right-rtl"
+                                           name="mobile"
                                            placeholder={this.props.translate("mobile")}/>
                                     <span className="error-msg">{this.handleErrors("mobile")}</span>
                                 </div>
                                 <div className="form-group">
-                                    <textarea id="message" onChange={this.handleInputChange} cols="30" rows="7"
+                                    <textarea id="message"
+                                              onChange={this.handleInputChange} cols="30"
+                                              rows="7"
+                                              name="message"
                                               className="form-control align-right-rtl"
                                               placeholder={this.props.translate("message")}>
 
                                     </textarea>
                                     <span className="error-msg">{this.handleErrors("message")}</span>
                                 </div>
+
+
+
+
+                                <div className="g-recaptcha"
+                                     data-sitekey="6LecXX0UAAAAAKxjCi6SZjzHkLoG-QCl-QwiWIDa"></div>
+
+                                <div className="capcha-error">
+                                    <span style={{  marginLeft: '12px' }} className="error-msg">{this.handleErrors("g-recaptcha-response")}</span>
+                                </div>
+
+                                <br />  <br />
+
                                 <div className="form-group align-right-rtl">
                                     <input type="submit" value={this.props.translate("send_message")}
                                            className="btn btn-primary py-3 px-5"/>
                                 </div>
+
+
+
+
+
                             </form>
 
                         </div>

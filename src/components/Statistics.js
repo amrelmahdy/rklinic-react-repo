@@ -1,7 +1,9 @@
 import React from "react";
 import ProgressiveImage from "react-progressive-image-loading";
+import { withTranslate } from "react-redux-multilingual";
 
-const Statistics = () => {
+
+const Statistics = ( { translate }) => {
     return (
         <section className="ftco-section img" id="section-counter">
             <div className="section-img">
@@ -15,8 +17,8 @@ const Statistics = () => {
                     <div className="container">
                         <div className="row justify-content-center mb-5 pb-3">
                             <div className="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                                <h2 className="mb-4 text-center">Some fun facts</h2>
-                                <span className="subheading">Fun Facts About the Health You Don’t Know</span>
+                                <h2 className="mb-4 text-center"> { translate ("facts_header")}</h2>
+                                <span className="subheading">{ translate ("facts_title")}</span>
                             </div>
                         </div>
                         <div className="row justify-content-center">
@@ -26,7 +28,7 @@ const Statistics = () => {
                                         <div className="block-18 text-center">
                                             <div className="text">
                                                 <strong className="number" data-number="1">1</strong>
-                                                <span>Physical checkup</span>
+                                                <span>{ translate ("facts_text_1")}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -34,7 +36,7 @@ const Statistics = () => {
                                         <div className="block-18 text-center">
                                             <div className="text">
                                                 <strong className="number" data-number="3">3</strong>
-                                                <span>Cancer Checkup</span>
+                                                <span>{ translate ("facts_text_2")}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -42,7 +44,7 @@ const Statistics = () => {
                                         <div className="block-18 text-center">
                                             <div className="text">
                                                 <strong className="number" data-number="1">1</strong>
-                                                <span>Blood Checkup</span>
+                                                <span>{ translate ("facts_text_3")}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -50,7 +52,7 @@ const Statistics = () => {
                                         <div className="block-18 text-center">
                                             <div className="text">
                                                 <strong className="number" data-number="1">1</strong>
-                                                <span>Teeth Checkup</span>
+                                                <span>{ translate ("facts_text_4")}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -66,7 +68,7 @@ const Statistics = () => {
 }
 
 
-export default Statistics;
+export default withTranslate (Statistics);
 
 
 

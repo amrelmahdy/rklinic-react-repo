@@ -129,7 +129,7 @@ export const translations = {
             /******************** */
 
             // Testimonials
-            testimonials:"Testimonials",
+            testimonials:"آراء العمــلاء",
             testimonial_text_1: "أنا معجب جدا بالنظام الخاص بهم . كل شيء متعلق ب أر كلينيك  سهل للتنقل من خلاله . ميزة أُخرى أني أستطيع تصفح التطبيق الخاص بي في أي وقت.",
             testimonial_text_1_dr: "د. شادي بدران",
             testimonial_text_1_clinic: "عيادة بدران",
@@ -163,7 +163,7 @@ export const translations = {
             /***** */
             
             // Subscribe
-            subscribe: "للمراسلة",
+            subscribe: "متابعتنا",
             subscribe_Text:"هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل م",
             enter_your_email_address: "ادخل بريدك الالكترونى",
 

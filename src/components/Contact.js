@@ -4,7 +4,6 @@ import izitoast from "izitoast";
 import './../../node_modules/izitoast/dist/css/iziToast.min.css';
 import MapContainer from "./MapContainer";
 import {withTranslate} from "react-redux-multilingual"
-import ReCAPTCHA from "react-google-recaptcha";
 import {getHeader} from "../config";
 
 
@@ -29,13 +28,14 @@ class Contact extends Component {
     handleFormSubmission = (e) => {
         // prevent default behavior
         e.preventDefault();
-
+        console.log("handling form");
         const serialize = require('form-serialize');
         const form = document.querySelector('#contact-form');
         const serialized_data = serialize(form);
 
         // send data to server
-        axios.post("https://rklinic-admin.com/api/system/contact-mail", serialized_data, { headers:getHeader }).then(res => {
+        axios.post("https://rklinic-admin.com/api/system/contact-mail", serialized_data, { headers:getHeader() }).then(res => {
+
             if (res.data.Error.status === true) {
                 // Reset errors
                 this.resetErrors();
@@ -59,7 +59,7 @@ class Contact extends Component {
                 console.log("errors", errors);
             }
         }).catch(error => {
-
+            console.log(error)
         })
     };
 

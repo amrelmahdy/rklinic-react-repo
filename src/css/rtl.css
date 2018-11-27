@@ -34,3 +34,9 @@ p,
 .align-right-rtl{
     text-align: right !important;
 }
+.block-23 ul li .icon{
+    float: right !important;
+}
+.block-23 ul li .icon, .block-23 ul li .text{
+    float: left !important;
+}

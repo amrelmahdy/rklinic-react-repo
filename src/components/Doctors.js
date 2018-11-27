@@ -68,7 +68,7 @@ const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
                                     <div className="row">
                                         <div className="col-md-9 ftco-animate">
                                             <h4>{translate("doctors_header_2")}</h4>
-                                            <p> {translate("doctors_paragragh")}</p>
+                                            <p> {translate("doctors_paragraph")}</p>
                                         </div>
 
                                     </div>

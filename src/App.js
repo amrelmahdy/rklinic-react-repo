@@ -41,7 +41,11 @@ class App extends Component {
               <div>
                   <Navigator />
                   <Switch>
-                      <Route exact path="/" component={ Home } />
+                      <Route exact path="/" render={
+                          () => {
+                             return (<Home titleKey="home_title" />)
+                          }}
+                      />
                       <Route  path="/about" component={ About }  />
                       <Route  path="/doctors" component={ Doctor }  />
                       <Route  path="/contact" component={ Contact }  />

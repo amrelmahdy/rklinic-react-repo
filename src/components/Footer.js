@@ -96,8 +96,7 @@ class Footer extends Component {
                                             <span className="icon icon-map-marker"></span>
                                             <a target="_blank"
                                                href="https://www.google.com.eg/maps/place/30%C2%B003'08.5%22N+31%C2%B021'02.4%22E/@30.052355,31.3484803,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d30.052355!4d31.350669?hl=en"
-                                               className="text"><i
-                                                className="fas fa-map-marker pull-left font-20 loon mr-20"></i>
+                                               className="text">
                                                {this.props.translate("address_details")}
                                             </a>
                                         </li>

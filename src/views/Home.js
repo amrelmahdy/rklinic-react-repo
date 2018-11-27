@@ -12,9 +12,9 @@ import Slider from "../components/Slider";
 
 class Home extends Component {
 
-
-
-
+    componentWillUpdate(){
+        document.title = this.props.translate(this.props.titleKey)
+    }
 
     componentDidMount() {
         

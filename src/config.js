@@ -5,3 +5,10 @@ export const getSpecialtyDetailsLink = "https://rklinic-admin.com/api/speciality
 export const getDoctorDetailsLink = "https://rklinic-admin.com/api/doctor/profile";
 
 
+export const getHeader = function () {
+    const lang = window.localStorage.getItem('lang');
+    const header = {
+        lang: lang
+    }
+    return header
+}

@@ -1,9 +1,9 @@
 import axios from "axios";
-import { getSpecialtiesLink, getSpecialtyDetailsLink } from "./../../config";
+import {getHeader, getSpecialtiesLink, getSpecialtyDetailsLink} from "./../../config";
 
 export const getAllSpecialtiesList = () => {
     return (dispatch, getState) => {
-        axios.post(getSpecialtiesLink, { featured: 0 }).then(res => {
+        axios.post(getSpecialtiesLink, { featured: 0 },{ headers: getHeader() }).then(res => {
             if (res.data.status !== true) {
                 const specialties = res.data.Response;
                 dispatch({
@@ -20,7 +20,7 @@ export const getAllSpecialtiesList = () => {
 
 export const getSpecialtiesList = () => {
     return (dispatch, getState) => {
-        axios.post(getSpecialtiesLink, { featured: 0 }).then(res => {
+        axios.post(getSpecialtiesLink, { featured: 0 }, { headers: getHeader() }).then(res => {
             if (res.data.status !== true) {
                 const specialties = res.data.Response;
                 dispatch({

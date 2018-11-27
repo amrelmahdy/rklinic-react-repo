@@ -19,6 +19,7 @@ export const translations = {
 
             /*********** */
             // MiniCategories Will be loaded Dynamically from the Server.
+            show_Doctors:" Show Doctors ",
             /*** *****/
 
             //Services
@@ -36,12 +37,13 @@ export const translations = {
             // Second one will be here. It's only two lines.
             doctors_header_1:"Our Experienced Doctors",
             doctors_header_2:"We are well experienced doctors",
-            doctors_paragragh:"Our application was made for doctors who care, work and strive to help people and people alone! That alone will help doctors to create a more  comfortable environment for patients to feel closer and more related to the entire medical process.",
+            doctors_paragraph:"Our application was made for doctors who care, work and strive to help people and people alone! That alone will help doctors to create a more  comfortable environment for patients to feel closer and more related to the entire medical process.",
             /***** */
 
             // Subscribe
             subscribe:"Subscribe to our Newsletter",
             subscribe_Text:"Far aw, there live the blind texts. Separated they live in",
+            enter_your_email_address: "Enter your email address",
 
     
             
@@ -49,13 +51,22 @@ export const translations = {
 
             /*****************Contact Us*********************/
             Contact_Information : "Contact Information",
-            address: "Address : ",
+            address: "Address",
             address_details: "21 Ibrahim El-Refaey, Nasr City, Egypt",
-            name:"Your name",
-            email:"Your email",
-            mobile:"Your mobile",
+            name:"Name",
+            email:"Email",
+            mobile:"Mobile",
             message:"Message",
             send_message: "send message",
+
+            /*****************Footer*********************/
+            important : "Important",
+            how_to_register : "How to register?",
+            already_have_account : "Already have an account ?",
+            privacy_policy : "Privacy Policy",
+            site_links : "Site Links",
+            have_questions : "Have a Questions?",
+            copyright : "Copyright all rights reserved to rKlinic",
         }
     },
 
@@ -81,6 +92,7 @@ export const translations = {
             get_started: "ابـــدأ",
             /*************** */
             // MiniCategories Will be loaded Dynamically from the Server.
+            show_Doctors:" ألق نظرة على اﻷطباء ",
             /*** *****/
 
             //Services
@@ -99,14 +111,14 @@ export const translations = {
             // Second one will be here. It's only two lines.
             doctors_header_1:"أطبائنا المتخصـصيــــن",
             doctors_header_2:"نحن نخبة من اﻷطبــاء على مستوى عالي جداً",
-            doctors_paragragh:"هذا التطبيق للأطباء الذين يهتمون ويعملون ويسعون لمساعدة الناس والناس بمفردهم! هذا وحده سيساعد الأطباء على خلق بيئة أكثر راحة للمرضى لكي يشعروا بأنهم أقرب وأكثر وأكثر ارتباطًا بالعملية الطبية بأكملها.  ",
+            doctors_paragraph:"هذا التطبيق للأطباء الذين يهتمون ويعملون ويسعون لمساعدة الناس والناس بمفردهم! هذا وحده سيساعد الأطباء على خلق بيئة أكثر راحة للمرضى لكي يشعروا بأنهم أقرب وأكثر وأكثر ارتباطًا بالعملية الطبية بأكملها.  ",
             /***** */
             
             // Subscribe
             subscribe: "للمراسلة",
             subscribe_Text:"هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل م",
-            
-            
+            enter_your_email_address: "ادخل بريدك الالكترونى",
+
             // Contact us page
             Contact_Information : "بيانات التواصل",
             
@@ -121,6 +133,15 @@ export const translations = {
             mobile:"رقم هاتفك",
             message:"رسالتك",
             send_message: "ارسل لنا",
+
+            /*****************Footer*********************/
+            important : "هام",
+            how_to_register : "كيفية التسجيل؟",
+            already_have_account : "لديك حساب؟",
+            privacy_policy : "سياسة الخصوصية",
+            site_links : "روابط الموقع",
+            have_questions : "لديك سؤال؟",
+            copyright : " rKlinicحقوق النشر محفوظة ل ",
         }
     }
 };

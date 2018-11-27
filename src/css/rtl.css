@@ -16,7 +16,7 @@ p,
 }
 
 
-.flaticon-cardiogram{
+.flaticon-cardiogram, .block-23 ul{
     float: right;
 }
 
@@ -33,4 +33,17 @@ p,
 }
 .align-right-rtl{
     text-align: right !important;
+}
+.float-right-rtl{
+    float: right !important;
+}
+.block-23 ul li .icon{
+    float: left !important;
+    text-align: right;
+}
+.block-23 ul li .icon, .block-23 ul li .text{
+    float: right !important;
+}
+.show-more-style{
+    margin-right: 10px;
 }

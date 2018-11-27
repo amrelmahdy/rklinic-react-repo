@@ -67,7 +67,7 @@ const Slider = ({ translate }) => {
                         <div className="text-over-slider">
                             <h1 className="title-over">{ translate("slider_title_3") }</h1>
                             <p>Create a better, smoother and faster Doctor-patient communication.</p>
-                            <a href="https://rklinic-admin.com/register" className="btn btn-primary">{translate ("get_started")}</a>
+                            <a href="https://rklinic-admin.com/register" className="btn btn-primary"> { translate("get_started") }</a>
 
 
                         </div>

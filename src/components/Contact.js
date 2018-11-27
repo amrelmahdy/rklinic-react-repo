@@ -127,14 +127,20 @@ class Contact extends Component {
                         </div>
                         <div className="w-100"></div>
                         <div className="col-md-4">
+<<<<<<< HEAD
                             <p><span>{this.props.translate("address")}</span>{this.props.translate("address_details")}
+=======
+                            <p><span>{this.props.translate("address")} :</span>{this.props.translate("address_details")}
+>>>>>>> 469d31fb4418d82291888394a217a2a93bc8fd22
                             </p>
                         </div>
                         <div className="col-md-4">
-                            <p><span>Phone:</span> <a href="tel://1234567920">(+02) 22713871 - (+02) 22713872</a></p>
+                            <p><span>{this.props.translate("mobile")} :</span> <a href="tel://1234567920">(+02) 22713871
+                                - (+02) 22713872</a></p>
                         </div>
                         <div className="col-md-4">
-                            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@rklinic.com</a></p>
+                            <p><span>{this.props.translate("email")} :</span> <a
+                                href="mailto:info@yoursite.com">info@rklinic.com</a></p>
                         </div>
 
                     </div>
@@ -142,33 +148,50 @@ class Contact extends Component {
                         <div className="col-md-6 pr-md-5">
                             <form action="#" id="contact-form" onSubmit={this.handleFormSubmission}>
                                 <div className="form-group">
+<<<<<<< HEAD
                                     <input type="text" id="name"
                                            onChange={this.handleInputChange}
                                            className="form-control align-right-rtl"
                                            name="name"
+=======
+                                    <input type="text" id="name" onChange={this.handleInputChange}
+                                           className="form-control align-right-rtl"
+>>>>>>> 469d31fb4418d82291888394a217a2a93bc8fd22
                                            placeholder={this.props.translate("name")}/>
                                     <span className="error-msg">{this.handleErrors("name")}</span>
                                 </div>
                                 <div className="form-group">
+<<<<<<< HEAD
                                     <input type="text" id="email"
                                            onChange={this.handleInputChange}
                                            className="form-control align-right-rtl"
                                            name="email"
+=======
+                                    <input type="text" id="email" onChange={this.handleInputChange}
+                                           className="form-control align-right-rtl"
+>>>>>>> 469d31fb4418d82291888394a217a2a93bc8fd22
                                            placeholder={this.props.translate("email")}/>
                                     <span className="error-msg">{this.handleErrors("email")}</span>
                                 </div>
                                 <div className="form-group">
                                     <input type="text" id="mobile" onChange={this.handleInputChange}
                                            className="form-control align-right-rtl"
+<<<<<<< HEAD
                                            name="mobile"
+=======
+>>>>>>> 469d31fb4418d82291888394a217a2a93bc8fd22
                                            placeholder={this.props.translate("mobile")}/>
                                     <span className="error-msg">{this.handleErrors("mobile")}</span>
                                 </div>
                                 <div className="form-group">
+<<<<<<< HEAD
                                     <textarea id="message"
                                               onChange={this.handleInputChange} cols="30"
                                               rows="7"
                                               name="message"
+=======
+                                    <textarea id="message" onChange={this.handleInputChange} cols="30" rows="7"
+>>>>>>> 469d31fb4418d82291888394a217a2a93bc8fd22
                                               className="form-control align-right-rtl"
                                               placeholder={this.props.translate("message")}>
 

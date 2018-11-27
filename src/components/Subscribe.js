@@ -108,11 +108,11 @@ class Subscribe extends Component {
                                         <form action="#" onSubmit={this.handleFormSubmission} className="subscribe-form"
                                               id="subscribe-form">
                                             <div className="form-group d-flex">
-                                                <input id="email" type="text" className="form-control"
-                                                       placeholder="Enter email address"
+                                                <input id="email" type="text" className="form-control align-right-rtl"
+                                                       placeholder={this.props.translate("enter_your_email_address")}
                                                        onChange={this.handleEmailChange}/>
 
-                                                <input type="submit" value="Subscribe" className="submit px-3"/>
+                                                <input type="submit" value={this.props.translate("subscribe")} className="submit px-3"/>
                                             </div>
                                             {
                                                 (this.handleErrors("email") ? <span

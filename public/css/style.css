@@ -10179,7 +10179,7 @@ h1, h2, h3, h4, h5,
     padding-bottom: .9rem;
     padding-left: 20px;
     padding-right: 20px;
-    color: #fff;
+    color: #35c7e0;
     font-weight: 400;
     opacity: 1 !important;
 }
@@ -10232,7 +10232,7 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-    color: #fff;
+    color: #35c7e0;
     border: 1px solid #35c7e0;
     background: #35c7e0;
     padding-top: .5rem;

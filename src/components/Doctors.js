@@ -1,11 +1,8 @@
 import React from "react";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
-<<<<<<< HEAD
 import { withTranslate } from "react-redux-multilingual"
-=======
 import {Link} from "react-router-dom";
 
->>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
 
 function setDoctorImage(url) {
     return {
@@ -14,12 +11,7 @@ function setDoctorImage(url) {
 }
 
 
-<<<<<<< HEAD
 const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
-    console.log(doctors);
-=======
-const Doctors = ({doctors, doctorsListIsLoading}) => {
->>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
     const doctorList = doctors.map(doctor => {
         return doctors.length ? (
             <div className="col-md-6 col-lg-3 ftco-animate" key={doctor.id}>
@@ -58,13 +50,8 @@ const Doctors = ({doctors, doctorsListIsLoading}) => {
         <section className="ftco-section">
             <div className="container rtl">
                 <div className="row justify-content-center mb-5 pb-3">
-<<<<<<< HEAD
                     <div className="col-md-7 heading-section ftco-animate text-center">
                         <h2 className="mb-4">{translate ("doctors_header_1")}</h2>
-=======
-                    <div className="col-md-7 heading-section ftco-animate">
-                        <h2 className="mb-4  text-center">Our Experienced Doctors</h2>
->>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
                     </div>
                 </div>
 

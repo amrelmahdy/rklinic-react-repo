@@ -100,17 +100,10 @@ class Subscribe extends Component {
                 <div className="parallax-img d-flex align-items-center">
                     <div className="container">
                         <div className="row d-flex justify-content-center">
-<<<<<<< HEAD
                             <div className="col-md-7 text-center heading-section heading-section-white ftco-animate">
                                 <h2>{this.props.translate ("subscribe")} </h2>
                                 <p>{this.props.translate("subscribe_Text")}</p>
-=======
-                            <div className="col-md-7 heading-section heading-section-white ftco-animate">
-                                <h2 className="text-center">Subscribe to our Newsletter</h2>
-                                <p className="text-center">Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia,
-                                    there live the blind texts. Separated they live in</p>
->>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
+
                                 <div className="row d-flex justify-content-center mt-5">
                                     <div className="col-md-8">
                                         <form action="#" onSubmit={ this.handleFormSubmission }  className="subscribe-form" id="subscribe-form">

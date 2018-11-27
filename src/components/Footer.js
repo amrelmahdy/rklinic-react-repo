@@ -1,21 +1,22 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import {connect} from "react-redux"
 import {getAllSpecialtiesList} from "../store/actions/specialtyActions";
-import { Bone } from"react-loading-skeleton-placeholders"
+import {Bone} from "react-loading-skeleton-placeholders"
+import { withTranslate } from 'react-redux-multilingual';
 
-class Footer extends Component{
-    componentDidMount(){
+class Footer extends Component {
+    componentDidMount() {
         this.props.getAllSpecialtiesList();
 
     }
 
-    render(){
+    render() {
 
-        const { specialties } = this.props;
+        const {specialties} = this.props;
         const specialtiesList = specialties ? specialties.map(specialty => {
             return (
-                <li className="nav-item" key={ specialty.id }>
-                    <a className="py-2 d-block" href={ "/specialty/" + specialty.id }>{ specialty.speciality }</a>
+                <li className="nav-item mb-0 full-width align-right-rtl" key={specialty.id}>
+                    <a className="py-2 d-block mb-0 pb-0" href={"/specialty/" + specialty.id}>{specialty.speciality}</a>
                 </li>
             )
         }) : null;
@@ -27,86 +28,88 @@ class Footer extends Component{
                         <div className="col-md">
                             <div className="ftco-footer-widget mb-4">
                                 <h2 className="ftco-heading-2">rKlinic</h2>
-                                <p>Our application was made for doctors who care, work and strive to help people and people
-                                    alone!</p>
+                                <p>{this.props.translate('doctors_paragraph')}</p>
                                 <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                                     <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
                                                                     target="_blank"><span
                                         className="icon-twitter"></span></a></li>
                                     <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
-                                                                    target="_blank"><span className="icon-facebook"></span></a>
+                                                                    target="_blank"><span
+                                        className="icon-facebook"></span></a>
                                     </li>
                                     <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
-                                                                    target="_blank"><span className="icon-instagram"></span></a>
+                                                                    target="_blank"><span
+                                        className="icon-instagram"></span></a>
                                     </li>
 
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md">
+                        <div className="col-md-2">
                             <div className="ftco-footer-widget mb-4">
-                                <h2 className="ftco-heading-2">Specialties</h2>
+                                <h2 className="ftco-heading-2">{this.props.translate("specialties")}</h2>
                                 <div className="block-23 mb-3">
                                     <ul>
 
-                                        { this.props.specialties.length ? specialtiesList : (
-                                           <div>
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                           </div>
-                                        ) }
+                                        {this.props.specialties.length ? specialtiesList : (
+                                            <div>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                            </div>
+                                        )}
 
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md">
+                        <div className="col-md-2">
                             <div className="ftco-footer-widget mb-4 ml-md-5">
-                                <h2 className="ftco-heading-2">Important</h2>
+                                <h2 className="ftco-heading-2">{this.props.translate("important")}</h2>
                                 <ul className="list-unstyled">
-                                    <li><a target="_blank" href="https://www.youtube.com/watch?v=fUcTdObF8NU"
-                                           className="py-2 d-block">How to register</a></li>
-                                    <li><a target="_blank" href="https://rklinic-admin.com/login" className="py-2 d-block">Already
-                                        have an account ?</a></li>
-                                    <li><a target="_blank" href="https://rklinic-admin.com/register"
-                                           className="py-2 d-block">Get Started</a></li>
-                                    <li><a href="/privacy" className="py-2 d-block">Privacy Policy</a></li>
+                                    <li className="align-right-rtl"><a target="_blank" href="https://www.youtube.com/watch?v=fUcTdObF8NU"
+                                           className="py-2 d-block">{this.props.translate("how_to_register")}</a></li>
+                                    <li className="align-right-rtl"><a target="_blank" href="https://rklinic-admin.com/login"
+                                           className="py-2 d-block">{this.props.translate("already_have_account")}</a></li>
+                                    <li className="align-right-rtl"><a target="_blank" href="https://rklinic-admin.com/register"
+                                           className="py-2 d-block">{this.props.translate("get_started")}</a></li>
+                                    <li className="align-right-rtl"><a href="/privacy" className="py-2 d-block">{this.props.translate("privacy_policy")}</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md">
+                        <div className="col-md-2">
                             <div className="ftco-footer-widget mb-4">
-                                <h2 className="ftco-heading-2">Site Links</h2>
+                                <h2 className="ftco-heading-2">{this.props.translate("site_links")}</h2>
                                 <ul className="list-unstyled">
 
-                                    <li className="nav-item">
-                                        <a className="py-2 d-block" href="/">Home</a>
+                                    <li className="nav-item align-right-rtl">
+                                        <a className="py-2 d-block" href="/">{this.props.translate("home")}
+                                        </a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="py-2 d-block" href="/about">About</a>
+                                    <li className="nav-item align-right-rtl">
+                                        <a className="py-2 d-block" href="/about">{this.props.translate("about")}</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="py-2 d-block" href="/specialties">Specialities</a>
+                                    <li className="nav-item align-right-rtl">
+                                        <a className="py-2 d-block" href="/specialties">{this.props.translate("specialties")}</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="py-2 d-block" href="/doctors">Doctors</a>
+                                    <li className="nav-item align-right-rtl">
+                                        <a className="py-2 d-block" href="/doctors">{this.props.translate("doctors")}</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="py-2 d-block" href="/contact">Contact</a>
+                                    <li className="nav-item align-right-rtl">
+                                        <a className="py-2 d-block" href="/contact">{this.props.translate("contact")}</a>
                                     </li>
 
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md">
+                        <div className="col-md-3">
                             <div className="ftco-footer-widget mb-4">
-                                <h2 className="ftco-heading-2">Have a Questions?</h2>
+                                <h2 className="ftco-heading-2">{this.props.translate("have_questions")}</h2>
                                 <div className="block-23 mb-3">
                                     <ul>
                                         <li>
@@ -115,7 +118,7 @@ class Footer extends Component{
                                                href="https://www.google.com.eg/maps/place/30%C2%B003'08.5%22N+31%C2%B021'02.4%22E/@30.052355,31.3484803,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d30.052355!4d31.350669?hl=en"
                                                className="text"><i
                                                 className="fas fa-map-marker pull-left font-20 loon mr-20"></i>
-                                                21 Ibrahim El-Refaey, Nasr City, Egypt.
+                                               {this.props.translate("address_details")}
                                             </a>
                                         </li>
                                         <li><a href="/"><span className="icon icon-phone"></span><span className="text">(+02) 22713871 - (+02) 22713872</span></a>
@@ -130,9 +133,9 @@ class Footer extends Component{
                     <div className="row">
                         <div className="col-md-12">
 
-                            <p className="text-center">Copyright &copy;
-                                {new Date().getFullYear()} All rights to &nbsp;
-                                <a href="https://rkanjel.com">RK Anjel Group</a>
+                            <p className="text-center">{this.props.translate("copyright")} &copy;
+                                {new Date().getFullYear()} {this.props.translate("all_rights_to")} &nbsp;
+                                <a href="https://rkanjel.com">rKlinic</a>
                             </p>
                         </div>
                     </div>
@@ -157,4 +160,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Footer);
+export default connect(mapStateToProps, mapDispatchToProps)(withTranslate(Footer));

@@ -1,8 +1,9 @@
 import React from "react";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { withTranslate } from 'react-redux-multilingual'
 
-const MiniCategory = ({specialties, specialtyListIsLoading}) => {
+const MiniCategory = ({specialties, specialtyListIsLoading, translate}) => {
 
 
     const specialtiesList = specialties.map((specialty, index) => {
@@ -26,7 +27,7 @@ const MiniCategory = ({specialties, specialtyListIsLoading}) => {
 
                 <h2 className="mb-4">{ specialty.speciality }</h2>
                 <p>{specialty.desc}</p>
-                <p><Link to={ '/specialty/' + specialty.id  } className="btn btn-primary">Show Doctors</Link></p>
+                <p><Link to={ '/specialty/' + specialty.id  } className="btn btn-primary">{translate("show_Doctors")}</Link></p>
             </div>
         )
     });
@@ -76,4 +77,4 @@ const MiniCategory = ({specialties, specialtyListIsLoading}) => {
     )
 }
 
-export default MiniCategory;
+export default withTranslate (MiniCategory) ;

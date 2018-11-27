@@ -6,7 +6,7 @@ import { withTranslate } from "react-redux-multilingual";
 const Statistics = ( { translate }) => {
     return (
         <section className="ftco-section img" id="section-counter">
-            <div className="section-img">
+            <div className="section-img statistics-counter">
                 <div className="overlay"></div>
                 <ProgressiveImage
                     preview="/images/bg_4.png"

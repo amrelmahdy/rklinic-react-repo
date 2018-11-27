@@ -10157,7 +10157,7 @@ h1, h2, h3, h4, h5,
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light {
-        background: #39345a !important;
+        background: #00365B !important;
         position: relative;
         top: 0;
     }
@@ -10169,7 +10169,7 @@ h1, h2, h3, h4, h5,
 
 @media (min-width: 768px) {
     .ftco-navbar-light .navbar-brand {
-        color: #39345a;
+        color: #00365B;
     }
 }
 
@@ -10179,13 +10179,13 @@ h1, h2, h3, h4, h5,
     padding-bottom: .9rem;
     padding-left: 20px;
     padding-right: 20px;
-    color: #7e77b0;
+    color: #fff;
     font-weight: 400;
     opacity: 1 !important;
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-    color: #39345a;
+    color: #fff;
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
@@ -11680,7 +11680,7 @@ textarea.form-control {
 }
 
 .testimony-wrap .user-img {
-    width: 100px;
+    width: 65px;
     height: 100px;
     border-radius: 50%;
     position: relative;
@@ -13290,7 +13290,7 @@ textarea.form-control {
 .section-img {
     position: relative;
     display: block;
-    max-height: 610px;
+    min-height: 610px;
     overflow: hidden;
     height: 100%;
     width: 100%;
@@ -13417,3 +13417,6 @@ textarea.form-control {
     margin-top: 50px;
 }
 
+.testimonial-p{
+    min-height: 140px;
+}

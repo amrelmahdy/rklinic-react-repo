@@ -2,8 +2,7 @@ import React, {Component} from "react";
 import ModalVideo from 'react-modal-video'
 import "./../../node_modules/react-modal-video/scss/modal-video.scss"
 import ProgressiveImage from "react-progressive-image-loading";
-
-
+import { withTranslate } from "react-redux-multilingual";
 
 
 class AboutRklinic extends Component {
@@ -38,17 +37,9 @@ class AboutRklinic extends Component {
                         </div>
                         <div className="text col-lg-6 ftco-animate">
                             <div className="text-inner align-self-start">
-
-                                <h3>Welcome to the ultimate medical meeting point!</h3>
-                                <p>A Doctor or a patient, what could be better than a custom made Application just for
-                                    you? RKlinic has just created the right-in-your-pocket application that will help
-                                    both doctors and their patients to communicate easier and better. Get to know your
-                                    Application and its features. </p>
-
-                                <p>Our application was made for doctors who care, work and strive to help people and
-                                    people alone! That alone will help doctors to create a more comfortable environment
-                                    for patients to feel closer and more related to the entire medical process.
-                                    .</p>
+                                <h3> { this.props.translate ("about_header")} </h3>
+                                <p> { this.props.translate ("about_paragragh_1")} </p>
+                                <p>{ this.props.translate ("about_paragragh_2")}</p>
                             </div>
                         </div>
                     </div>
@@ -61,4 +52,4 @@ class AboutRklinic extends Component {
 
 
 
-export default AboutRklinic;
+export default withTranslate (AboutRklinic);

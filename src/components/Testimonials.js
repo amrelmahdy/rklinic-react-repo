@@ -1,8 +1,10 @@
 import React from "react";
 import OwlCarousel from 'react-owl-carousel';
+import { withTranslate } from "react-redux-multilingual";
 
 
-const Testimonials = () => {
+
+const Testimonials = ({ translate }) => {
     var testimonialStyle = {
         backgroundImage: 'url(images/person_1.jpg)',
     }
@@ -15,7 +17,7 @@ const Testimonials = () => {
             <div className="container">
                 <div className="row justify-content-center mb-5 pb-3">
                     <div className="col-md-7 heading-section ftco-animate">
-                        <h2 className="mb-4 text-center">Testimonials</h2>
+                        <h2 className="mb-4 text-center"> {translate("testimonials")}</h2>
                     </div>
                 </div>
                 <div className="row">
@@ -39,11 +41,9 @@ const Testimonials = () => {
                     </span>
                                     </div>
                                     <div className="text">
-                                        <p className="mb-5">FI like the simplicity of the system. Everything
-                                            about RKlinic is very easy to navigate. Another advantage is that I can view the
-                                            software through my app--which is super helpful when I am on the go.</p>
-                                        <p className="name text-center">Dr Chadi Badran</p>
-                                        <span className="position">Badran Clinic</span>
+                                        <p className="mb-5"> {translate("testimonial_text_1")}</p>
+                                        <p className="name text-center">{translate("testimonial_text_1_dr")}</p>
+                                        <span className="position">{translate("testimonial_text_1_clinic")}</span>
                                     </div>
                                 </div>
                             </div>
@@ -55,11 +55,9 @@ const Testimonials = () => {
                     </span>
                                     </div>
                                     <div className="text">
-                                        <p className="mb-5">when we signed with RKlinic they were the only ones
-                                            out there in our price range for a small clinic. But we had a great value
-                                            against that price. Great functionality.</p>
-                                        <p className="name text-center">Dr.Ahmed Samir</p>
-                                        <span className="position">Elite Clinic</span>
+                                        <p className="mb-5">{translate("testimonial_text_2")}</p>
+                                        <p className="name text-center">{translate("testimonial_text_2_dr")}</p>
+                                        <span className="position">{translate("testimonial_text_2_clinic")}</span>
                                     </div>
                                 </div>
                             </div>
@@ -71,12 +69,9 @@ const Testimonials = () => {
                     </span>
                                     </div>
                                     <div className="text">
-                                        <p className="mb-5">This was my first product for my clinic. I am
-                                            very happy so far. There have been some bugs that popped up unexpectedly but
-                                            the customer service is great. My rep was available very quickly through
-                                            phone.</p>
-                                        <p className="name text-center">Dr Ahmed Bagoury</p>
-                                        <span className="position">bagoury Clinic</span>
+                                        <p className="mb-5">{translate("testimonial_text_3")}</p>
+                                        <p className="name text-center">{translate("testimonial_text_3_dr")}</p>
+                                        <span className="position">{translate("testimonial_text_3_clinic")}</span>
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +84,7 @@ const Testimonials = () => {
 }
 
 
-export default Testimonials;
+export default withTranslate (Testimonials) ;
 
 
 

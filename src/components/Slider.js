@@ -50,7 +50,6 @@ const Slider = ({ translate }) => {
                             <p>Become the ultimate Doctor-Patient meeting point.
                             </p>
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary">{translate ("get_started")}</a>
-
                         </div>
                         <ProgressiveImage
                             preview="/images/slider4.png"
@@ -88,7 +87,6 @@ const Slider = ({ translate }) => {
         </section>
     )
 }
-
 
 export default withTranslate(Slider);
 

@@ -1,21 +1,22 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import {connect} from "react-redux"
 import {getAllSpecialtiesList} from "../store/actions/specialtyActions";
-import { Bone } from"react-loading-skeleton-placeholders"
+import {Bone} from "react-loading-skeleton-placeholders"
+import { withTranslate } from 'react-redux-multilingual';
 
-class Footer extends Component{
-    componentDidMount(){
+class Footer extends Component {
+    componentDidMount() {
         this.props.getAllSpecialtiesList();
 
     }
 
-    render(){
+    render() {
 
-        const { specialties } = this.props;
+        const {specialties} = this.props;
         const specialtiesList = specialties ? specialties.map(specialty => {
             return (
-                <li className="nav-item" key={ specialty.id }>
-                    <a className="py-2 d-block" href={ "/specialty/" + specialty.id }>{ specialty.speciality }</a>
+                <li className="nav-item" key={specialty.id}>
+                    <a className="py-2 d-block" href={"/specialty/" + specialty.id}>{specialty.speciality}</a>
                 </li>
             )
         }) : null;
@@ -27,17 +28,20 @@ class Footer extends Component{
                         <div className="col-md">
                             <div className="ftco-footer-widget mb-4">
                                 <h2 className="ftco-heading-2">rKlinic</h2>
-                                <p>Our application was made for doctors who care, work and strive to help people and people
+                                <p>Our application was made for doctors who care, work and strive to help people and
+                                    people
                                     alone!</p>
                                 <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                                     <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
                                                                     target="_blank"><span
                                         className="icon-twitter"></span></a></li>
                                     <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
-                                                                    target="_blank"><span className="icon-facebook"></span></a>
+                                                                    target="_blank"><span
+                                        className="icon-facebook"></span></a>
                                     </li>
                                     <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
-                                                                    target="_blank"><span className="icon-instagram"></span></a>
+                                                                    target="_blank"><span
+                                        className="icon-instagram"></span></a>
                                     </li>
 
                                 </ul>
@@ -49,18 +53,18 @@ class Footer extends Component{
                                 <div className="block-23 mb-3">
                                     <ul>
 
-                                        { this.props.specialties.length ? specialtiesList : (
-                                           <div>
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                               <Bone width={50} />
-                                           </div>
-                                        ) }
+                                        {this.props.specialties.length ? specialtiesList : (
+                                            <div>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                                <Bone width={50}/>
+                                            </div>
+                                        )}
 
                                     </ul>
                                 </div>
@@ -72,7 +76,8 @@ class Footer extends Component{
                                 <ul className="list-unstyled">
                                     <li><a target="_blank" href="https://www.youtube.com/watch?v=fUcTdObF8NU"
                                            className="py-2 d-block">How to register</a></li>
-                                    <li><a target="_blank" href="https://rklinic-admin.com/login" className="py-2 d-block">Already
+                                    <li><a target="_blank" href="https://rklinic-admin.com/login"
+                                           className="py-2 d-block">Already
                                         have an account ?</a></li>
                                     <li><a target="_blank" href="https://rklinic-admin.com/register"
                                            className="py-2 d-block">Get Started</a></li>
@@ -85,20 +90,21 @@ class Footer extends Component{
                                 <h2 className="ftco-heading-2">Site Links</h2>
                                 <ul className="list-unstyled">
 
-                                    <li className="nav-item">
-                                        <a className="py-2 d-block" href="/">Home</a>
+                                    <li className="nav-item align-right-rtl">
+                                        <a className="py-2 d-block" href="/">{this.props.translate("home")}
+                                        </a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="py-2 d-block" href="/about">About</a>
+                                    <li className="nav-item align-right-rtl">
+                                        <a className="py-2 d-block" href="/about">{this.props.translate("about")}</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="py-2 d-block" href="/specialties">Specialities</a>
+                                    <li className="nav-item align-right-rtl">
+                                        <a className="py-2 d-block" href="/specialties">{this.props.translate("specialties")}</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="py-2 d-block" href="/doctors">Doctors</a>
+                                    <li className="nav-item align-right-rtl">
+                                        <a className="py-2 d-block" href="/doctors">{this.props.translate("doctors")}</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="py-2 d-block" href="/contact">Contact</a>
+                                    <li className="nav-item align-right-rtl">
+                                        <a className="py-2 d-block" href="/contact">{this.props.translate("contact")}</a>
                                     </li>
 
                                 </ul>
@@ -157,4 +163,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Footer);
+export default connect(mapStateToProps, mapDispatchToProps)(withTranslate(Footer));

@@ -103,28 +103,52 @@ class Subscribe extends Component {
                                 <h2 className="text-center">{this.props.translate("subscribe")} </h2>
                                 <p className="text-center">{this.props.translate("subscribe_Text")}</p>
 
-                                    <div className="row d-flex justify-content-center mt-5">
-                                        <div className="col-md-8">
-                                            <form action="#" onSubmit={this.handleFormSubmission}
-                                                  className="subscribe-form" id="subscribe-form">
-                                                <div className="form-group d-flex">
-                                                    <input id="email" type="text" className="form-control"
-                                                           placeholder="Enter email address"
-                                                           onChange={this.handleEmailChange}/>
+                                <div className="row d-flex justify-content-center mt-5">
+                                    <div className="col-md-8">
+                                        <form action="#" onSubmit={this.handleFormSubmission}
+                                              className="subscribe-form" id="subscribe-form">
+                                            <div className="form-group d-flex">
+                                                <input id="email" type="text" className="form-control"
+                                                       placeholder="Enter email address"
+                                                       onChange={this.handleEmailChange}/>
 
-                                                    <input type="submit" value="Subscribe" className="submit px-3"/>
-                                                </div>
-                                                {
-                                                    (this.handleErrors("email") ? <span
-                                                        className="error-msg styled-error-msg">{this.handleErrors("email")}</span> : "")
-                                                }
-                                            </form>
+                                                <input type="submit" value="Subscribe" className="submit px-3"/>
+                                            </div>
+                                            {
+                                                (this.handleErrors("email") ? <span
+                                                    className="error-msg styled-error-msg">{this.handleErrors("email")}</span> : "")
+                                            }
+                                        </form>
+                                    </div>
+                                    <div
+                                        className="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                                        <h2>{this.props.translate("subscribe")} </h2>
+                                        <p>{this.props.translate("subscribe_Text")}</p>
+
+                                        <div className="row d-flex justify-content-center mt-5">
+                                            <div className="col-md-8">
+                                                <form action="#" onSubmit={this.handleFormSubmission}
+                                                      className="subscribe-form" id="subscribe-form">
+                                                    <div className="form-group d-flex">
+                                                        <input id="email" type="text" className="form-control"
+                                                               placeholder="Enter email address"
+                                                               onChange={this.handleEmailChange}/>
+
+                                                        <input type="submit" value="Subscribe" className="submit px-3"/>
+                                                    </div>
+                                                    {
+                                                        (this.handleErrors("email") ? <span
+                                                            className="error-msg styled-error-msg">{this.handleErrors("email")}</span> : "")
+                                                    }
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
         )
     }

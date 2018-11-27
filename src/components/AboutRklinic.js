@@ -31,7 +31,7 @@ class AboutRklinic extends Component {
                             <ProgressiveImage
                                 preview="/images/about.png"
                                 src="/images/about.png"
-                                render={(src, style) => <img alt="image-slider" src={src} style={style}/>}
+                                render={(src, style) => <img alt="image-slider" className="full-width full-height" src={src} style={style}/>}
                             />
                             <button onClick={ this.openModal } className="button video-popup" style={{ cursor: 'pointer' }}><span
                                 className="ion-ios-play"></span></button>

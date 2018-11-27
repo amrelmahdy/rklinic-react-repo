@@ -91,6 +91,18 @@ export const translations = {
             site_links : "Site Links",
             have_questions : "Have a Questions?",
             copyright : "Copyright all rights reserved to rKlinic",
+            /**************************************************************** */
+            /*************************************************************** */
+
+            /********** About Rklinic *************** */
+            about_header:"Welcome to the ultimate medical meeting point!",
+            about_paragragh_1:"A Doctor or a patient, what could be better than a custom made Application just for you? RKlinic has just created the right-in-your-pocket application that will help both doctors and their patients to communicate easier and better. Get to know your Application and its features.",
+            about_paragragh_2:"Our application was made for doctors who care, work and strive to help people and people alone! That alone will help doctors to create a more comfortable environment for patients to feel closer and more related to the entire medical process.",
+
+
+
+            /************************* General Translations */
+            phone:" Phone ",
         }
     },
 
@@ -190,6 +202,18 @@ export const translations = {
             site_links : "روابط الموقع",
             have_questions : "لديك سؤال؟",
             copyright : " rKlinicحقوق النشر محفوظة ل ",
+            /**************************************************************** */
+            /*************************************************************** */
+            
+            /********** About *************** */
+
+            about_header:"مرحبا بكم في أفضل اللقاءات الطبية",
+            about_paragragh_1:" طبيب أم مريض ؟! ما الذي يمكن أن يكون أفضل من تطبيق صنع خصيصا للاثنين معاً.آر كلينيك صنع خصيصاً ليسهل عملية التواصل بين الطبيب و المريض و يجعلها أكثر فعالية. لنستعرض التطبيقمعاً.",
+            about_paragragh_2:" هذا التطبيق للأطباء الذين يهتمون ويعملون ويسعون لمساعدة الناس والناس بمفردهم! هذا وحده سيساعد الأطباء على خلق بيئة أكثر راحة للمرضى لكي يشعروا بأنهم أقرب وأكثر وأكثر ارتباطًا بالعملية الطبية بأكملها",
+
+
+            /************************* General Translations */
+            phone:" رقم الهاتف الجوال ",
         }
     }
 };

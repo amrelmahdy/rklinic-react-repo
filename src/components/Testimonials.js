@@ -6,7 +6,7 @@ import { withTranslate } from "react-redux-multilingual";
 
 const Testimonials = ({ translate }) => {
     var testimonialStyle = {
-        backgroundImage: 'url(images/person_1.jpg)',
+        backgroundImage: 'url(images/dr-avatar.png)',
     }
 
 
@@ -41,7 +41,7 @@ const Testimonials = ({ translate }) => {
                     </span>
                                     </div>
                                     <div className="text">
-                                        <p className="mb-5"> {translate("testimonial_text_1")}</p>
+                                        <p className="mb-5 testimonial-p"> {translate("testimonial_text_1")}</p>
                                         <p className="name text-center">{translate("testimonial_text_1_dr")}</p>
                                         <span className="position">{translate("testimonial_text_1_clinic")}</span>
                                     </div>
@@ -55,7 +55,7 @@ const Testimonials = ({ translate }) => {
                     </span>
                                     </div>
                                     <div className="text">
-                                        <p className="mb-5">{translate("testimonial_text_2")}</p>
+                                        <p className="mb-5 testimonial-p">{translate("testimonial_text_2")}</p>
                                         <p className="name text-center">{translate("testimonial_text_2_dr")}</p>
                                         <span className="position">{translate("testimonial_text_2_clinic")}</span>
                                     </div>
@@ -69,7 +69,7 @@ const Testimonials = ({ translate }) => {
                     </span>
                                     </div>
                                     <div className="text">
-                                        <p className="mb-5">{translate("testimonial_text_3")}</p>
+                                        <p className="mb-5 testimonial-p">{translate("testimonial_text_3")}</p>
                                         <p className="name text-center">{translate("testimonial_text_3_dr")}</p>
                                         <span className="position">{translate("testimonial_text_3_clinic")}</span>
                                     </div>

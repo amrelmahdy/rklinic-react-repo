@@ -39,12 +39,10 @@ p,
 }
 .block-23 ul li .icon{
     float: left !important;
-<<<<<<< HEAD
 }
 
 .pt-20-rtl{
     padding-top: 20px;
-=======
     text-align: right;
 }
 .block-23 ul li .icon, .block-23 ul li .text{
@@ -52,5 +50,4 @@ p,
 }
 .show-more-style{
     margin-right: 10px;
->>>>>>> e35cd31d1647389cbae29f8016a346b3e874555e
 }

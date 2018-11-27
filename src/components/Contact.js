@@ -26,10 +26,6 @@ class Contact extends Component {
         });
     };
 
-
-
-
-
     handleFormSubmission = (e) => {
         // prevent default behavior
         e.preventDefault();

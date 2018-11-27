@@ -25,7 +25,7 @@ class Footer extends Component {
             <footer className="ftco-footer ftco-bg-dark ftco-section img">
                 <div className="container">
                     <div className="row mb-5">
-                        <div className="col-md">
+                        <div className="col-md-3">
                             <div className="ftco-footer-widget mb-4">
                                 <h2 className="ftco-heading-2">rKlinic</h2>
                                 <p>{this.props.translate('doctors_paragraph')}</p>
@@ -45,7 +45,7 @@ class Footer extends Component {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-2">
+                        <div className="col-md">
                             <div className="ftco-footer-widget mb-4">
                                 <h2 className="ftco-heading-2">{this.props.translate("specialties")}</h2>
                                 <div className="block-23 mb-3">
@@ -68,7 +68,7 @@ class Footer extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-2">
+                        <div className="col-md">
                             <div className="ftco-footer-widget mb-4 ml-md-5">
                                 <h2 className="ftco-heading-2">{this.props.translate("important")}</h2>
                                 <ul className="list-unstyled">
@@ -82,7 +82,7 @@ class Footer extends Component {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-2">
+                        <div className="col-md">
                             <div className="ftco-footer-widget mb-4">
                                 <h2 className="ftco-heading-2">{this.props.translate("site_links")}</h2>
                                 <ul className="list-unstyled">
@@ -107,7 +107,7 @@ class Footer extends Component {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-4">
                             <div className="ftco-footer-widget mb-4">
                                 <h2 className="ftco-heading-2">{this.props.translate("have_questions")}</h2>
                                 <div className="block-23 mb-3">
@@ -134,7 +134,7 @@ class Footer extends Component {
                         <div className="col-md-12">
 
                             <p className="text-center">{this.props.translate("copyright")} &copy;
-                                {new Date().getFullYear()} {this.props.translate("all_rights_to")} &nbsp;
+                                {new Date().getFullYear()} &nbsp;
                                 <a href="https://rkanjel.com">rKlinic</a>
                             </p>
                         </div>

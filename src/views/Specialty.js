@@ -29,8 +29,8 @@ class Specialty extends Component {
                                 <p>
                                     {specialty.desc.length > 120 ? specialty.desc.slice(0, 120) + " ..." : specialty.desc}
                                 </p>
-                                <span className="doc align-right-rtl">{specialty.doctors.length} Doctors</span>
-                                <Link className="align-right-rtl" style={{ marginLeft: '10px' }} to={"/specialty/" + specialty.id}>Show more</Link>
+                                <span className="doc float-right-rtl">{specialty.doctors.length} Doctors</span>
+                                <Link className="float-right-rtl show-more-style" style={{ marginLeft: '10px' }} to={"/specialty/" + specialty.id}>Show more</Link>
 
                             </div>
                         </div>

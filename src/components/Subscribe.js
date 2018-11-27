@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import axios from "axios";
 import izitoast from "izitoast";
 import './../../node_modules/izitoast/dist/css/iziToast.min.css';
-import {sendSubscribeEmail} from "../config";
+import {getHeader, sendSubscribeEmail} from "../config";
 import {withTranslate} from "react-redux-multilingual"
 
 
@@ -25,7 +25,7 @@ class Subscribe extends Component {
         e.preventDefault();
         console.log("handling form");
         // send data to server
-        axios.post(sendSubscribeEmail, this.state).then(res => {
+        axios.post(sendSubscribeEmail, this.state, { headers: getHeader() }).then(res => {
             if (res.data.Error.status === true) {
                 // Reset errors
                 this.resetErrors();

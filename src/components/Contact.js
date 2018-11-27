@@ -4,7 +4,6 @@ import izitoast from "izitoast";
 import './../../node_modules/izitoast/dist/css/iziToast.min.css';
 import MapContainer from "./MapContainer";
 import {withTranslate} from "react-redux-multilingual"
-import ReCAPTCHA from "react-google-recaptcha";
 import {getHeader} from "../config";
 
 

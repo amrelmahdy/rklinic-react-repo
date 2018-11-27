@@ -5,6 +5,7 @@ import './../../node_modules/izitoast/dist/css/iziToast.min.css';
 import MapContainer from "./MapContainer";
 import {withTranslate} from "react-redux-multilingual"
 import ReCAPTCHA from "react-google-recaptcha";
+import {getHeader} from "../config";
 
 
 
@@ -38,7 +39,7 @@ class Contact extends Component {
         const serialized_data = serialize(form);
 
         // send data to server
-        axios.post("https://rklinic-admin.com/api/system/contact-mail", serialized_data).then(res => {
+        axios.post("https://rklinic-admin.com/api/system/contact-mail", serialized_data, { headers:getHeader }).then(res => {
             if (res.data.Error.status === true) {
                 // Reset errors
                 this.resetErrors();

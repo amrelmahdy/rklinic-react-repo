@@ -3,12 +3,10 @@ import Head from "../components/Head";
 import Subscribe from "../components/Subscribe";
 import AboutRklinic from "../components/AboutRklinic";
 import { withTranslate } from "react-redux-multilingual"
+import globalMiddleware from "./../hocs/globalMiddleware";
 
 
 class About extends Component{
-
-
-
     render() {
 
         const history = [
@@ -28,4 +26,6 @@ class About extends Component{
     }
 }
 
-export default withTranslate(About)
+export default globalMiddleware({
+    title: "about us"
+})(withTranslate(About));

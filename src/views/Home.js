@@ -12,6 +12,10 @@ import Slider from "../components/Slider";
 
 class Home extends Component {
 
+
+
+
+
     componentDidMount() {
         
         // fetch doctors from database

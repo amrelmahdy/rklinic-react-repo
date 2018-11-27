@@ -40,3 +40,7 @@ p,
 .block-23 ul li .icon, .block-23 ul li .text{
     float: left !important;
 }
+
+.pt-20-rtl{
+    padding-top: 20px;
+}

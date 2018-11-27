@@ -22,6 +22,30 @@ export const translations = {
             show_Doctors:" Show Doctors ",
             /*** *****/
 
+            // FunFacts ( Statisics )
+            facts_header:"Some fun facts",
+            facts_title:"Fun Facts About the Health You Don’t Know",
+            facts_text_1: "Physical checkup",
+            facts_text_2: "Cancer Checkup",
+            facts_text_3: "Blood Checkup",
+            facts_text_4: "Teeth Checkup",
+            /************ */
+
+            // Testimonials
+            testimonials:"Testimonials",
+            testimonial_text_1: "I like the simplicity of the system. Everything about RKlinic is very easy to navigate. Another advantage is that I can view the software through my app--which is super helpful when I am on the go.",
+            testimonial_text_1_dr: "Dr Chadi Badran",
+            testimonial_text_1_clinic: "Badran Clinic",
+
+            testimonial_text_2: "when we signed with RKlinic they were the only ones out there in our price range for a small clinic. But we had a great value against that price. Great functionality.",
+            testimonial_text_2_dr: "Dr.Ahmed Samir",
+            testimonial_text_2_clinic: "Elite Clinic",
+
+            testimonial_text_3: "This was my first product for my clinic. I am very happy so far. There have been some bugs that popped up unexpectedly but the customer service is great. My rep was available very quickly through phone.",
+            testimonial_text_3_dr: "Dr Ahmed Bagoury",
+            testimonial_text_3_clinic: "Bagoury Clinic",
+            /**************** */
+
             //Services
             honor:"Honor",
             honor_text:"rKlinic was made to honor every doctor that keeps on trying, winning and still going.",
@@ -85,7 +109,7 @@ export const translations = {
             slider_title_1: "rKlinic أهلا بك في",
             slider_body_1: "البوابة الطبية الأولي في مصر",
             slider_title_2: "مهمتنا",
-            slider_body_2: "كن أنت البيب الاول في مصر",
+            slider_body_2: "كن أنت الطبيب الاول في مصر",
             slider_title_3: "رؤيتنا",
             slider_body_3: "أقم علاقة جيدة مع مريضك",
 
@@ -94,6 +118,30 @@ export const translations = {
             // MiniCategories Will be loaded Dynamically from the Server.
             show_Doctors:" ألق نظرة على اﻷطباء ",
             /*** *****/
+
+            // FunFacts ( Statisics )
+            facts_header:"بعض الحقائق الطبية",
+            facts_title:"معلومات صحية لا تعلم عنها",
+            facts_text_1: "فحص جسدي شامل",
+            facts_text_2: "فحص السرطان",
+            facts_text_3: "فحص الدم",
+            facts_text_4: "فحص الأسنان",
+            /******************** */
+
+            // Testimonials
+            testimonials:"Testimonials",
+            testimonial_text_1: "أنا معجب جدا بالنظام الخاص بهم . كل شيء متعلق ب أر كلينيك  سهل للتنقل من خلاله . ميزة أُخرى أني أستطيع تصفح التطبيق الخاص بي في أي وقت.",
+            testimonial_text_1_dr: "د. شادي بدران",
+            testimonial_text_1_clinic: "عيادة بدران",
+
+            testimonial_text_2: "عندما تم التعاقد بيننا لم يكن هناك أي تطبيق آخر في نفس الميزانية الخاصة بعيادتنا . و لكننا حصلنا على قيمة عظيمة من خلال هذا التعاون.",
+            testimonial_text_2_dr: "د. أحمد سمير",
+            testimonial_text_2_clinic: "عيادة النخبة",
+
+            testimonial_text_3: "هذا كان التطبيق الأول لعيادتي و أنا سعيد جدا به. لقد كان هناك بعض الاخطاء و الصعوبات ف التطبيق. لكن نظام خدمة العملاء عندهم قوي جدا. لقد تم حل المشكلة في نفس الوقت من خلال الهاتف",
+            testimonial_text_3_dr: "د. أحمد الباجوري",
+            testimonial_text_3_clinic: "عيادة الباجوري",
+            /**************** */
 
             //Services
             honor:"شـرف",

@@ -31,7 +31,7 @@ const Slider = ({ translate }) => {
                             <h1 className="title-over">
                                 { translate("slider_title_1") }
                             </h1>
-                            <p>The ultimate medical gate</p>
+                            <p className="pt-20-rtl">{ translate("slider_body_1") }</p>
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary"> {translate ("get_started")}</a>
                         </div>
                         <ProgressiveImage
@@ -47,8 +47,8 @@ const Slider = ({ translate }) => {
                     <div className="item-content">
                         <div className="text-over-slider">
                             <h1 className="title-over">{  translate("slider_title_2") }</h1>
-                            <p>Become the ultimate Doctor-Patient meeting point.
-                            </p>
+                            <p className="pt-20-rtl">{ translate("slider_body_2") }</p>
+                            <p></p>
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary">{translate ("get_started")}</a>
                         </div>
                         <ProgressiveImage
@@ -66,7 +66,8 @@ const Slider = ({ translate }) => {
                     <div className="item-content">
                         <div className="text-over-slider">
                             <h1 className="title-over">{ translate("slider_title_3") }</h1>
-                            <p>Create a better, smoother and faster Doctor-patient communication.</p>
+                            <p></p>
+                            <p className="pt-20-rtl">{ translate("slider_body_3") }</p>
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary"> { translate("get_started") }</a>
 
 

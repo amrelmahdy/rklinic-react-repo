@@ -50,13 +50,17 @@ class SingleDoctor extends Component {
                                     doctor ? (
 
                                             <div className="about-author d-flex p-5 bg-light">
-                                                <div className="bio align-self-md-center mr-5">
-                                                    <img src={doctor.image} alt="Image placeholder"
-                                                         className="img-fluid mb-4"/>
+                                                <div className="col-md-3">
+                                                    <div className="bio align-self-md-center">
+                                                        <img src={doctor.image} alt="Image placeholder"
+                                                             className="img-fluid mb-4"/>
+                                                    </div>
                                                 </div>
+                                                <div className="col-md-9">
                                                 <div className="desc align-self-md-center">
                                                     <h3>{doctor.name}</h3>
                                                     <p>{doctor.bio}</p>
+                                                </div>
                                                 </div>
                                             </div>
 

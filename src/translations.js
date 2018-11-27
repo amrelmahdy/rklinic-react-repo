@@ -21,9 +21,12 @@ export const translations = {
             /*****************Contact Us*********************/
             Contact_Information : "Contact Information",
             address: "Address : ",
-            address_details: "21 Ibrahim El-Refaey, Nasr City, Egypt"
-
-
+            address_details: "21 Ibrahim El-Refaey, Nasr City, Egypt",
+            name:"Your name",
+            email:"Your email",
+            mobile:"Your mobile",
+            message:"Message",
+            send_message: "send message",
         }
     },
     ar: {
@@ -46,7 +49,12 @@ export const translations = {
             /*****************Contact Us*********************/
             Contact_Information : "بيانات التواصل",
             address: "العنوان : ",
-            address_details: "21 ابراهيم الرفاعي مدينة نصر"
+            address_details: "21 ابراهيم الرفاعي مدينة نصر",
+            name:"اسمك",
+            email:"بريدك الالكترونى",
+            mobile:"رقم هاتفك",
+            message:"رسالتك",
+            send_message: "ارسل لنا",
         }
     }
 };

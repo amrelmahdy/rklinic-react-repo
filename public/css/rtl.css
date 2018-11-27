@@ -2237,6 +2237,6 @@
     }
 }
 
-.ftco-services .tab-content .tab-pane .icon{
-  text-align: right;
+.ftco-services .tab-content .tab-pane .icon, .block-9 .form-control , .form-group{
+  text-align: right !important;
 }

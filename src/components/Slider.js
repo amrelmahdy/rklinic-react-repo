@@ -32,13 +32,7 @@ const Slider = ({ translate }) => {
                                 { translate("slider_title_1") }
                             </h1>
                             <p>The ultimate medical gate</p>
-<<<<<<< HEAD
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary"> {translate ("get_started")}</a>
-=======
-                            <a href="https://rklinic-admin.com/register" className="btn btn-primary">  { translate("get_started") } </a>
->>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
-
-
                         </div>
                         <ProgressiveImage
                             preview="/images/slider.png"
@@ -55,12 +49,7 @@ const Slider = ({ translate }) => {
                             <h1 className="title-over">{  translate("slider_title_2") }</h1>
                             <p>Become the ultimate Doctor-Patient meeting point.
                             </p>
-<<<<<<< HEAD
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary">{translate ("get_started")}</a>
-=======
-                            <a href="https://rklinic-admin.com/register" className="btn btn-primary"> { translate("get_started") }</a>
->>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
-
 
                         </div>
                         <ProgressiveImage
@@ -79,11 +68,7 @@ const Slider = ({ translate }) => {
                         <div className="text-over-slider">
                             <h1 className="title-over">{ translate("slider_title_3") }</h1>
                             <p>Create a better, smoother and faster Doctor-patient communication.</p>
-<<<<<<< HEAD
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary">{translate ("get_started")}</a>
-=======
-                            <a href="https://rklinic-admin.com/register" className="btn btn-primary"> { translate("get_started") }</a>
->>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
 
 
                         </div>

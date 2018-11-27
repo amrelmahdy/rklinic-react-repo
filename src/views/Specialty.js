@@ -5,6 +5,7 @@ import Subscribe from "../components/Subscribe";
 import {connect} from "react-redux"
 import {getSpecialtiesList} from "./../store/actions/specialtyActions"
 import {Link} from "react-router-dom";
+import {withTranslate} from "react-redux-multilingual";
 
 class Specialty extends Component {
     componentDidMount() {
@@ -14,7 +15,7 @@ class Specialty extends Component {
     render() {
         const history = [
             {
-                page: 'Home',
+                page: this.props.translate("home"),
                 to: "/"
             }
         ]
@@ -43,7 +44,7 @@ class Specialty extends Component {
 
         return (
             <div className="About">
-                <Head title="Specialties"
+                <Head title={ this.props.translate("specialities") }
                       desc="A Doctor or a patient, cut the distance short, and get your application now!" history={ history }/>
 
 
@@ -127,4 +128,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Specialty)
+export default connect(mapStateToProps, mapDispatchToProps)(withTranslate(Specialty))

@@ -29,7 +29,7 @@ class Footer extends Component {
                             <div className="ftco-footer-widget mb-4">
                                 <h2 className="ftco-heading-2">rKlinic</h2>
                                 <p>{this.props.translate('doctors_paragraph')}</p>
-                                <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                                <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5 float-right-rtl">
                                     <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
                                                                     target="_blank"><span
                                         className="icon-twitter"></span></a></li>
@@ -112,7 +112,7 @@ class Footer extends Component {
                                 <h2 className="ftco-heading-2">{this.props.translate("have_questions")}</h2>
                                 <div className="block-23 mb-3">
                                     <ul>
-                                        <li>
+                                        <li className="float-right-rtl">
                                             <span className="icon icon-map-marker"></span>
                                             <a target="_blank"
                                                href="https://www.google.com.eg/maps/place/30%C2%B003'08.5%22N+31%C2%B021'02.4%22E/@30.052355,31.3484803,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d30.052355!4d31.350669?hl=en"
@@ -121,9 +121,9 @@ class Footer extends Component {
                                                {this.props.translate("address_details")}
                                             </a>
                                         </li>
-                                        <li><a href="/"><span className="icon icon-phone"></span><span className="text">(+02) 22713871 - (+02) 22713872</span></a>
+                                        <li className="float-right-rtl"><a href="/"><span className="icon icon-phone"></span><span className="text">(+02) 22713871 - (+02) 22713872</span></a>
                                         </li>
-                                        <li><a href="/"><span className="icon icon-envelope"></span><span
+                                        <li className="float-right-rtl"><a href="/"><span className="icon icon-envelope"></span><span
                                             className="text">info@rklinic.com</span></a></li>
                                     </ul>
                                 </div>
@@ -133,10 +133,7 @@ class Footer extends Component {
                     <div className="row">
                         <div className="col-md-12">
 
-                            <p className="text-center">{this.props.translate("copyright")} &copy;
-                                {new Date().getFullYear()} &nbsp;
-                                <a href="https://rkanjel.com">rKlinic</a>
-                            </p>
+                            <p className="text-center">{this.props.translate("copyright")} &copy;{new Date().getFullYear()}</p>
                         </div>
                     </div>
                 </div>

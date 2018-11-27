@@ -5,6 +5,7 @@ import {connect} from "react-redux";
 import {getSpecialtyDetails} from "../store/actions/specialtyActions";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
 import { Link } from "react-router-dom";
+import {withTranslate} from "react-redux-multilingual";
 
 
 class SingleSpecialty extends Component {
@@ -18,11 +19,11 @@ class SingleSpecialty extends Component {
         // bread crumb history
         const history = [
             {
-                page: 'Home',
+                page: this.props.translate("home"),
                 to: "/"
             },
             {
-                page: 'Specialties',
+                page: this.props.translate("specialties"),
                 to: "/specialties"
             }
         ];
@@ -145,4 +146,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SingleSpecialty);
+export default connect(mapStateToProps, mapDispatchToProps)(withTranslate(SingleSpecialty));

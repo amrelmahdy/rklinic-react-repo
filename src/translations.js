@@ -43,6 +43,7 @@ export const translations = {
             // Subscribe
             subscribe:"Subscribe to our Newsletter",
             subscribe_Text:"Far aw, there live the blind texts. Separated they live in",
+            enter_your_email_address: "Enter your email address",
 
     
             
@@ -50,11 +51,11 @@ export const translations = {
 
             /*****************Contact Us*********************/
             Contact_Information : "Contact Information",
-            address: "Address : ",
+            address: "Address",
             address_details: "21 Ibrahim El-Refaey, Nasr City, Egypt",
-            name:"Your name",
-            email:"Your email",
-            mobile:"Your mobile",
+            name:"Name",
+            email:"Email",
+            mobile:"Mobile",
             message:"Message",
             send_message: "send message",
 
@@ -65,8 +66,7 @@ export const translations = {
             privacy_policy : "Privacy Policy",
             site_links : "Site Links",
             have_questions : "Have a Questions?",
-            copyright : "Copyright",
-            all_rights_to : "All rights to",
+            copyright : "Copyright all rights reserved to rKlinic",
         }
     },
 
@@ -117,8 +117,8 @@ export const translations = {
             // Subscribe
             subscribe: "للمراسلة",
             subscribe_Text:"هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل م",
-            
-            
+            enter_your_email_address: "ادخل بريدك الالكترونى",
+
             // Contact us page
             Contact_Information : "بيانات التواصل",
             
@@ -141,8 +141,7 @@ export const translations = {
             privacy_policy : "سياسة الخصوصية",
             site_links : "روابط الموقع",
             have_questions : "لديك سؤال؟",
-            copyright : "حقوق النشر",
-            all_rights_to : "محفوظة ل",
+            copyright : " rKlinicحقوق النشر محفوظة ل ",
         }
     }
 };

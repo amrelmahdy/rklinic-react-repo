@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Head from "../components/Head";
 import Subscribe from "../components/Subscribe";
 import Contact from "../components/Contact";
+import { withTranslate } from "react-redux-multilingual"
 
 
 class ContactUs extends Component{
@@ -11,7 +12,7 @@ class ContactUs extends Component{
 
         const history = [
             {
-                page: 'Home',
+                page: this.props.translate("home"),
                 to: "/"
             }
         ]
@@ -19,7 +20,7 @@ class ContactUs extends Component{
 
         return (
             <div className="contact">
-                <Head title="Contact" history={ history }  />
+                <Head title={ this.props.translate("contact") } history={ history }  />
                 <Contact />
                 <Subscribe />
             </div>
@@ -27,4 +28,4 @@ class ContactUs extends Component{
     }
 }
 
-export default ContactUs
+export default withTranslate(ContactUs)

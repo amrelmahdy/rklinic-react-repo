@@ -5,6 +5,7 @@ import {connect} from "react-redux"
 import {getDoctorsList} from "../store/actions/doctorActions";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
 import {Link} from "react-router-dom";
+import {withTranslate} from "react-redux-multilingual";
 
 
 class Doctor extends Component {
@@ -18,7 +19,7 @@ class Doctor extends Component {
 
         const history = [
             {
-                page: 'Home',
+                page: this.props.translate("home"),
                 to: "/"
             }
         ]
@@ -61,7 +62,7 @@ class Doctor extends Component {
 
         return (
             <div className="About">
-                <Head title="Doctors" history={ history } />
+                <Head title={ this.props.translate("doctors") } history={ history } />
 
                 <section className="ftco-section">
                     <div className="container">
@@ -141,4 +142,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Doctor)
+export default connect(mapStateToProps, mapDispatchToProps)(withTranslate(Doctor))

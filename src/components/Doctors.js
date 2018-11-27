@@ -1,7 +1,11 @@
 import React from "react";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
+<<<<<<< HEAD
+import { withTranslate } from "react-redux-multilingual"
+=======
 import {Link} from "react-router-dom";
 
+>>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
 
 function setDoctorImage(url) {
     return {
@@ -10,7 +14,12 @@ function setDoctorImage(url) {
 }
 
 
+<<<<<<< HEAD
+const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
+    console.log(doctors);
+=======
 const Doctors = ({doctors, doctorsListIsLoading}) => {
+>>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
     const doctorList = doctors.map(doctor => {
         return doctors.length ? (
             <div className="col-md-6 col-lg-3 ftco-animate" key={doctor.id}>
@@ -49,8 +58,13 @@ const Doctors = ({doctors, doctorsListIsLoading}) => {
         <section className="ftco-section">
             <div className="container rtl">
                 <div className="row justify-content-center mb-5 pb-3">
+<<<<<<< HEAD
+                    <div className="col-md-7 heading-section ftco-animate text-center">
+                        <h2 className="mb-4">{translate ("doctors_header_1")}</h2>
+=======
                     <div className="col-md-7 heading-section ftco-animate">
                         <h2 className="mb-4  text-center">Our Experienced Doctors</h2>
+>>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
                     </div>
                 </div>
 
@@ -65,11 +79,8 @@ const Doctors = ({doctors, doctorsListIsLoading}) => {
                                     </div>
                                     <div className="row">
                                         <div className="col-md-9 ftco-animate">
-                                            <h4>We are well experienced doctors</h4>
-                                            <p>Our application was made for doctors who care, work and strive to help
-                                                people and people alone! That alone will help doctors to create a more
-                                                comfortable environment for patients to feel closer and more related to
-                                                the entire medical process.</p>
+                                            <h4>{translate ("doctors_header_2")}</h4>
+                                            <p> {translate ("doctors_paragragh")}</p>
                                         </div>
 
                                     </div>
@@ -114,7 +125,7 @@ const Doctors = ({doctors, doctorsListIsLoading}) => {
 }
 
 
-export default Doctors;
+export default withTranslate (Doctors);
 
 
 

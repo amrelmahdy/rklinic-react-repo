@@ -4,10 +4,10 @@ import Subscribe from "../components/Subscribe";
 import {connect} from "react-redux"
 import {getDoctorsList} from "../store/actions/doctorActions";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
+import {Link} from "react-router-dom";
 
 
 class Doctor extends Component {
-
 
     componentDidMount() {
         this.props.getDoctorsList();
@@ -24,37 +24,39 @@ class Doctor extends Component {
         ]
 
 
-        const doctorsList = this.props.doctors.length ? (
-            <div className="col-md-6 col-lg-3 ftco-animate">
-                <div className="block-2">
-                    <div className="flipper">
-                        <div className="front" style={{backgroundImage: 'url(images/doctor-1.jpg)'}}>
-                            <div className="box">
-                                <h2>Aldin Powell</h2>
-                                <p>Neurologist</p>
-                            </div>
-                        </div>
-                        <div className="back">
-                            <blockquote>
-                                <p>&ldquo;Even the all-powerful Pointing has no control about the blind
-                                    texts it is
-                                    an almost unorthographic life One day however a small line of blind text
-                                    by the
-                                    name of Lorem&rdquo;</p>
-                            </blockquote>
-                            <div className="author d-flex">
-                                <div className="image mr-3 align-self-center">
-                                    <div className="img"
-                                         style={{backgroundImage: 'url(images/doctor-1.jpg)'}}></div>
+        const doctorsList = this.props.doctors.length ? this.props.doctors.map((doctor, index) => {
+            return (
+                <div className="col-md-6 col-lg-3 ftco-animate" key={ doctor.id }>
+                    <div className="block-2">
+                        <div className="flipper">
+                            <div className="front" style={{ backgroundImage:  'url(' + doctor.image + ')' }}>
+                                <div className="box">
+                                    <h2>{ doctor.name }</h2>
+                                    <p>{ doctor.speciality }</p>
                                 </div>
-                                <div className="name align-self-center">Aldin Powell <span
-                                    className="position">Neurologist</span></div>
+                            </div>
+                            <div className="back">
+                                <blockquote>
+                                    <p>&ldquo;Even the all-powerful Pointing has no control about the blind
+                                        texts it is
+                                        an almost unorthographic life One day however a small line of blind text
+                                        by the
+                                        name of Lorem&rdquo;</p>
+                                </blockquote>
+                                <div className="author d-flex">
+                                    <div className="image mr-3 align-self-center">
+                                        <div className="img"
+                                             style={{ backgroundImage: doctor.image }}></div>
+                                    </div>
+                                    <div className="name align-self-center"><Link to={"/doctor/" + doctor.id}>{doctor.name}</Link>
+                                        <span className="position">{ doctor.speciality }</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        ) : <p>Our doctors will be here ..</p>;
+            )
+        }) : <p>Our doctors will be here ..</p>;
 
 
         return (

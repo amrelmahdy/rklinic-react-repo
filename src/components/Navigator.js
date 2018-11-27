@@ -1,19 +1,13 @@
 /* eslint-plugin-disable angular, react */
 import React, {Component} from "react";
-import {NavLink} from "react-router-dom";
-import { connect } from 'react-redux'
-import { withTranslate, IntlActions } from 'react-redux-multilingual'
+import { NavLink } from "react-router-dom";
+import { withTranslate } from 'react-redux-multilingual';
+import ChangeLang from "./../components/ChangeLang";
 
 
 class Navigator extends Component {
 
-    changeLang = (e) => {
-        //console.log(e.target);
-        e.preventDefault();
-        localStorage.setItem("lang", e.target.id);
-        this.props.dispatch(IntlActions.setLocale(e.target.id))
-        window.location.reload();
-    }
+
 
 
     render() {
@@ -65,14 +59,7 @@ class Navigator extends Component {
                             </li>
 
                             <li className="nav-item">
-                                {
-                                    localStorage.getItem("lang") === "en" ?
-                                        <a href="/" onClick={this.changeLang} target="_blank" className="nav-link"
-                                           id="ar">العربية</a>
-                                        :
-                                        <a href="/" onClick={this.changeLang} target="_blank" className="nav-link"
-                                           id="en">English</a>
-                                }
+                                <ChangeLang />
                             </li>
                             <li className="nav-item cta">
                                 <a target="_blank" href="https://rklinic-admin.com/login" className="nav-link">
@@ -87,4 +74,4 @@ class Navigator extends Component {
     }
 }
 
-export default connect()(withTranslate(Navigator));
+export default withTranslate(Navigator);

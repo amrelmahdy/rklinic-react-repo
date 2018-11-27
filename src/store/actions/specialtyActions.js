@@ -1,9 +1,26 @@
 import axios from "axios";
 import { getSpecialtiesLink, getSpecialtyDetailsLink } from "./../../config";
 
-export const getSpecialtiesList = (featured = 1) => {
+export const getAllSpecialtiesList = () => {
     return (dispatch, getState) => {
-        axios.post(getSpecialtiesLink, { featured: featured }).then(res => {
+        axios.post(getSpecialtiesLink, { featured: 0 }).then(res => {
+            if (res.data.status !== true) {
+                const specialties = res.data.Response;
+                dispatch({
+                    type: "GET_All_SPECIALITIES_LIST",
+                    payload: specialties
+                })
+            }
+        }).catch(err => {
+            console.log(err)
+        });
+
+    }
+};
+
+export const getSpecialtiesList = () => {
+    return (dispatch, getState) => {
+        axios.post(getSpecialtiesLink, { featured: 0 }).then(res => {
             if (res.data.status !== true) {
                 const specialties = res.data.Response;
                 dispatch({
@@ -38,3 +55,4 @@ export const getSpecialtyDetails = (id) => {
         })
     }
 };
+

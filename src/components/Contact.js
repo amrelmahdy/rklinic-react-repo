@@ -117,9 +117,7 @@ class Contact extends Component {
                         </div>
                         <div className="w-100"></div>
                         <div className="col-md-4">
-                            <p><span>Address:</span> 21 Ibrahim El-Refaey, Nasr City, Egypt.
-
-                            </p>
+                            <p><span>{ this.props.translate("address") }</span>{ this.props.translate("address_details") }</p>
                         </div>
                         <div className="col-md-4">
                             <p><span>Phone:</span> <a href="tel://1234567920">(+02) 22713871 - (+02) 22713872</a></p>
@@ -142,15 +140,11 @@ class Contact extends Component {
                                            className="form-control" placeholder="Your Email"/>
                                     <span className="error-msg">{this.handleErrors("email")}</span>
                                 </div>
-
-
                                 <div className="form-group">
                                     <input type="text" id="mobile" onChange={this.handleInputChange}
                                            className="form-control" placeholder="Your Mobile"/>
                                     <span className="error-msg">{this.handleErrors("mobile")}</span>
                                 </div>
-
-
                                 <div className="form-group">
                                     <textarea id="message" onChange={this.handleInputChange} cols="30" rows="7"
                                               className="form-control" placeholder="Message">

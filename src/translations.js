@@ -16,6 +16,7 @@ export const translations = {
             slider_title_3: "Our Vision",
             slider_body_3: "Create a better, smoother and faster Doctor-patient communication",
             get_started: "Get Started",
+
             /*********** */
             // MiniCategories Will be loaded Dynamically from the Server.
             /*** *****/
@@ -42,9 +43,16 @@ export const translations = {
             subscribe:"Subscribe to our Newsletter",
             subscribe_Text:"Far aw, there live the blind texts. Separated they live in",
 
-            // Contact us page
-            Contact_Information : "Contact Information",
+    
             
+            // specialties
+
+            /*****************Contact Us*********************/
+            Contact_Information : "Contact Information",
+            address: "Address : ",
+            address_details: "21 Ibrahim El-Refaey, Nasr City, Egypt"
+
+
         }
     },
 
@@ -66,6 +74,7 @@ export const translations = {
             slider_body_2: "كن أنت البيب الاول في مصر",
             slider_title_3: "رؤيتنا",
             slider_body_3: "أقم علاقة جيدة مع مريضك",
+
             get_started: "ابـــدأ",
             /*************** */
             // MiniCategories Will be loaded Dynamically from the Server.
@@ -99,6 +108,11 @@ export const translations = {
             Contact_Information : "بيانات التواصل",
             
 
+            get_started: "آبدا",
+            /*****************Contact Us*********************/
+            Contact_Information : "بيانات التواصل",
+            address: "العنوان : ",
+            address_details: "21 ابراهيم الرفاعي مدينة نصر"
         }
     }
 };

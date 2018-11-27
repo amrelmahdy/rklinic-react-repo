@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import Head from "../components/Head";
 import Subscribe from "../components/Subscribe";
 import AboutRklinic from "../components/AboutRklinic";
+import { withTranslate } from "react-redux-multilingual"
 
 
 class About extends Component{
-
 
 
 
@@ -13,14 +13,14 @@ class About extends Component{
 
         const history = [
             {
-                page: 'Home',
+                page:  this.props.translate("home"),
                 to: "/"
             }
         ]
 
         return (
             <div className="About">
-                <Head title="About Us" history={ history } />
+                <Head title={ this.props.translate("about") } history={ history } />
                 <AboutRklinic/>
                 <Subscribe />
             </div>
@@ -28,4 +28,4 @@ class About extends Component{
     }
 }
 
-export default About
+export default withTranslate(About)

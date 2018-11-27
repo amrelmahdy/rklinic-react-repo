@@ -19,7 +19,7 @@ class ContactUs extends Component{
 
         return (
             <div className="contact">
-                <Head title="Contact"history={ history }  />
+                <Head title="Contact" history={ history }  />
                 <Contact />
                 <Subscribe />
             </div>

@@ -1,6 +1,11 @@
 import React from "react";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
+<<<<<<< HEAD
 import { withTranslate } from "react-redux-multilingual"
+=======
+import {Link} from "react-router-dom";
+
+>>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
 
 function setDoctorImage(url) {
     return {
@@ -9,8 +14,12 @@ function setDoctorImage(url) {
 }
 
 
+<<<<<<< HEAD
 const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
     console.log(doctors);
+=======
+const Doctors = ({doctors, doctorsListIsLoading}) => {
+>>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
     const doctorList = doctors.map(doctor => {
         return doctors.length ? (
             <div className="col-md-6 col-lg-3 ftco-animate" key={doctor.id}>
@@ -19,19 +28,19 @@ const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
                         <div className="front" style={setDoctorImage(doctor.image)}>
                             <div className="box">
                                 <h2>{doctor.name}</h2>
-                                <p>Neurologist</p>
+                                <p>{ doctor.speciality }</p>
                             </div>
                         </div>
                         <div className="back">
                             <blockquote>
-                                <p>{doctor.bio.length > 200 ? doctor.bio.slice(0, 200) + " ..." : doctor.bio}</p>
+                                <p>{doctor.bio && doctor.bio.length > 200 ? doctor.bio.slice(0, 200) + " ..." : doctor.bio}</p>
                             </blockquote>
                             <div className="author d-flex">
                                 <div className="image mr-3 align-self-center">
                                     <div className="img" style={setDoctorImage(doctor.image)}></div>
                                 </div>
-                                <div className="name align-self-center">{doctor.name}<span
-                                    className="position">{doctor.speciality}</span></div>
+                                <div className="name align-self-center"><Link to={"/doctor/" + doctor.id}>{doctor.name}</Link>
+                                    <span className="position">{doctor.speciality}</span></div>
                             </div>
                         </div>
                     </div>
@@ -49,8 +58,13 @@ const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
         <section className="ftco-section">
             <div className="container rtl">
                 <div className="row justify-content-center mb-5 pb-3">
+<<<<<<< HEAD
                     <div className="col-md-7 heading-section ftco-animate text-center">
                         <h2 className="mb-4">{translate ("doctors_header_1")}</h2>
+=======
+                    <div className="col-md-7 heading-section ftco-animate">
+                        <h2 className="mb-4  text-center">Our Experienced Doctors</h2>
+>>>>>>> 2d5327cc00fe6f6b94a828e3dd2d865fc8a0f83d
                     </div>
                 </div>
 

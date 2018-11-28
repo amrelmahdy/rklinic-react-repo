@@ -108,7 +108,8 @@ export const translations = {
             home_title: "Home",
             about_title: "About",
             contact_title: "Contact",
-            doctors_title: "Doctors"
+            doctors_title: "Doctors",
+            specialties_title:"Specialties",
         }
     },
 
@@ -228,7 +229,9 @@ export const translations = {
             home_title: "الرئيسية",
             about_title: "عن التطبيق",
             contact_title: "اتصل بنا",
-            doctors_title: "الآطباء"
+            doctors_title: "الآطباء",
+            specialties_title:"التخصصـات"
+
         }
     }
 };

@@ -9,7 +9,8 @@ export const getHeader = function () {
     const lang = window.localStorage.getItem('lang');
     const header = {
         lang: lang,
-        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
     }
     return header
 }

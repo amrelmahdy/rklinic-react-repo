@@ -19,6 +19,11 @@ class Contact extends Component {
     };
 
 
+    componentDidMount(){
+
+    }
+
+
     handleInputChange = (e) => {
         this.setState({
             [e.target.id]: e.target.value
@@ -113,6 +118,7 @@ class Contact extends Component {
     render() {
         return (
             <section className="ftco-section contact-section ftco-degree-bg">
+
                 <div className="container">
                     <div className="row">
                         <div className="d-flex mb-5 contact-info">
@@ -176,7 +182,7 @@ class Contact extends Component {
                                     <span className="error-msg">{this.handleErrors("message")}</span>
                                 </div>
 
-                                <div className="g-recaptcha" data-sitekey="6LecXX0UAAAAAKxjCi6SZjzHkLoG-QCl-QwiWIDa"></div>
+                                <div className="g-recaptcha " data-sitekey="6LecXX0UAAAAAKxjCi6SZjzHkLoG-QCl-QwiWIDa"></div>
 
                                 <div className="capcha-error">
                                     <span style={{  marginLeft: '12px' }} className="error-msg">{this.handleErrors("g-recaptcha-response")}</span>

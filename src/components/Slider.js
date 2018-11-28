@@ -57,7 +57,6 @@ const Slider = ({ translate }) => {
                             render={(src, style) => <img  alt="image-slider" src={src} style={style} />}
                         />
                         <div className="slider-overlay"></div>
-
                     </div>
                 </div>
 
@@ -66,11 +65,8 @@ const Slider = ({ translate }) => {
                     <div className="item-content">
                         <div className="text-over-slider">
                             <h1 className="title-over">{ translate("slider_title_3") }</h1>
-                            <p></p>
                             <p className="pt-20-rtl">{ translate("slider_body_3") }</p>
                             <a href="https://rklinic-admin.com/register" className="btn btn-primary"> { translate("get_started") }</a>
-
-
                         </div>
                         <ProgressiveImage
                             preview="/images/slider3.png"

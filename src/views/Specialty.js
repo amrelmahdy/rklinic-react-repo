@@ -44,9 +44,8 @@ class Specialty extends Component {
 
         return (
             <div className="About">
-                <Head title={ this.props.translate("specialities") }
-                      desc="A Doctor or a patient, cut the distance short, and get your application now!" history={ history }/>
 
+                <Head title={ this.props.translate("specialities")  } history={history}/>
 
                 <section className="ftco-section">
                     <div className="container">

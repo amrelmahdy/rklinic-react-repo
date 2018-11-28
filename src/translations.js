@@ -73,6 +73,7 @@ export const translations = {
     
             
             // specialties
+            specialities: "Specialties",
 
             /*****************Contact Us*********************/
             Contact_Information : "Contact Information",
@@ -131,7 +132,6 @@ export const translations = {
             slider_title_3: "رؤيتنا",
             slider_body_3: "أقم علاقة جيدة مع مريضك",
 
-            get_started: "ابـــدأ",
             /*************** */
             // MiniCategories Will be loaded Dynamically from the Server.
             show_Doctors:" ألق نظرة على اﻷطباء ",
@@ -188,6 +188,13 @@ export const translations = {
 
 
             get_started: "آبدا",
+
+
+
+            // specialties
+            specialities: "التخصصات",
+
+
             /*****************Contact Us*********************/
             Contact_Information : "بيانات التواصل",
             address: "العنوان : ",

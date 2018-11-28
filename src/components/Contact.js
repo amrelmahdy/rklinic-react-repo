@@ -122,9 +122,7 @@ class Contact extends Component {
                         </div>
                     </div>
 
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="w-100"></div>
+                    <div className="row mb-40">
                             <div className="col-md-4">
                                 <p><span>{this.props.translate("address")}: </span>{this.props.translate("address_details")}</p>
                             </div>
@@ -134,8 +132,10 @@ class Contact extends Component {
                             <div className="col-md-4">
                                 <p><span>{this.props.translate("email")}:</span> <a href="mailto:info@yoursite.com">info@rklinic.com</a></p>
                             </div>
-                        </div>
                     </div>
+
+
+
 
                     <div className="row">
 

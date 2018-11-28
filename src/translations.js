@@ -7,6 +7,7 @@ export const translations = {
             specialties: 'Specialties',
             doctors: 'Doctors',
             contact: 'Contact',
+            login:"Login",
             /*****************Home*********************/
             //slider
             slider_title_1: "Welcome To rKlinik",
@@ -116,6 +117,7 @@ export const translations = {
             specialties: 'التخصصات',
             doctors: 'الآطباء',
             contact: 'إتصل بنا',
+            login:"الدخول",
             /*****************Home*********************/
             //slider
             slider_title_1: "rKlinic أهلا بك في",

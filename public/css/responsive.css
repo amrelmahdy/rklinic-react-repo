@@ -52,6 +52,18 @@
     .service-img .col-md-12{
         padding: 0;
     }
+    .ftco-section .block-23 ul li .icon{
+        width: 20px;
+    }
+    .ftco-section .block-23 ul li .text{
+        width: 130px;
+    }
+    .dept .text{
+        padding: 1.5rem 1.5rem 3rem 1.5rem !important;
+    }
+    .title-over{
+        margin-bottom: 0;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -110,5 +122,17 @@
     }
     .service-img .col-md-12{
         padding: 0;
+    }
+    .ftco-section .block-23 ul li .icon{
+        width: 20px;
+    }
+    .ftco-section .block-23 ul li .text{
+        width: 130px;
+    }
+    .dept .text{
+        padding: 1.5rem 1.5rem 3rem 1.5rem !important;
+    }
+    .title-over{
+        margin-bottom: 0;
     }
 }

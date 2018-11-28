@@ -6,6 +6,7 @@ import {getDoctorsList} from "../store/actions/doctorActions";
 import {Bone, Skeleton} from "react-loading-skeleton-placeholders";
 import {Link} from "react-router-dom";
 import {withTranslate} from "react-redux-multilingual";
+import globalMiddleware from "./../hocs/globalMiddleware";
 
 
 class Doctor extends Component {
@@ -142,4 +143,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(withTranslate(Doctor))
+export default connect(mapStateToProps, mapDispatchToProps)(globalMiddleware(withTranslate(Doctor)));

@@ -53,13 +53,26 @@ class App extends Component {
                                     return (<About title={this.props.translate("about_title")} />)
                                 }}
                             />
-                            <Route path="/doctors" component={Doctor}/>
+                            <Route path="/doctors"  render={
+                                () => {
+                                    return ( <Doctor title={this.props.translate("doctors_title") } /> )
+                                }}
+                            /> 
+
+
+
                             <Route path="/contact" render={
                                 () => {
                                     return (<Contact title={this.props.translate("contact_title")} />)
                                 }
                             }/> />
-                            <Route path="/specialties" component={Specialty}/>
+
+                            <Route path="/specialties" render={
+                                ()=> {
+                                    return (<Specialty title= { this.props.translate("specialties_title")} /> )
+                                }
+                            }/>
+
                             <Route path="/specialty/:id" component={SingleSpecialty}/>
                             <Route path="/doctor/:id" component={SingleDoctor}/>
                         </Switch>

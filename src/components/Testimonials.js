@@ -37,7 +37,7 @@ class Testimonials extends Component {
         }
         window.addEventListener("resize", this.changeNumberOfItems)
     }
-    
+
     render() {
         return (
             <section className="ftco-section testimony-section">

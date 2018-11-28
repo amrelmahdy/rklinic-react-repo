@@ -63,7 +63,7 @@ class Navigator extends Component {
                             </li>
                             <li className="nav-item cta">
                                 <a target="_blank" href="https://rklinic-admin.com/login" className="nav-link">
-                                    <span>Login</span>
+                                    <span>{ this.props.translate ("login") }</span>
                                 </a>
                             </li>
                         </ul>

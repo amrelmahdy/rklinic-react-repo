@@ -7,6 +7,7 @@ export const translations = {
             specialties: 'Specialties',
             doctors: 'Doctors',
             contact: 'Contact',
+            login:"Login",
             /*****************Home*********************/
             //slider
             slider_title_1: "Welcome To rKlinik",
@@ -66,7 +67,7 @@ export const translations = {
 
             // Subscribe
             subscribe:"Subscribe",
-            subscribe_Text:"Far aw, there live the blind texts. Separated they live in",
+            subscribe_Text:"To Get our Latest News and Offers. Please subsribe with your email.",
             enter_your_email_address: "Enter your email address",
 
     
@@ -120,6 +121,7 @@ export const translations = {
             specialties: 'التخصصات',
             doctors: 'الآطباء',
             contact: 'إتصل بنا',
+            login:"الدخول",
             /*****************Home*********************/
             //slider
             slider_title_1: "rKlinic أهلا بك في",
@@ -179,8 +181,8 @@ export const translations = {
             /***** */
             
             // Subscribe
-            subscribe: "متابعتنا",
-            subscribe_Text:"هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل م",
+            subscribe: "للمتابعـــة",
+            subscribe_Text:" لمتابعتنا و الحصول على آخر العروض و الاخبار نرجو ادخال بريدك الالكتروني",
             enter_your_email_address: "ادخل بريدك الالكترونى",
 
             // Contact us page

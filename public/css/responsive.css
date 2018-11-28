@@ -2,7 +2,9 @@
     .col-md {
         width: 50%;
     }
-
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+        color: #fff;
+    }
     .ftco-section-2 .section-2-blocks-wrapper {
         margin-top: 0;
     }
@@ -12,16 +14,16 @@
     }
 
     .slider-sec .item-content .text-over-slider p {
-        font-size: 15px;
+        font-size: 13px;
         letter-spacing: 2px;
     }
 
     .slider-sec .item-content .text-over-slider h1 {
-        font-size: 30px;
+        font-size: 18px;
     }
 
     .slider-sec .item-content .text-over-slider a {
-        padding: 8px 14px !important;
+        padding: 1px 8px !important;
         font-size: 15px;
         max-height: 40px !important;
     }
@@ -47,7 +49,9 @@
     .col-md {
         width: 50%;
     }
-
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+        color: #fff;
+    }
     .ftco-section-2 .section-2-blocks-wrapper {
         margin-top: 0;
     }
@@ -57,16 +61,16 @@
     }
 
     .slider-sec .item-content .text-over-slider p {
-        font-size: 15px;
+        font-size: 13px;
         letter-spacing: 2px;
     }
 
     .slider-sec .item-content .text-over-slider h1 {
-        font-size: 30px;
+        font-size: 18px;
     }
 
     .slider-sec .item-content .text-over-slider a {
-        padding: 8px 14px !important;
+        padding: 1px 8px !important;
         font-size: 15px;
         max-height: 40px !important;
     }

@@ -115,11 +115,11 @@ class Footer extends Component {
                                 <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
                                                                 target="_blank"><span
                                     className="icon-twitter"></span></a></li>
-                                <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
+                                <li className="ftco-animate"><a href="https://www.facebook.com/rklinic"
                                                                 target="_blank"><span
                                     className="icon-facebook"></span></a>
                                 </li>
-                                <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
+                                <li className="ftco-animate"><a href="https://www.instagram.com/rklinic_official"
                                                                 target="_blank"><span
                                     className="icon-instagram"></span></a>
                                 </li>

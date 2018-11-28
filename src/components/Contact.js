@@ -114,24 +114,32 @@ class Contact extends Component {
         return (
             <section className="ftco-section contact-section ftco-degree-bg">
                 <div className="container">
-                    <div className="row d-flex mb-5 contact-info">
-                        <div className="col-md-12 mb-4">
-                            <h2 className="h4">{this.props.translate("Contact_Information")}</h2>
+                    <div className="row">
+                        <div className="d-flex mb-5 contact-info">
+                            <div className="col-md-12">
+                                <h2 className="h4 mb-4">{this.props.translate("Contact_Information")}</h2>
+                            </div>
                         </div>
-                        <div className="w-100"></div>
-                        <div className="col-md-4">
-                            <p><span>{this.props.translate("address")}: </span>{this.props.translate("address_details")}</p>
-                        </div>
-                        <div className="col-md-4">
-                            <p><span>{this.props.translate("phone")}:</span> <a href="tel://1234567920">(+02) 22713871 - (+02) 22713872</a></p>
-                        </div>
-                        <div className="col-md-4">
-                            <p><span>{this.props.translate("email")}:</span> <a href="mailto:info@yoursite.com">info@rklinic.com</a></p>
-                        </div>
-
                     </div>
-                    <div className="row block-9">
-                        <div className="col-md-6 pr-md-5">
+
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="w-100"></div>
+                            <div className="col-md-4">
+                                <p><span>{this.props.translate("address")}: </span>{this.props.translate("address_details")}</p>
+                            </div>
+                            <div className="col-md-4">
+                                <p><span>{this.props.translate("phone")}:</span> <a href="tel://1234567920">(+02) 22713871 - (+02) 22713872</a></p>
+                            </div>
+                            <div className="col-md-4">
+                                <p><span>{this.props.translate("email")}:</span> <a href="mailto:info@yoursite.com">info@rklinic.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+
+                        <div className="col-md-6">
                             <form action="#" id="contact-form" onSubmit={this.handleFormSubmission}>
                                 <div className="form-group">
                                     <input type="text" id="name"
@@ -168,11 +176,7 @@ class Contact extends Component {
                                     <span className="error-msg">{this.handleErrors("message")}</span>
                                 </div>
 
-
-
-
-                                <div className="g-recaptcha"
-                                     data-sitekey="6LecXX0UAAAAAKxjCi6SZjzHkLoG-QCl-QwiWIDa"></div>
+                                <div className="g-recaptcha" data-sitekey="6LecXX0UAAAAAKxjCi6SZjzHkLoG-QCl-QwiWIDa"></div>
 
                                 <div className="capcha-error">
                                     <span style={{  marginLeft: '12px' }} className="error-msg">{this.handleErrors("g-recaptcha-response")}</span>
@@ -185,18 +189,19 @@ class Contact extends Component {
                                            className="btn btn-primary py-3 px-5"/>
                                 </div>
 
-
-
-
-
                             </form>
 
                         </div>
 
-                        <div className="col-md-6" id="map">
-                            <MapContainer/>
+                        <div className="col-md-6">
+                            <div id="map">
+                                <MapContainer/>
+                            </div>
+
                         </div>
+
                     </div>
+
                 </div>
             </section>
         )

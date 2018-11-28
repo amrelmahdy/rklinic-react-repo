@@ -30,6 +30,4 @@ class ContactUs extends Component{
     }
 }
 
-export default globalMiddleware({
-    title: "contact us"
-})(withTranslate(ContactUs))
+export default globalMiddleware(withTranslate(ContactUs))

@@ -65,7 +65,7 @@ export const translations = {
             /***** */
 
             // Subscribe
-            subscribe:"Subscribe to our Newsletter",
+            subscribe:"Subscribe",
             subscribe_Text:"Far aw, there live the blind texts. Separated they live in",
             enter_your_email_address: "Enter your email address",
 
@@ -104,7 +104,9 @@ export const translations = {
             /************************* General Translations */
             phone:" Phone ",
             home_title: "Home",
-            about_title: "About rKlinic"
+            about_title: "About",
+            contact_title: "Contact",
+            doctors_title: "Doctors"
         }
     },
 
@@ -217,7 +219,9 @@ export const translations = {
             /************************* General Translations */
             phone:" رقم الهاتف الجوال ",
             home_title: "الرئيسية",
-            about_title: "عن التطبيق"
+            about_title: "عن التطبيق",
+            contact_title: "اتصل بنا",
+            doctors_title: "الآطباء"
         }
     }
 };

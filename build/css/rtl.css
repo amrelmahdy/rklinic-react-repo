@@ -55,7 +55,9 @@
 .col-xs-12 {
     float: right;
 }
-
+.form-group{
+    text-align: right;
+}
 .pull-left {
     float: right !important;
 }
@@ -1330,8 +1332,8 @@
 }
 
 .shop-table th.ico-1,
-.related-shop .new-product h2 {
-    text-align: center;
+.related-shop .new-product h2, .subsribe-section h2{
+    text-align: center !important;
 }
 
 .shop-table .alignleft {
@@ -2235,3 +2237,11 @@
     }
 }
 
+.ftco-services .tab-content .tab-pane .icon, .block-9 .form-control , .form-group{
+  text-align: right !important;
+}
+
+.heading-section h2 {
+
+    letter-spacing: 0 !important;
+}

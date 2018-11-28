@@ -10185,7 +10185,7 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-    color: #fff;
+    color: #35c7e0;
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
@@ -10348,7 +10348,8 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light.scrolled .nav-link.active, .ftco-navbar-light .navbar-nav > .nav-item > .nav-link.active {
-    color: #35c7e0 !important;
+    color: #009DE7 !important;
+    font-weight: bold;
 }
 
 .ftco-navbar-light.scrolled.awake {
@@ -13290,7 +13291,7 @@ textarea.form-control {
 .section-img {
     position: relative;
     display: block;
-    min-height: 610px;
+    max-height: 610px;
     overflow: hidden;
     height: 100%;
     width: 100%;

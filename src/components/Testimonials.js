@@ -37,15 +37,14 @@ class Testimonials extends Component {
         }
         window.addEventListener("resize", this.changeNumberOfItems)
     }
-
-
+    
     render() {
         return (
             <section className="ftco-section testimony-section">
                 <div className="container">
                     <div className="row justify-content-center mb-5 pb-3">
                         <div className="col-md-7 heading-section ftco-animate">
-                            <h2 className="mb-4 text-center"> {this.props.translate("testimonials")}</h2>
+                            <h2 className="mb-4 text-center loon"> {this.props.translate("testimonials")}</h2>
                         </div>
                     </div>
                     <div className="row">

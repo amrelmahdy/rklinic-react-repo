@@ -6,7 +6,7 @@ const Services = ({ translate }) => {
 
     return (
         <section className="ftco-section-2 img">
-            <div className="section-img">
+            <div className="section-img service-img">
                 <ProgressiveImage
                     preview="/images/bg_3.png"
                     src="/images/bg_3.png"

@@ -37,7 +37,7 @@ p,
 .float-right-rtl{
     float: right !important;
 }
-.block-23 ul li .icon{
+.block-23 ul li .icon, .ftco-navbar-light .navbar-nav > .nav-item.cta > a{
     float: left !important;
 }
 
@@ -50,4 +50,11 @@ p,
 }
 .show-more-style{
     margin-right: 10px;
+}
+.g-recaptcha{
+    float: right;
+    margin-bottom: 5%;
+}
+.contact-email{
+    float: right;
 }

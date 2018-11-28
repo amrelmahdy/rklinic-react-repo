@@ -2,6 +2,9 @@
     .col-md {
         width: 50%;
     }
+    .block-2, .block-2 .front, .block-2 .back {
+        height: 340px;
+    }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
         color: #fff;
     }
@@ -43,11 +46,20 @@
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
         color: #fff;
     }
+    .service-img{
+        max-height: 545px;
+    }
+    .service-img .col-md-12{
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .col-md {
         width: 50%;
+    }
+    .block-2, .block-2 .front, .block-2 .back {
+        height: 340px;
     }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
         color: #fff;
@@ -92,5 +104,11 @@
     }
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
         color: #fff;
+    }
+    .service-img{
+        max-height: 545px;
+    }
+    .service-img .col-md-12{
+        padding: 0;
     }
 }

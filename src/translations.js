@@ -185,9 +185,7 @@ export const translations = {
             subscribe_Text:" لمتابعتنا و الحصول على آخر العروض و الاخبار نرجو ادخال بريدك الالكتروني",
             enter_your_email_address: "ادخل بريدك الالكترونى",
 
-            // Contact us page
-            Contact_Information : "بيانات التواصل",
-            
+
 
             get_started: "آبدا",
             /*****************Contact Us*********************/

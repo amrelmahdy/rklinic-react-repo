@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import Head from "../components/Head";
 import Subscribe from "../components/Subscribe";
 import Contact from "../components/Contact";
-import { withTranslate } from "react-redux-multilingual"
+import { withTranslate } from "react-redux-multilingual";
+import globalMiddleware from "./../hocs/globalMiddleware";
+
 
 
 class ContactUs extends Component{
@@ -28,4 +30,4 @@ class ContactUs extends Component{
     }
 }
 
-export default withTranslate(ContactUs)
+export default globalMiddleware(withTranslate(ContactUs))

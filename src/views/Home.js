@@ -9,8 +9,14 @@ import {getDoctorsList} from "../store/actions/doctorActions";
 import {getSpecialtiesList} from "../store/actions/specialtyActions";
 import {connect} from "react-redux";
 import Slider from "../components/Slider";
+import {withTranslate } from "react-redux-multilingual"
+import globalMiddleware from "../hocs/globalMiddleware";
 
 class Home extends Component {
+
+    componentWillUpdate(){
+        //document.title = this.props.translate(this.props.titleKey)
+    }
 
     componentDidMount() {
         
@@ -60,4 +66,4 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(globalMiddleware(withTranslate(Home)))

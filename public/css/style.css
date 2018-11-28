@@ -13421,3 +13421,8 @@ textarea.form-control {
 .testimonial-p{
     min-height: 140px;
 }
+
+#map{
+    position: relative;
+}
+

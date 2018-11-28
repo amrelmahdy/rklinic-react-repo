@@ -73,6 +73,7 @@ export const translations = {
     
             
             // specialties
+            specialities: "Specialties",
 
             /*****************Contact Us*********************/
             Contact_Information : "Contact Information",
@@ -104,6 +105,10 @@ export const translations = {
 
             /************************* General Translations */
             phone:" Phone ",
+            home_title: "Home",
+            about_title: "About",
+            contact_title: "Contact",
+            doctors_title: "Doctors"
         }
     },
 
@@ -127,7 +132,6 @@ export const translations = {
             slider_title_3: "رؤيتنا",
             slider_body_3: "أقم علاقة جيدة مع مريضك",
 
-            get_started: "ابـــدأ",
             /*************** */
             // MiniCategories Will be loaded Dynamically from the Server.
             show_Doctors:" ألق نظرة على اﻷطباء ",
@@ -181,11 +185,16 @@ export const translations = {
             subscribe_Text:" لمتابعتنا و الحصول على آخر العروض و الاخبار نرجو ادخال بريدك الالكتروني",
             enter_your_email_address: "ادخل بريدك الالكترونى",
 
-            // Contact us page
-            Contact_Information : "بيانات التواصل",
-            
+
 
             get_started: "آبدا",
+
+
+
+            // specialties
+            specialities: "التخصصات",
+
+
             /*****************Contact Us*********************/
             Contact_Information : "بيانات التواصل",
             address: "العنوان : ",
@@ -216,6 +225,10 @@ export const translations = {
 
             /************************* General Translations */
             phone:" رقم الهاتف الجوال ",
+            home_title: "الرئيسية",
+            about_title: "عن التطبيق",
+            contact_title: "اتصل بنا",
+            doctors_title: "الآطباء"
         }
     }
 };

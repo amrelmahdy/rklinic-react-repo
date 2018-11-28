@@ -25,7 +25,7 @@ const MiniCategory = ({specialties, specialtyListIsLoading, translate}) => {
                 <span className="icon mb-3 d-block flaticon-stethoscope"></span>
 
 
-                <h2 className="mb-4">{ specialty.speciality }</h2>
+                <h2 className="mb-4 grey">{ specialty.speciality }</h2>
                 <p>{specialty.desc}</p>
                 <p><Link to={ '/specialty/' + specialty.id  } className="btn btn-primary">{translate("show_Doctors")}</Link></p>
             </div>

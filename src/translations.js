@@ -83,6 +83,7 @@ export const translations = {
             mobile:"Mobile",
             message:"Message",
             send_message: "send message",
+            contact_email : "email :",
 
             /*****************Footer*********************/
             important : "Important",
@@ -192,14 +193,14 @@ export const translations = {
             get_started: "آبدا",
             /*****************Contact Us*********************/
             Contact_Information : "بيانات التواصل",
-            address: "العنوان : ",
+            address: "العنوان",
             address_details: "21 ابراهيم الرفاعي مدينة نصر",
-            name:"اسمك",
-            email:"بريدك الالكترونى",
-            mobile:"رقم هاتفك",
-            message:"رسالتك",
+            name: "اسمك",
+            email: "البريد الالكترونى",
+            mobile: "رقم هاتفك" ,
+            message: "رسالتك" ,
             send_message: "ارسل لنا",
-
+            contact_email : ": البريد الالكترونى",
             /*****************Footer*********************/
             important : "هام",
             how_to_register : "كيفية التسجيل؟",
@@ -219,7 +220,7 @@ export const translations = {
 
 
             /************************* General Translations */
-            phone:" رقم الهاتف الجوال ",
+            phone:" رقم الهاتف",
             home_title: "الرئيسية",
             about_title: "عن التطبيق",
             contact_title: "اتصل بنا",

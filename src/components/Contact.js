@@ -126,13 +126,13 @@ class Contact extends Component {
                         <div className="col-md-12">
                             <div className="w-100"></div>
                             <div className="col-md-4">
-                                <p><span>{this.props.translate("address")}: </span>{this.props.translate("address_details")}</p>
+                                <p><span>{this.props.translate("address")} : </span>{this.props.translate("address_details")}</p>
                             </div>
                             <div className="col-md-4">
-                                <p><span>{this.props.translate("phone")}:</span> <a href="tel://1234567920">(+02) 22713871 - (+02) 22713872</a></p>
+                                <p><span>{this.props.translate("phone")} : </span> <a href="tel://1234567920">(+02) 22713871 - (+02) 22713872</a></p>
                             </div>
                             <div className="col-md-4">
-                                <p><span>{this.props.translate("email")}:</span> <a href="mailto:info@yoursite.com">info@rklinic.com</a></p>
+                                <p><span className="contact-email">{this.props.translate("contact_email")} </span> <a href="mailto:info@yoursite.com">info@rklinic.com</a></p>
                             </div>
                         </div>
                     </div>

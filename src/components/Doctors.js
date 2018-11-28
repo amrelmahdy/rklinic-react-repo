@@ -52,7 +52,7 @@ const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
             <div className="container rtl">
                 <div className="row justify-content-center mb-5 pb-3">
                     <div className="col-md-7 heading-section ftco-animate">
-                        <h2 className="mb-4 text-center">{translate("doctors_header_1")}</h2>
+                        <h2 className="mb-4 text-center loon">{translate("doctors_header_1")}</h2>
                     </div>
                 </div>
 

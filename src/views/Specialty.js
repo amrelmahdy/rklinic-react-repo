@@ -6,6 +6,7 @@ import {connect} from "react-redux"
 import {getSpecialtiesList} from "./../store/actions/specialtyActions"
 import {Link} from "react-router-dom";
 import {withTranslate} from "react-redux-multilingual";
+import globalMiddleware from "./../hocs/globalMiddleware";
 
 class Specialty extends Component {
     componentDidMount() {
@@ -127,4 +128,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(withTranslate(Specialty))
+export default connect(mapStateToProps, mapDispatchToProps)(globalMiddleware(withTranslate(Specialty)));

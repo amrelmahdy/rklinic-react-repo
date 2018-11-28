@@ -28,4 +28,4 @@ class About extends Component{
     }
 }
 
-export default withTranslate(About);
+export default globalMiddleware(withTranslate(About));

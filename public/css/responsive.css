@@ -52,6 +52,12 @@
     .service-img .col-md-12{
         padding: 0;
     }
+    .ftco-section .block-23 ul li .icon{
+        width: 20px;
+    }
+    .ftco-section .block-23 ul li .text{
+        width: 130px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -110,5 +116,11 @@
     }
     .service-img .col-md-12{
         padding: 0;
+    }
+    .ftco-section .block-23 ul li .icon{
+        width: 20px;
+    }
+    .ftco-section .block-23 ul li .text{
+        width: 130px;
     }
 }

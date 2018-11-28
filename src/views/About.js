@@ -7,6 +7,8 @@ import globalMiddleware from "./../hocs/globalMiddleware";
 
 
 class About extends Component{
+
+
     render() {
 
         const history = [
@@ -26,6 +28,4 @@ class About extends Component{
     }
 }
 
-export default globalMiddleware({
-    title: "about us"
-})(withTranslate(About));
+export default withTranslate(About);

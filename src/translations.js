@@ -103,6 +103,8 @@ export const translations = {
 
             /************************* General Translations */
             phone:" Phone ",
+            home_title: "Home",
+            about_title: "About rKlinic"
         }
     },
 
@@ -214,6 +216,8 @@ export const translations = {
 
             /************************* General Translations */
             phone:" رقم الهاتف الجوال ",
+            home_title: "الرئيسية",
+            about_title: "عن التطبيق"
         }
     }
 };

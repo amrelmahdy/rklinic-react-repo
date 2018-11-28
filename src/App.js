@@ -15,6 +15,7 @@ import Specialty from "./views/Specialty";
 import SingleSpecialty from "./views/SingleSpecialty";
 import SingleDoctor from "./views/SingleDoctor";
 
+
 /*
 const fakeAuth = {
     isAuthenticated: false,
@@ -43,10 +44,14 @@ class App extends Component {
                   <Switch>
                       <Route exact path="/" render={
                           () => {
-                             return (<Home titleKey="home_title" />)
+                             return (<Home />)
                           }}
                       />
-                      <Route  path="/about" component={ About }  />
+                      <Route  path="/about" render={
+                          () => {
+                              return ( <About titleKey="about_title" /> )
+                          }
+                      }  />
                       <Route  path="/doctors" component={ Doctor }  />
                       <Route  path="/contact" component={ Contact }  />
                       <Route  path="/specialties" component={ Specialty }  />

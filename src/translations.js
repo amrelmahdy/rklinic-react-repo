@@ -10,7 +10,7 @@ export const translations = {
             login:"Login",
             /*****************Home*********************/
             //slider
-            slider_title_1: "Welcome To rKlinik",
+            slider_title_1: "Welcome To rKlinic",
             slider_body_1: "The ultimate medical gate.",
             slider_title_2: "Our Mission",
             slider_body_2: "Become the ultimate Doctor-Patient meeting point.",

@@ -30,7 +30,7 @@ const fakeAuth = {
 
 class App extends Component {
 
-    componentDidMount() {
+    componentWillMount() {
         if (localStorage.getItem("lang") === "ar") {
             require("./css/rtl.css");
         }

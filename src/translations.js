@@ -2,7 +2,7 @@ export const translations = {
     en: {
         locale: 'en',
         messages: {
-            home: 'Home',
+            home: 'Homepage',
             about: 'About',
             specialties: 'Specialties',
             doctors: 'Doctors',

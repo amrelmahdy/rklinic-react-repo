@@ -33,6 +33,7 @@ class App extends Component {
     componentWillMount() {
         if (localStorage.getItem("lang") === "ar") {
             require("./css/rtl.css");
+            console.log("arabic language");
         }
     }
 

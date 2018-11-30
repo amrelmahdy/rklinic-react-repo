@@ -110,7 +110,7 @@ function (_Component) {
     value: function componentWillMount() {
       if (localStorage.getItem("lang") && localStorage.getItem("lang") === 'ar') {
         __webpack_require__(/*! ./css/rtl.css */ "./src/css/rtl.css");
-      } else {}
+      }
     }
   }, {
     key: "render",

@@ -32,11 +32,10 @@ class App extends Component {
 
     componentWillMount() {
 
-        if (localStorage.getItem("lang") === 'ar') {
-
-            //console.log("arabic language");
-        }  else {
+        if (localStorage.getItem("lang")  && localStorage.getItem("lang")  === 'ar') {
             require("./css/rtl.css");
+        }  else {
+
         }
     }
 

@@ -34,8 +34,6 @@ class App extends Component {
 
         if (localStorage.getItem("lang")  && localStorage.getItem("lang")  === 'ar') {
             require("./css/rtl.css");
-        }  else {
-
         }
     }
 

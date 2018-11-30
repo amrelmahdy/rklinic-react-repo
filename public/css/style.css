@@ -13427,3 +13427,11 @@ textarea.form-control {
     position: relative;
 }
 
+
+
+
+
+.rtl{
+    direction: rtl;
+}
+

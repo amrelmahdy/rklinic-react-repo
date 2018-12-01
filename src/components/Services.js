@@ -8,8 +8,8 @@ const Services = ({ translate }) => {
         <section className="ftco-section-2 img">
             <div className="section-img service-img">
                 <ProgressiveImage
-                    preview="/images/doctor-3.png"
-                    src="/images/doctor-3.png"
+                    preview="/images/bg_3.png"
+                    src="/images/bg_3.png"
                     render={(src, style) => <img alt="image-slider" src={src} style={style}/>}
                 />
                 <div className="absolute section-content">

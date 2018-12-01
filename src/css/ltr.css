@@ -1,0 +1,60 @@
+.rtl{
+    direction: ltr;
+}
+
+
+body{
+    font-family: 'Times New Roman', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+p,
+.nav-pills a
+{
+    text-align: left;
+}
+
+
+.flaticon-cardiogram, .block-23 ul{
+    float: left;
+}
+
+
+.flaticon-cardiogram{
+    margin-right: 10px;
+}
+.slider-sec .item-content .text-over-slider h1 {
+    font-family: 'Times New Roman', sans-serif;
+
+}
+.ftco-services .tab-content .tab-pane .icon{
+    text-align: left !important;
+}
+.align-right-rtl{
+    text-align: left !important;
+}
+.float-right-rtl{
+    float: left !important;
+}
+.block-23 ul li .icon, .ftco-navbar-light .navbar-nav > .nav-item.cta > a{
+    float: right !important;
+}
+
+.pt-20-rtl{
+    padding-top: 20px;
+    text-align: left;
+}
+.block-23 ul li .icon, .block-23 ul li .text{
+    float: left !important;
+}
+.show-more-style{
+    margin-left: 10px;
+}
+.g-recaptcha{
+    float: left;
+    margin-bottom: 5%;
+}
+.contact-email{
+    float: left;
+}

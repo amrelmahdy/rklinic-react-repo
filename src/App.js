@@ -34,9 +34,9 @@ class App extends Component {
 
     componentDidMount() {
         if (localStorage.getItem("lang")  && localStorage.getItem("lang")  === 'ar') {
-            document.getElementById("container").classList.add("rtl");
-        } else {
-            document.getElementById("container").classList.remove("rtl");
+            require("./css/rtl.css");
+        } else{
+            require("./css/ltr.css");
         }
     }
 

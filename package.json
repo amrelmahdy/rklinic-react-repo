@@ -68,7 +68,6 @@
     "styled-components": "^4.1.1",
     "terser-webpack-plugin": "1.1.0",
     "url-loader": "1.1.1",
-    "webpack": "4.19.1",
     "webpack-dev-server": "3.1.9",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3"
@@ -89,7 +88,8 @@
   ],
   "devDependencies": {
     "node-sass": "^4.10.0",
-    "scss-loader": "0.0.1"
+    "scss-loader": "0.0.1",
+    "webpack": "^4.19.1"
   },
   "jest": {
     "collectCoverageFrom": [

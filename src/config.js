@@ -8,7 +8,9 @@ export const getDoctorDetailsLink = "https://rklinic-admin.com/api/doctor/profil
 export const getHeader = function () {
     const lang = window.localStorage.getItem('lang');
     const header = {
-        lang: lang
+        lang: lang,
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
     }
     return header
 }

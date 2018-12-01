@@ -10,7 +10,18 @@ import {withTranslate} from "react-redux-multilingual";
 
 
 class SingleDoctor extends Component {
+
+
+    //state:
+
+
+
+
     componentDidMount() {
+        // set page title
+
+
+
         const id = this.props.match.params.id;
         this.props.getDoctorDetails(id);
     }
@@ -143,6 +154,7 @@ class SingleDoctor extends Component {
 
 
 const mapStateToProps = (state) => {
+
     return {
         doctor: state.doctor.current,
     }

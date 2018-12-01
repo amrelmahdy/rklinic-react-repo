@@ -8,10 +8,7 @@ const changeLang = (dispatch, e) => {
     e.preventDefault();
     localStorage.setItem("lang", e.target.id);
     dispatch(IntlActions.setLocale(e.target.id));
-
     window.location.reload();
-
-
 };
 
 

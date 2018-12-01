@@ -30,6 +30,8 @@ const fakeAuth = {
 
 class App extends Component {
 
+
+
     componentDidMount() {
         if (localStorage.getItem("lang")  && localStorage.getItem("lang")  === 'ar') {
             document.getElementById("container").classList.add("rtl");

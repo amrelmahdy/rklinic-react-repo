@@ -30,11 +30,11 @@ const fakeAuth = {
 
 class App extends Component {
 
-    componentWillMount() {
+    componentDidMount() {
         if (localStorage.getItem("lang")  === 'ar') {
-            require("./css/rtl.css");
-        } else{
-            require("./css/ltr.css");
+            document.getElementById("body").classList.add("rtl");
+        } else {
+            document.getElementById("body").classList.remove("rtl");
         }
     }
 
@@ -43,7 +43,7 @@ class App extends Component {
             <div className="App">
                 <Router>
                     <div>
-                        <Navigator/>
+                        <Navigator  />
                         <Switch>
                             <Route exact path="/" render={
                                 () => {

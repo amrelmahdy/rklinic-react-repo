@@ -22,6 +22,7 @@ const Slider = ({ translate }) => {
                 autoplay
                 dots={false}
                 animateIn
+
                 navSpeed
             >
                 <div className="item">

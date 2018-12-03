@@ -98,10 +98,10 @@ class SingleDoctor extends Component {
                                         {
                                             doctor ? (
                                                     <div>
-                                                        <li><a href="#">Specialty <span>{doctor.speciality}</span></a></li>
-                                                        <li><a href="#">Min Fees <span>{doctor.min_fees + " LE"}</span></a>
+                                                        <li><a >Specialty <span>{doctor.speciality}</span></a></li>
+                                                        <li><a >Min Fees <span>{doctor.min_fees + " LE"}</span></a>
                                                         </li>
-                                                        <li><a href="#">Followers <span>{doctor.followers}</span></a></li>
+                                                        <li><a >Followers <span>{doctor.followers}</span></a></li>
                                                     </div>
                                                 ) :
                                                 <Skeleton amount={3} bigBone={true}/>

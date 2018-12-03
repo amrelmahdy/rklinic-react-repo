@@ -5,6 +5,8 @@ import './../../node_modules/izitoast/dist/css/iziToast.min.css';
 import MapContainer from "./MapContainer";
 import {withTranslate} from "react-redux-multilingual"
 import {getHeader} from "../config";
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 
 
@@ -16,11 +18,14 @@ class Contact extends Component {
         mobile: null,
         message: null,
         errors: null,
+        gcaptcha : null
     };
 
 
-    componentDidMount(){
-
+    onChangeCapcha = (value) =>{
+        this.setState({
+            gcaptcha : value
+        });
     }
 
 
@@ -37,9 +42,10 @@ class Contact extends Component {
         const serialize = require('form-serialize');
         const form = document.querySelector('#contact-form');
         const serialized_data = serialize(form);
+        console.log("handling form", this.state);
 
         // send data to server
-        axios.post("https://rklinic-admin.com/api/system/contact-mail", serialized_data, { headers:getHeader() }).then(res => {
+        axios.post("https://rklinic-admin.com/api/system/contact-mail?g-recaptcha-response=" + this.state.gcaptcha + '&', this.state, { headers:getHeader() }).then(res => {
 
             if (res.data.Error.status === true) {
                 // Reset errors
@@ -120,13 +126,9 @@ class Contact extends Component {
             <section className="ftco-section contact-section ftco-degree-bg">
 
                 <div className="container">
-                    <div className="row">
-                        <div className="d-flex mb-5 contact-info">
-                            <div className="col-md-12">
-                                <h2 className="h4 mb-4">{this.props.translate("Contact_Information")}</h2>
-                            </div>
-                        </div>
-                    </div>
+
+
+                    <h2 className="h4 mb-4">{this.props.translate("Contact_Information")}</h2>
 
                     <div className="row mb-40">
                             <div className="col-md-4">
@@ -182,7 +184,18 @@ class Contact extends Component {
                                     <span className="error-msg">{this.handleErrors("message")}</span>
                                 </div>
 
-                                <div className="g-recaptcha " data-sitekey="6LecXX0UAAAAAKxjCi6SZjzHkLoG-QCl-QwiWIDa"></div>
+
+
+                                <div className="google-capcha">
+                                    <ReCAPTCHA
+                                        ref={this.state.recaptchaRef}
+                                        sitekey="6LecXX0UAAAAAKxjCi6SZjzHkLoG-QCl-QwiWIDa"
+                                        onChange={this.onChangeCapcha}
+                                    />
+                                </div>
+
+
+
 
                                 <div className="capcha-error">
                                     <span style={{  marginLeft: '12px' }} className="error-msg">{this.handleErrors("g-recaptcha-response")}</span>

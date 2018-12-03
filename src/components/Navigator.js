@@ -8,12 +8,10 @@ import ChangeLang from "./../components/ChangeLang";
 class Navigator extends Component {
 
 
-
-
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-                <div className="container" id="container">
+                <div className="container">
                     <a className="navbar-brand" href="/">
                         <img src="images/logo.png" alt="rklinic logo"/>
                     </a>

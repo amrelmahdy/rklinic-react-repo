@@ -48,8 +48,8 @@ const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
 
     return (
 
-        <section className="ftco-section">
-            <div className="container rtl">
+        <section className="ftco-section doctors-list">
+            <div className="container">
                 <div className="row justify-content-center mb-5 pb-3">
                     <div className="col-md-7 heading-section ftco-animate">
                         <h2 className="mb-4 text-center loon">{translate("doctors_header_1")}</h2>

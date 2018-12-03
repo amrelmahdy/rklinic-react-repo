@@ -13525,3 +13525,18 @@ textarea.form-control {
 .rtl .dept .text .doc{
     display: inline-block;
 }
+
+.rtl .author .name{
+    margin-right: 13px;
+}
+
+
+
+.rtl .contact p{
+    direction: rtl;
+}
+
+.rtl .contact .phone{
+    display: inline-block;
+    direction: ltr !important;
+}

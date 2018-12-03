@@ -75,6 +75,7 @@ export const translations = {
             // specialties
             specialities: "Specialties",
 
+
             /*****************Contact Us*********************/
             Contact_Information : "Contact Information",
             address: "Address",
@@ -93,7 +94,7 @@ export const translations = {
             privacy_policy : "Privacy Policy",
             site_links : "Site Links",
             have_questions : "Have a Questions?",
-            copyright : "Copyright all rights reserved to rKlinic",
+            copyright : "Copyright all rights reserved to Rk Anjel",
             /**************************************************************** */
             /*************************************************************** */
 
@@ -111,6 +112,12 @@ export const translations = {
             contact_title: "Contact",
             doctors_title: "Doctors",
             specialties_title:"Specialties",
+            privacy_title: 'Privacy Policy',
+            terms_title: 'Terms Of Condition',
+            show_more : "show more",
+            no_data: "No data to show .."
+
+
         }
     },
 
@@ -200,13 +207,13 @@ export const translations = {
             /*****************Contact Us*********************/
             Contact_Information : "بيانات التواصل",
             address: "العنوان",
-            address_details: "21 ابراهيم الرفاعي مدينة نصر",
+            address_details: "٢١ ابراهيم الرفاعي مدينة نصر",
             name: "اسمك",
             email: "البريد الالكترونى",
             mobile: "رقم هاتفك" ,
             message: "رسالتك" ,
             send_message: "ارسل لنا",
-            contact_email : ": البريد الالكترونى",
+            contact_email : "البريد الالكترونى : ",
             /*****************Footer*********************/
             important : "هام",
             how_to_register : "كيفية التسجيل؟",
@@ -214,7 +221,7 @@ export const translations = {
             privacy_policy : "سياسة الخصوصية",
             site_links : "روابط الموقع",
             have_questions : "لديك سؤال؟",
-            copyright : " rKlinicحقوق النشر محفوظة ل ",
+            copyright : " RK Anjel جميع الحقوق محفوظة ل",
             /**************************************************************** */
             /*************************************************************** */
             
@@ -231,7 +238,11 @@ export const translations = {
             about_title: "عن التطبيق",
             contact_title: "اتصل بنا",
             doctors_title: "الآطباء",
-            specialties_title:"التخصصـات"
+            specialties_title:"التخصصـات",
+            privacy_title: 'سياسة الخصوصية',
+            terms_title: 'الشروط والاحكام',
+            show_more : "متابعة المزيد",
+            no_data: "لا توجد نتائج..",
 
         }
     }

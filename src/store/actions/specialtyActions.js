@@ -38,7 +38,7 @@ export const getSpecialtiesList = () => {
 
 export const getSpecialtyDetails = (id) => {
     return (dispatch, getState) => {
-        axios.post(getSpecialtyDetailsLink, { speciality_id: id}).then(res => {
+        axios.post(getSpecialtyDetailsLink, { speciality_id: id}, { headers: getHeader() }).then(res => {
             if (res.data.Error.status === true){
                 const currentSpecialty = res.data.Response;
                 dispatch({

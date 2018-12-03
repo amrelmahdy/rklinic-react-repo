@@ -19,7 +19,7 @@ const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
                     <div className="flipper">
                         <div className="front" style={setDoctorImage(doctor.image)}>
                             <div className="box">
-                                <h2>{doctor.name}</h2>
+                                <h2>{doctor.account_name}</h2>
                                 <p>{doctor.speciality}</p>
                             </div>
                         </div>

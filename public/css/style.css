@@ -11356,7 +11356,7 @@ textarea.form-control {
 .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     font-size: 18px;
     font-weight: 400;
 }
@@ -12160,7 +12160,6 @@ textarea.form-control {
 .block-23 ul li, .block-23 ul li > a {
     display: table;
     line-height: 1.5;
-    margin-bottom: 15px;
 }
 
 .block-23 ul li span {
@@ -13277,7 +13276,7 @@ textarea.form-control {
     /*font-family: 'Lobster Two', cursive; */
     font-weight: bold;
     text-transform: capitalize;
-    letter-spacing: 5px;
+    /*letter-spacing: 5px;*/
     text-align: center !important;
 }
 
@@ -13413,25 +13412,31 @@ textarea.form-control {
     background: #35c7e0;
 }
 
-.store-download .btn-store{
-    color: #FFF;
+
+.store-download{
+    margin-top: 30px;
 }
 
-.store-download p{
-    margin-top: 50px;
+.store-download img{
+    width: 150px;
+    height: auto;
 }
 
-.testimonial-p{
-    min-height: 140px;
-}
+
 
 #map{
     position: relative;
 }
 
+
+
+.contact-info-footer  li{
+    margin-bottom: 10px !important;
+}
 /*******************RTL*******************/
-.rtl{
-    font-family: 'Cairo', sans-serif;
+.rtl, .ftco-footer-widget a {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 18px;
 }
 
 .rtl .navbar .container, .rtl .ftco-services .container,
@@ -13440,7 +13445,8 @@ textarea.form-control {
 .rtl .dept p,
 .rtl .specialties-list,
 .rtl .google-capcha,
-.rtl .doctors-list-all
+.rtl .doctors-list-all,
+.rtl .float-right-rtl
 {
     direction: rtl;
 }
@@ -13476,7 +13482,7 @@ textarea.form-control {
 
 
 .rtl .slider-sec .item-content .text-over-slider h1 {
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 
@@ -13514,14 +13520,44 @@ textarea.form-control {
 .rtl .block-23 ul li, .rtl .block-23 ul li > a {
     text-align: right;
     display: block;
-    margin-bottom: 15px;
 }
 
 
-.rtl .block-23 ul li, .rtl .block-23 ul li > a.with-padding {
-    padding: 10px 0;
+.rtl  .contact-info-footer li{
+    margin-bottom: 40px !important;
 }
 
 .rtl .dept .text .doc{
     display: inline-block;
+}
+
+.rtl .author .name{
+    margin-right: 13px;
+}
+
+
+
+.rtl .contact p{
+    direction: rtl;
+}
+
+.rtl .contact .phone{
+    display: inline-block;
+    direction: ltr !important;
+}
+
+
+.rtl .contact-section .form-group .error-msg, .rtl .error-msg{
+    text-align: right;
+}
+
+
+.rtl .text{
+    display: inline-block;
+    direction: ltr;
+    margin-bottom: 13px;
+}
+
+.rtl .services-wrap{
+    padding: 22px !important;
 }

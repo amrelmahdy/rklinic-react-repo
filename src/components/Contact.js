@@ -132,13 +132,15 @@ class Contact extends Component {
 
                     <div className="row mb-40">
                             <div className="col-md-4">
-                                <p><span>{this.props.translate("address")} : </span>{this.props.translate("address_details")}</p>
+                                <p><span>{this.props.translate("address")} : </span><a target="_blank" href="https://www.google.com.eg/maps/place/RK+Anjel/@30.0522316,31.3506658,15z/data=!4m2!3m1!1s0x0:0xf29994b6f5aa58bc?ved=2ahUKEwi5hOLbvoPfAhXbTxUIHZQBBz4Q_BIwCnoECAYQBg"> {this.props.translate("address_details")}</a></p>
                             </div>
                             <div className="col-md-4">
-                                <p><span>{this.props.translate("phone")} : </span> <a href="tel://1234567920">(+02) 22713871 - (+02) 22713872</a></p>
+                                <p><span>{this.props.translate("phone")} : </span> <a href="tel://1234567920">
+                                    <span className="phone">(+02) 22713871</span> - <span className="phone">(+02) 22713872</span>
+                                </a></p>
                             </div>
                             <div className="col-md-4">
-                                <p><span className="contact-email">{this.props.translate("contact_email")} </span> <a href="mailto:info@yoursite.com">info@rklinic.com</a></p>
+                                <p><span className="contact-email">{this.props.translate("contact_email")} &nbsp;</span> <a href="mailto:info@yoursite.com">info@rklinic.com</a></p>
                             </div>
                     </div>
 

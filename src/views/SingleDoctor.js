@@ -18,6 +18,7 @@ class SingleDoctor extends Component {
 
 
     componentDidMount() {
+        window.scrollTo(100, 100);
         // set page title
 
 

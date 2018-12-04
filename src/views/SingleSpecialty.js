@@ -10,6 +10,7 @@ import {withTranslate} from "react-redux-multilingual";
 
 class SingleSpecialty extends Component {
     componentDidMount() {
+        window.scrollTo(100, 100);
         this.props.getSpecialtyDetails(this.props.match.params.id);
         console.log("props after dispatch", this.props.specialty)
     }
@@ -60,7 +61,7 @@ class SingleSpecialty extends Component {
         }) : (
             <div className="text-center" style={{width: "100%"}}>
                 <img src="/images/no_accounts.png" alt="no doctors found"/>
-                <p>Our Doctors will be here !!</p>
+                <p className="text-center">{ this.props.translate("no_data") }</p>
             </div>
         );
 

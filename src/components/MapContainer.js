@@ -33,7 +33,7 @@ class MapContainer extends Component {
     render() {
         return (
             <Map google={this.props.google}
-                 zoom={14}
+                 zoom={18}
                  initialCenter={{lat: 30.0522316, lng: 31.3506658}}
                  onClick={this.onMapClicked}
             >

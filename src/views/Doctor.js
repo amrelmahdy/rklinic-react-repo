@@ -39,16 +39,11 @@ class Doctor extends Component {
                             </div>
                             <div className="back">
                                 <blockquote>
-                                    <p>&ldquo;Even the all-powerful Pointing has no control about the blind
-                                        texts it is
-                                        an almost unorthographic life One day however a small line of blind text
-                                        by the
-                                        name of Lorem&rdquo;</p>
+                                    <p>{ doctor.bio }</p>
                                 </blockquote>
                                 <div className="author d-flex">
                                     <div className="image mr-3 align-self-center">
-                                        <div className="img"
-                                             style={{ backgroundImage: doctor.image }}></div>
+                                        <div className="img" style={{ backgroundImage: 'url(' + doctor.image + ')' }}></div>
                                     </div>
                                     <div className="name align-self-center"><Link to={"/doctor/" + doctor.id}>{doctor.name}</Link>
                                         <span className="position">{ doctor.speciality }</span></div>

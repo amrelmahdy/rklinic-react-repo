@@ -123,17 +123,6 @@ class Subscribe extends Component {
                                 </div>
 
 
-                                <div className="store-download text-center">
-                                    <p className="text-center">
-                                        <a href="https://itunes.apple.com/us/app/rklinic-manager/id1382204506?mt=8" target="_blank" className="btn btn-store">
-                                            <span className="fa fa-apple fa-3x pull-left"></span>
-                                        </a>
-                                        <a href="https://play.google.com/store/apps/details?id=com.rkanjel.rklinicmanager&hl=en" target="_blank" className="btn btn-store">
-                                            <span className="fa fa-android fa-3x pull-left"></span>
-                                        </a>
-
-                                    </p>
-                                </div>
 
 
                             </div>

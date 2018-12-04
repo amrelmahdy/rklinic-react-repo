@@ -3,7 +3,7 @@ import React from "react";
 const globalMiddleware = (WrappedComponent) => {
     return  (props) => {
 
-        document.title = props.title;
+        document.title = "rKlinic | " + props.title;
         return (
             <WrappedComponent {...props} />
         )

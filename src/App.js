@@ -17,6 +17,8 @@ import Specialty from "./views/Specialty";
 import SingleSpecialty from "./views/SingleSpecialty";
 import SingleDoctor from "./views/SingleDoctor";
 import {withTranslate} from 'react-redux-multilingual';
+import NoMatch from "./views/NoMatch";
+import Terms from "./views/Terms";
 
 
 /*
@@ -32,7 +34,10 @@ const fakeAuth = {
 
 class App extends Component {
 
+
     componentDidMount() {
+
+        console.log(this.props.match);
         if (localStorage.getItem("lang")  === 'ar') {
             document.getElementById("body").classList.add("rtl");
         } else {
@@ -61,23 +66,23 @@ class App extends Component {
                                 () => {
                                     return ( <Doctor title={this.props.translate("doctors_title") } /> )
                                 }}
-                            /> 
-
+                            />
                             <Route path="/contact" render={
                                 () => {
                                     return (<Contact title={this.props.translate("contact_title")} />)
                                 }
                             }/>
-
-
-
                             <Route path="/privacy" render={
                                 () => {
                                     return (<Privacy title={this.props.translate("privacy_title")} />)
                                 }
                             }/>
 
-
+                            <Route path="/terms" render={
+                                () => {
+                                    return (<Terms title={this.props.translate("terms_title")} />)
+                                }
+                            }/>
 
 
                             <Route path="/specialties" render={
@@ -86,8 +91,11 @@ class App extends Component {
                                 }
                             }/>
 
+
+
                             <Route path="/specialty/:id" component={SingleSpecialty}/>
                             <Route path="/doctor/:id" component={SingleDoctor}/>
+                            <Route component={NoMatch} />
                         </Switch>
                     </div>
                 </Router>

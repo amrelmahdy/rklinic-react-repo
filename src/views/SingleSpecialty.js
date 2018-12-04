@@ -70,7 +70,7 @@ class SingleSpecialty extends Component {
                 <Head title={this.props.specialty ? this.props.specialty.speciality : <Bone/>}
                       history={history}/>
 
-                <section className="ftco-section">
+                <section className="ftco-section doctors-list-all">
                     <div className="container">
                         {
                             this.props.specialty ?

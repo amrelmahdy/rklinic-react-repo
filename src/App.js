@@ -9,6 +9,8 @@ import Home from "./views/Home";
 import Footer from "./components/Footer"
 import About from "./views/About";
 import Doctor from "./views/Doctor";
+import Privacy from "./views/Privacy";
+
 
 import Contact from "./views/ContactUs";
 import Specialty from "./views/Specialty";
@@ -61,13 +63,22 @@ class App extends Component {
                                 }}
                             /> 
 
-
-
                             <Route path="/contact" render={
                                 () => {
                                     return (<Contact title={this.props.translate("contact_title")} />)
                                 }
-                            }/> />
+                            }/>
+
+
+
+                            <Route path="/privacy" render={
+                                () => {
+                                    return (<Privacy title={this.props.translate("privacy_title")} />)
+                                }
+                            }/>
+
+
+
 
                             <Route path="/specialties" render={
                                 ()=> {

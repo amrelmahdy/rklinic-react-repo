@@ -31,7 +31,7 @@ class Specialty extends Component {
                                 <p>
                                     {specialty.desc.length > 120 ? specialty.desc.slice(0, 120) + " ..." : specialty.desc}
                                 </p>
-                                <span className="doc float-right-rtl">{specialty.doctors.length} Doctors</span>
+                                <span  className="doc float-right-rtl">{specialty.doctors.length} Doctors</span>
                                 <Link className="float-right-rtl show-more-style" style={{ marginLeft: '10px' }} to={"/specialty/" + specialty.id}>Show more</Link>
 
                             </div>
@@ -54,7 +54,7 @@ class Specialty extends Component {
                         {
                             (
                                 specialtyListIsLoading === false ?
-                                    <div className="row">
+                                    <div className="row specialties-list">
 
                                         {
                                             specialtiesList

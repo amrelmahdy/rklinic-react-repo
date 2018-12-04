@@ -65,7 +65,7 @@ class Doctor extends Component {
             <div className="About">
                 <Head title={ this.props.translate("doctors") } history={ history } />
 
-                <section className="ftco-section">
+                <section className="ftco-section doctors-list-all">
                     <div className="container">
 
                         {

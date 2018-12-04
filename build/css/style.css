@@ -10840,7 +10840,9 @@ h1, h2, h3, h4, h5,
 
 .dept .text {
     width: 100%;
-    bordeR: 1px solid #d0e5fb;
+    bordeR: 1px solid transparent;
+    box-shadow: 0 0 15px #dcd3d3;
+    border-radius: 25px;
 }
 
 @media (max-width: 767.98px) {
@@ -13432,7 +13434,14 @@ textarea.form-control {
     font-family: 'Cairo', sans-serif;
 }
 
-.rtl .navbar .container, .ftco-services .container, .doctors-list .container{
+.rtl .navbar .container, .rtl .ftco-services .container,
+.rtl .doctors-list .container, .rtl .testimonial-p,
+.rtl .align-self-start p,
+.rtl .dept p,
+.rtl .specialties-list,
+.rtl .google-capcha,
+.rtl .doctors-list-all
+{
     direction: rtl;
 }
 
@@ -13448,7 +13457,8 @@ textarea.form-control {
 
 .rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6,
 .rtl p,
-.rtl .nav-pills a
+.rtl .nav-pills a,
+.rtl .d-flex
 {
     text-align: right;
 }
@@ -13477,9 +13487,7 @@ textarea.form-control {
 .rtl .align-right-rtl{
     text-align: right !important;
 }
-.rtl .float-right-rtl{
-    float: right !important;
-}
+
 .rtl .block-23 ul li .icon, .ftco-navbar-light .navbar-nav > .nav-item.cta > a{
     float: left !important;
 }
@@ -13500,4 +13508,20 @@ textarea.form-control {
 }
 .rtl .contact-email{
     float: right;
+}
+
+
+.rtl .block-23 ul li, .rtl .block-23 ul li > a {
+    text-align: right;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+.rtl .block-23 ul li, .rtl .block-23 ul li > a.with-padding {
+    padding: 10px 0;
+}
+
+.rtl .dept .text .doc{
+    display: inline-block;
 }

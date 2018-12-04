@@ -33,19 +33,19 @@ class Doctor extends Component {
                         <div className="flipper">
                             <div className="front" style={{ backgroundImage:  'url(' + doctor.image + ')' }}>
                                 <div className="box">
-                                    <h2>{ doctor.name }</h2>
+                                    <h2>{ doctor.account_name }</h2>
                                     <p>{ doctor.speciality }</p>
                                 </div>
                             </div>
                             <div className="back">
                                 <blockquote>
-                                    <p>{ doctor.bio }</p>
+                                    <p>{ doctor.bio && doctor.bio.length > 200 ? doctor.bio.slice(0, 200) + " ..." : doctor.bio }</p>
                                 </blockquote>
                                 <div className="author d-flex">
                                     <div className="image mr-3 align-self-center">
                                         <div className="img" style={{ backgroundImage: 'url(' + doctor.image + ')' }}></div>
                                     </div>
-                                    <div className="name align-self-center"><Link to={"/doctor/" + doctor.id}>{doctor.name}</Link>
+                                    <div className="name align-self-center"><Link to={"/doctor/" + doctor.id}>{doctor.account_name}</Link>
                                         <span className="position">{ doctor.speciality }</span></div>
                                 </div>
                             </div>
@@ -57,10 +57,10 @@ class Doctor extends Component {
 
 
         return (
-            <div className="About">
+            <div className="">
                 <Head title={ this.props.translate("doctors") } history={ history } />
 
-                <section className="ftco-section doctors-list-all">
+                <section className="ftco-section doctors-list-all doctors-list">
                     <div className="container">
 
                         {
@@ -123,6 +123,9 @@ class Doctor extends Component {
 
 
 }
+
+
+
 
 
 const mapStateToProps = (state) => {

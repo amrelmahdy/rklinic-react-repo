@@ -16,7 +16,7 @@ class Footer extends Component {
         const specialtiesList = specialties ? specialties.map(specialty => {
             return (
                 <li className="nav-item mb-0 full-width align-right-rtl" key={specialty.id}>
-                    <a className="py-2 d-block mb-0 pb-0" href={"/specialty/" + specialty.id}>{specialty.speciality}</a>
+                    <a className=" d-block mb-0 pb-0" href={"/specialty/" + specialty.id}>{specialty.speciality}</a>
                 </li>
             )
         }) : null;
@@ -24,11 +24,11 @@ class Footer extends Component {
         return (
             <footer className="ftco-footer ftco-bg-dark ftco-section img">
                 <div className="container">
-                    <div className="row mb-5">
+                    <div className="row">
                         <div className="col-md-3">
-                            <div className="ftco-footer-widget mb-4">
+                            <div className="ftco-footer-widget no-margin">
                                 <h2 className="ftco-heading-2">{this.props.translate("specialties")}</h2>
-                                <div className="block-23 mb-3">
+                                <div className="block-23 no-margin">
                                     <ul>
 
                                         {this.props.specialties.length ? specialtiesList : (
@@ -49,17 +49,17 @@ class Footer extends Component {
                             </div>
                         </div>
                         <div className="col-md-3">
-                            <div className="ftco-footer-widget mb-4 ml-md-5">
+                            <div className="ftco-footer-widget ml-md-5">
                                 <h2 className="ftco-heading-2">{this.props.translate("important")}</h2>
                                 <ul className="list-unstyled">
                                    {/* <li className="align-right-rtl"><a target="_blank" href="https://www.youtube.com/watch?v=fUcTdObF8NU"
-                                           className="py-2 d-block">{this.props.translate("how_to_register")}</a></li>*/}
+                                           className=" d-block">{this.props.translate("how_to_register")}</a></li>*/}
                                     <li className="align-right-rtl"><a target="_blank" href="https://rklinic-admin.com/login"
-                                           className="py-2 d-block">{this.props.translate("already_have_account")}</a></li>
+                                           className=" d-block">{this.props.translate("already_have_account")}</a></li>
                                     <li className="align-right-rtl"><a target="_blank" href="https://rklinic-admin.com/register"
-                                           className="py-2 d-block">{this.props.translate("get_started")}</a></li>
-                                    <li className="align-right-rtl"><a href="/privacy" className="py-2 d-block">{this.props.translate("privacy_title")}</a></li>
-                                    <li className="align-right-rtl"><a href="/terms" className="py-2 d-block">{this.props.translate("terms_title")}</a></li>
+                                           className=" d-block">{this.props.translate("get_started")}</a></li>
+                                    <li className="align-right-rtl"><a href="/privacy" className=" d-block">{this.props.translate("privacy_title")}</a></li>
+                                    <li className="align-right-rtl"><a href="/terms" className=" d-block">{this.props.translate("terms_title")}</a></li>
 
                                 </ul>
                             </div>
@@ -70,20 +70,20 @@ class Footer extends Component {
                                 <ul className="list-unstyled">
 
                                     <li className="nav-item align-right-rtl">
-                                        <a className="py-2 d-block" href="/">{this.props.translate("home")}
+                                        <a className=" d-block" href="/">{this.props.translate("home")}
                                         </a>
                                     </li>
                                     <li className="nav-item align-right-rtl">
-                                        <a className="py-2 d-block" href="/about">{this.props.translate("about")}</a>
+                                        <a className=" d-block" href="/about">{this.props.translate("about")}</a>
                                     </li>
                                     <li className="nav-item align-right-rtl">
-                                        <a className="py-2 d-block" href="/specialties">{this.props.translate("specialties")}</a>
+                                        <a className=" d-block" href="/specialties">{this.props.translate("specialties")}</a>
                                     </li>
                                     <li className="nav-item align-right-rtl">
-                                        <a className="py-2 d-block" href="/doctors">{this.props.translate("doctors")}</a>
+                                        <a className=" d-block" href="/doctors">{this.props.translate("doctors")}</a>
                                     </li>
                                     <li className="nav-item align-right-rtl">
-                                        <a className="py-2 d-block" href="/contact">{this.props.translate("contact")}</a>
+                                        <a className=" d-block" href="/contact">{this.props.translate("contact")}</a>
                                     </li>
 
                                 </ul>
@@ -93,7 +93,7 @@ class Footer extends Component {
                             <div className="ftco-footer-widget mb-4">
                                 <h2 className="ftco-heading-2">{this.props.translate("have_questions")}</h2>
 
-                                <div className="block-23 mb-3">
+                                <div className="block-23 no-margin">
                                     <ul className="contact-info-footer">
 
                                         <li className="float-right-rtl">
@@ -114,7 +114,7 @@ class Footer extends Component {
 
                                     </ul>
 
-                                    <p className="store-download">
+                                    <p className="store-download no-margin">
                                         <a href="https://itunes.apple.com/us/app/rklinic-manager/id1382204506?mt=8" target="_blank">
                                             <img src="/images/ios.svg" style={{ marginRight: '10px' }}  alt="ios" />
                                         </a>
@@ -128,7 +128,7 @@ class Footer extends Component {
                     </div>
                     <div className="row">
                         <div className="col-md-12">
-                            <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5 float-right-rtl text-center full-width" >
+                            <ul className="ftco-footer-social list-unstyled float-md-left float-lft float-right-rtl text-center full-width" >
                                 <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
                                                                 target="_blank"><span
                                     className="icon-twitter"></span></a></li>

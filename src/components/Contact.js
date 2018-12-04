@@ -51,9 +51,9 @@ class Contact extends Component {
                 // Reset errors
                 this.resetErrors();
                 // show success toast
-                this.showToast("Sent", "Mail send");
+                this.showToast(this.props.translate("msg_sent"), this.props.translate("msg_sent_details"));
 
-                //document.getElementById("subscribe-form").reset();
+                form.reset();
 
                 this.setState({
                     name: null,

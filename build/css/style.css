@@ -11311,7 +11311,7 @@ textarea.form-control {
 }
 
 .ftco-section {
-    padding: 7em 0;
+    padding: 35px 0;
     position: relative;
 }
 
@@ -11334,7 +11334,7 @@ textarea.form-control {
 .ftco-footer {
     font-size: 16px;
     /*padding: 8em 0 8em 0;*/
-    padding: 4em 0 2em 0;
+    padding: 40px 0 0 0;
 }
 
 .ftco-footer .overlay {
@@ -11356,7 +11356,7 @@ textarea.form-control {
 .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     font-size: 18px;
     font-weight: 400;
 }
@@ -11720,6 +11720,10 @@ textarea.form-control {
     color: #bbb7d6;
 }
 
+.testimonial-p{
+    min-height: 192px;
+}
+
 .ftco-section {
     position: relative;
     width: 100%;
@@ -11845,6 +11849,7 @@ textarea.form-control {
 #section-counter {
     position: relative;
     z-index: 0;
+    height: 400px;
 }
 
 /*  #section-counter:after {
@@ -11883,6 +11888,10 @@ textarea.form-control {
 @media (max-width: 767.98px) {
     .ftco-counter .counter-wrap {
         margin-bottom: 20px;
+    }
+
+    #section-counter{
+        height: 100% !important;
     }
 }
 
@@ -12160,7 +12169,6 @@ textarea.form-control {
 .block-23 ul li, .block-23 ul li > a {
     display: table;
     line-height: 1.5;
-    margin-bottom: 15px;
 }
 
 .block-23 ul li span {
@@ -13073,10 +13081,8 @@ textarea.form-control {
 }
 
 .categories li a span, .sidelink li a span {
-    position: absolute;
     right: 0;
     top: 0;
-    color: #ccc;
 }
 
 .categories li.active a, .sidelink li.active a {
@@ -13202,6 +13208,10 @@ textarea.form-control {
     left: 0;
     right: 0;
 }
+
+
+
+
 .styled-error-msg{
     left: 24%;
     background: white;
@@ -13277,7 +13287,7 @@ textarea.form-control {
     /*font-family: 'Lobster Two', cursive; */
     font-weight: bold;
     text-transform: capitalize;
-    letter-spacing: 5px;
+    /*letter-spacing: 5px;*/
     text-align: center !important;
 }
 
@@ -13355,7 +13365,7 @@ textarea.form-control {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009DE7', endColorstr='#05BBC2', GradientType=1);
 }
 .section-counter {
-    padding: 10em 0;
+    padding: 30px 0;
     width: 100%;
     display: block;
     z-index: 1;
@@ -13413,25 +13423,38 @@ textarea.form-control {
     background: #35c7e0;
 }
 
-.store-download .btn-store{
-    color: #FFF;
+
+.store-download{
+    margin-top: 30px;
 }
 
-.store-download p{
-    margin-top: 50px;
+.store-download img{
+    width: 150px;
+    height: auto;
 }
 
-.testimonial-p{
-    min-height: 140px;
-}
+
 
 #map{
     position: relative;
 }
 
+
+
+.contact-info-footer  li{
+    margin-bottom: 10px !important;
+}
+
+
+.table-value{
+    display: block;
+    float: right;
+}
+
 /*******************RTL*******************/
-.rtl{
-    font-family: 'Cairo', sans-serif;
+.rtl, .ftco-footer-widget a {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 18px;
 }
 
 .rtl .navbar .container, .rtl .ftco-services .container,
@@ -13440,7 +13463,11 @@ textarea.form-control {
 .rtl .dept p,
 .rtl .specialties-list,
 .rtl .google-capcha,
-.rtl .doctors-list-all
+.rtl .doctors-list-all,
+.rtl .float-right-rtl,
+.rtl .doctor_details .container,
+.rtl .specialties .container,
+.rtl .doctors-details .container
 {
     direction: rtl;
 }
@@ -13476,7 +13503,7 @@ textarea.form-control {
 
 
 .rtl .slider-sec .item-content .text-over-slider h1 {
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 
@@ -13514,12 +13541,11 @@ textarea.form-control {
 .rtl .block-23 ul li, .rtl .block-23 ul li > a {
     text-align: right;
     display: block;
-    margin-bottom: 15px;
 }
 
 
-.rtl .block-23 ul li, .rtl .block-23 ul li > a.with-padding {
-    padding: 10px 0;
+.rtl  .contact-info-footer li{
+    margin-bottom: 40px !important;
 }
 
 .rtl .dept .text .doc{
@@ -13539,4 +13565,56 @@ textarea.form-control {
 .rtl .contact .phone{
     display: inline-block;
     direction: ltr !important;
+}
+
+
+.rtl .contact-section .form-group .error-msg, .rtl .error-msg{
+    text-align: right;
+}
+
+
+.rtl .text{
+    display: inline-block;
+    direction: ltr;
+    margin-bottom: 13px;
+}
+
+.rtl .services-wrap{
+    padding: 22px !important;
+}
+
+
+.rtl .subscribe-form .error-msg{
+    text-align: center;
+
+}
+
+
+
+.rtl .table-title, .rtl .table-value {
+    position: static;
+}
+
+.rtl .table-title{
+    display: block;
+    float: right !important;
+}
+
+.rtl .table-value{
+    display: block;
+    float: left !important;
+
+}
+
+
+.rtl .categories li, .sidelink li {
+    display: block;
+    clear: both;
+    padding-bottom: 37px;
+    border-bottom: 1px dotted #dee2e6;
+    list-style: none;
+}
+
+.rtl .tagcloud div{
+    text-align: right;
 }

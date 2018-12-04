@@ -11311,7 +11311,7 @@ textarea.form-control {
 }
 
 .ftco-section {
-    padding: 7em 0;
+    padding: 35px 0;
     position: relative;
 }
 
@@ -11334,7 +11334,7 @@ textarea.form-control {
 .ftco-footer {
     font-size: 16px;
     /*padding: 8em 0 8em 0;*/
-    padding: 4em 0 2em 0;
+    padding: 40px 0 0 0;
 }
 
 .ftco-footer .overlay {
@@ -11720,6 +11720,10 @@ textarea.form-control {
     color: #bbb7d6;
 }
 
+.testimonial-p{
+    min-height: 192px;
+}
+
 .ftco-section {
     position: relative;
     width: 100%;
@@ -11845,6 +11849,7 @@ textarea.form-control {
 #section-counter {
     position: relative;
     z-index: 0;
+    height: 400px;
 }
 
 /*  #section-counter:after {
@@ -11883,6 +11888,10 @@ textarea.form-control {
 @media (max-width: 767.98px) {
     .ftco-counter .counter-wrap {
         margin-bottom: 20px;
+    }
+
+    #section-counter{
+        height: 100% !important;
     }
 }
 
@@ -13072,10 +13081,8 @@ textarea.form-control {
 }
 
 .categories li a span, .sidelink li a span {
-    position: absolute;
     right: 0;
     top: 0;
-    color: #ccc;
 }
 
 .categories li.active a, .sidelink li.active a {
@@ -13201,6 +13208,10 @@ textarea.form-control {
     left: 0;
     right: 0;
 }
+
+
+
+
 .styled-error-msg{
     left: 24%;
     background: white;
@@ -13354,7 +13365,7 @@ textarea.form-control {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009DE7', endColorstr='#05BBC2', GradientType=1);
 }
 .section-counter {
-    padding: 10em 0;
+    padding: 30px 0;
     width: 100%;
     display: block;
     z-index: 1;
@@ -13433,6 +13444,13 @@ textarea.form-control {
 .contact-info-footer  li{
     margin-bottom: 10px !important;
 }
+
+
+.table-value{
+    display: block;
+    float: right;
+}
+
 /*******************RTL*******************/
 .rtl, .ftco-footer-widget a {
     font-family: 'Tajawal', sans-serif;
@@ -13446,7 +13464,10 @@ textarea.form-control {
 .rtl .specialties-list,
 .rtl .google-capcha,
 .rtl .doctors-list-all,
-.rtl .float-right-rtl
+.rtl .float-right-rtl,
+.rtl .doctor_details .container,
+.rtl .specialties .container,
+.rtl .doctors-details .container
 {
     direction: rtl;
 }
@@ -13560,4 +13581,40 @@ textarea.form-control {
 
 .rtl .services-wrap{
     padding: 22px !important;
+}
+
+
+.rtl .subscribe-form .error-msg{
+    text-align: center;
+
+}
+
+
+
+.rtl .table-title, .rtl .table-value {
+    position: static;
+}
+
+.rtl .table-title{
+    display: block;
+    float: right !important;
+}
+
+.rtl .table-value{
+    display: block;
+    float: left !important;
+
+}
+
+
+.rtl .categories li, .sidelink li {
+    display: block;
+    clear: both;
+    padding-bottom: 37px;
+    border-bottom: 1px dotted #dee2e6;
+    list-style: none;
+}
+
+.rtl .tagcloud div{
+    text-align: right;
 }

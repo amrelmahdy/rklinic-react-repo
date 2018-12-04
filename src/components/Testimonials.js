@@ -42,9 +42,9 @@ class Testimonials extends Component {
         return (
             <section className="ftco-section testimony-section">
                 <div className="container">
-                    <div className="row justify-content-center mb-5 pb-3">
+                    <div className="row justify-content-center">
                         <div className="col-md-7 heading-section ftco-animate">
-                            <h2 className="mb-4 text-center loon"> {this.props.translate("testimonials")}</h2>
+                            <h2 className="text-center loon"> {this.props.translate("testimonials")}</h2>
                         </div>
                     </div>
                     <div className="row">
@@ -67,7 +67,7 @@ class Testimonials extends Component {
                     </span>
                                         </div>
                                         <div className="text">
-                                            <p className="mb-5 testimonial-p"> {this.props.translate("testimonial_text_1")}</p>
+                                            <p className="testimonial-p"> {this.props.translate("testimonial_text_1")}</p>
                                             <p className="name text-center">{this.props.translate("testimonial_text_1_dr")}</p>
                                             <span
                                                 className="position">{this.props.translate("testimonial_text_1_clinic")}</span>
@@ -82,7 +82,7 @@ class Testimonials extends Component {
                     </span>
                                         </div>
                                         <div className="text">
-                                            <p className="mb-5 testimonial-p">{this.props.translate("testimonial_text_2")}</p>
+                                            <p className="testimonial-p">{this.props.translate("testimonial_text_2")}</p>
                                             <p className="name text-center">{this.props.translate("testimonial_text_2_dr")}</p>
                                             <span
                                                 className="position">{this.props.translate("testimonial_text_2_clinic")}</span>
@@ -97,7 +97,7 @@ class Testimonials extends Component {
                     </span>
                                         </div>
                                         <div className="text">
-                                            <p className="mb-5 testimonial-p">{this.props.translate("testimonial_text_3")}</p>
+                                            <p className="testimonial-p">{this.props.translate("testimonial_text_3")}</p>
                                             <p className="name text-center">{this.props.translate("testimonial_text_3_dr")}</p>
                                             <span
                                                 className="position">{this.props.translate("testimonial_text_3_clinic")}</span>

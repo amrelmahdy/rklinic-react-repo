@@ -7,20 +7,15 @@ import Subscribe from "../components/Subscribe";
 import {withTranslate} from "react-redux-multilingual";
 
 
-
-
 class SingleDoctor extends Component {
 
 
     //state:
 
 
-
-
     componentDidMount() {
         window.scrollTo(100, 100);
         // set page title
-
 
 
         const id = this.props.match.params.id;
@@ -47,15 +42,15 @@ class SingleDoctor extends Component {
         const servicesList = doctor && doctor.services.length ?
             doctor.services.map((service, index) => {
                 return (
-                    <a key={ index } className="tag-cloud-link">{service}</a>
+                    <a key={index} className="tag-cloud-link">{service}</a>
                 )
             }) : null
 
 
         return (
-            <div className="Home">
-                <Head title={ doctor ? doctor.name : <Bone/> } history={history}/>
-                <section className="ftco-section">
+            <div className="">
+                <Head title={doctor ? doctor.account_name : <Bone/>} history={history}/>
+                <section className="ftco-section doctors-details">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8">
@@ -70,10 +65,10 @@ class SingleDoctor extends Component {
                                                     </div>
                                                 </div>
                                                 <div className="col-md-9">
-                                                <div className="desc align-self-md-center">
-                                                    <h3>{doctor.name}</h3>
-                                                    <p>{doctor.bio}</p>
-                                                </div>
+                                                    <div className="desc align-self-md-center">
+                                                        <h3>{doctor.account_name}</h3>
+                                                        <p>{doctor.bio}</p>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -99,10 +94,24 @@ class SingleDoctor extends Component {
                                         {
                                             doctor ? (
                                                     <div>
-                                                        <li><a >Specialty <span>{doctor.speciality}</span></a></li>
-                                                        <li><a >Min Fees <span>{doctor.min_fees + " LE"}</span></a>
+                                                        <li>
+                                                            <a>
+                                                                <span className="table-title">{this.props.translate("specialty")}</span>
+                                                                <span className="table-value">{doctor.speciality}</span>
+                                                            </a>
                                                         </li>
-                                                        <li><a >Followers <span>{doctor.followers}</span></a></li>
+                                                        <li>
+                                                            <a>
+                                                                <span className="table-title">{this.props.translate("min_fees")}</span>
+                                                                <span className="table-value">{doctor.min_fees + " LE"}</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a>
+                                                                <span className="table-title">{this.props.translate("followers")}</span>
+                                                                <span className="table-value">{doctor.followers}</span>
+                                                            </a>
+                                                        </li>
                                                     </div>
                                                 ) :
                                                 <Skeleton amount={3} bigBone={true}/>

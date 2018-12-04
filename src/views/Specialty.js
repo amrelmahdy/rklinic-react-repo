@@ -31,7 +31,9 @@ class Specialty extends Component {
                                 <p>
                                     {specialty.desc.length > 120 ? specialty.desc.slice(0, 120) + " ..." : specialty.desc}
                                 </p>
+{/*
                                 <span  className="doc float-right-rtl">{specialty.doctors.length} { this.props.translate("doctors") }</span>
+*/}
                                 <Link className="float-right-rtl show-more-style" style={{ marginLeft: '10px' }} to={"/specialty/" + specialty.id}>{ this.props.translate("show_more") }</Link>
 
                             </div>
@@ -44,11 +46,11 @@ class Specialty extends Component {
             );
 
         return (
-            <div className="About">
+            <div>
 
                 <Head title={ this.props.translate("specialities")  } history={history}/>
 
-                <section className="ftco-section">
+                <section className="ftco-section specialties">
                     <div className="container">
 
                         {

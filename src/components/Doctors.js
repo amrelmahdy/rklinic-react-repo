@@ -20,7 +20,7 @@ const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
                         <div className="front" style={setDoctorImage(doctor.image)}>
                             <div className="box">
                                 <h2>{doctor.account_name}</h2>
-                                <p>{doctor.speciality}</p>
+                                <p>{doctor.speciality}  </p>
                             </div>
                         </div>
                         <div className="back">
@@ -32,7 +32,7 @@ const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
                                     <div className="img" style={setDoctorImage(doctor.image)}></div>
                                 </div>
                                 <div className="name align-self-center"><Link
-                                    to={"/doctor/" + doctor.id}>{doctor.name}</Link>
+                                    to={"/doctor/" + doctor.id}>{doctor.account_name}</Link>
                                     <span className="position">{doctor.speciality}</span></div>
                             </div>
                         </div>
@@ -50,9 +50,9 @@ const Doctors = ({doctors, doctorsListIsLoading, translate}) => {
 
         <section className="ftco-section doctors-list">
             <div className="container ">
-                <div className="row justify-content-center mb-5 pb-3">
+                <div className="row justify-content-center pb-3">
                     <div className="col-md-7 heading-section ftco-animate">
-                        <h2 className="mb-4 text-center loon">{translate("doctors_header_1")}</h2>
+                        <h2 className="text-center loon">{translate("doctors_header_1")}</h2>
                     </div>
                 </div>
 

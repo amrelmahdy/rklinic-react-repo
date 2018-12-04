@@ -115,7 +115,12 @@ export const translations = {
             privacy_title: 'Privacy Policy',
             terms_title: 'Terms Of Condition',
             show_more : "show more",
-            no_data: "No data to show .."
+            no_data: "No data to show ..",
+            specialty: 'specialty',
+            min_fees: 'min fees',
+            followers: 'followers',
+            msg_sent: "Message Sent",
+            msg_sent_details: "Message has been sent successfully .."
 
 
         }
@@ -243,6 +248,11 @@ export const translations = {
             terms_title: 'الشروط والاحكام',
             show_more : "متابعة المزيد",
             no_data: "لا توجد نتائج..",
+            specialty: 'التخصص',
+            min_fees: 'اقل سعر للكشف',
+            followers: 'المتابعين',
+            msg_sent: "تم الارسال",
+            msg_sent_details: "تم ارسال الرسالة بنجاح .."
 
         }
     }

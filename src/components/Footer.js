@@ -102,7 +102,7 @@ class Footer extends Component {
                                         </li>
 
                                         <li className="float-right-rtl">
-                                            <a href="/" className="with-padding">
+                                            <a href="tel://00222713872" className="with-padding">
                                                 <span className="icon icon-phone"></span><span  className="text">+02 22713871 - +02 22713872</span></a>
                                         </li>
 

@@ -13623,3 +13623,7 @@ textarea.form-control {
 .rtl .slider-sec .item-content .text-over-slider p, .rtl .ftco-navbar-light .navbar-toggler{
     letter-spacing: 0
 }
+
+.rtl .store-download{
+    text-align: left !important;
+}

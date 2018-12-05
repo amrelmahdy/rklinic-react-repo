@@ -2,6 +2,12 @@ export const translations = {
     en: {
         locale: 'en',
         messages: {
+
+            menu: "MENU",
+
+
+
+
             home: 'Home',
             about: 'About',
             specialties: 'Specialties',
@@ -107,7 +113,7 @@ export const translations = {
 
             /************************* General Translations */
             phone:" Phone ",
-            home_title: "Home",
+            home_title: "Helping Doctor Save Lives.",
             about_title: "About",
             contact_title: "Contact",
             doctors_title: "Doctors",
@@ -131,6 +137,10 @@ export const translations = {
     ar: {
         locale: 'ar',
         messages: {
+            menu: "القائمة",
+
+
+
             home: 'الرئيسية',
             about: 'عن التطبيق',
             specialties: 'التخصصات',
@@ -239,7 +249,7 @@ export const translations = {
 
             /************************* General Translations */
             phone:" رقم الهاتف",
-            home_title: "الرئيسية",
+            home_title: "نساعد الطبيب لانقاذ الارواح",
             about_title: "عن التطبيق",
             contact_title: "اتصل بنا",
             doctors_title: "الآطباء",

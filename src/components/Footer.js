@@ -118,7 +118,7 @@ class Footer extends Component {
 
                                     </ul>
 
-                                    <p className="store-download no-margin">
+                                    <p className="store-download no-margin pull-right">
                                         <a href="https://itunes.apple.com/us/app/rklinic-manager/id1382204506?mt=8" target="_blank">
                                             <img src="/images/ios.svg" style={{ marginRight: '10px' }}  alt="ios" />
                                         </a>
@@ -132,7 +132,7 @@ class Footer extends Component {
                     </div>
                     <div className="row">
                         <div className="col-md-12">
-                            <ul className="ftco-footer-social list-unstyled float-md-left float-lft float-right-rtl text-center full-width" >
+                            <ul className="ftco-footer-social list-unstyled float-md-left float-lft float-right-rtl text-center full-width mt-25" >
                                 <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
                                                                 target="_blank"><span
                                     className="icon-twitter"></span></a></li>

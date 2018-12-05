@@ -4565,6 +4565,15 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 992px) {
+
+    .rtl .navbar-collapse {
+        position: relative;
+    }
+
+    .rtl .navbar-nav {
+        position: absolute;
+        left: 0;
+    }
     .navbar-expand-lg {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -13472,15 +13481,13 @@ textarea.form-control {
     direction: rtl;
 }
 
-
-.rtl .navbar-collapse{
+/*.rtl .navbar-collapse{
     position: relative;
 }
-
 .rtl .navbar-nav{
     position: absolute;
     left: 0;
-}
+}*/
 
 .rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6,
 .rtl p,

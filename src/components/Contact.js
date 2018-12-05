@@ -126,8 +126,6 @@ class Contact extends Component {
             <section className="ftco-section contact-section ftco-degree-bg">
 
                 <div className="container">
-
-
                     <h2 className="h4 mb-4">{this.props.translate("Contact_Information")}</h2>
 
                     <div className="row mb-40">
@@ -143,8 +141,6 @@ class Contact extends Component {
                                 <p><span className="contact-email">{this.props.translate("contact_email")} &nbsp;</span> <a href="mailto:info@yoursite.com">info@rklinic.com</a></p>
                             </div>
                     </div>
-
-
 
 
                     <div className="row">
@@ -186,8 +182,6 @@ class Contact extends Component {
                                     <span className="error-msg">{this.handleErrors("message")}</span>
                                 </div>
 
-
-
                                 <div className="google-capcha">
                                     <ReCAPTCHA
                                         ref={this.state.recaptchaRef}
@@ -195,9 +189,6 @@ class Contact extends Component {
                                         onChange={this.onChangeCapcha}
                                     />
                                 </div>
-
-
-
 
                                 <div className="capcha-error">
                                     <span style={{  marginLeft: '12px' }} className="error-msg">{this.handleErrors("g-recaptcha-response")}</span>

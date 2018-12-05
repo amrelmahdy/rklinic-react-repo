@@ -7,8 +7,12 @@ import { withTranslate } from 'react-redux-multilingual';
 class Footer extends Component {
     componentDidMount() {
         this.props.getAllSpecialtiesList();
-
     }
+
+
+
+
+
 
     render() {
 

@@ -4,10 +4,6 @@ export const translations = {
         messages: {
 
             menu: "MENU",
-
-
-
-
             home: 'Home',
             about: 'About',
             specialties: 'Specialties',
@@ -126,7 +122,9 @@ export const translations = {
             min_fees: 'min fees',
             followers: 'followers',
             msg_sent: "Message Sent",
-            msg_sent_details: "Message has been sent successfully .."
+            msg_sent_details: "Message has been sent successfully ..",
+            blog: "Our Blog",
+            blog_title: "Blog"
 
 
         }
@@ -262,7 +260,11 @@ export const translations = {
             min_fees: 'اقل سعر للكشف',
             followers: 'المتابعين',
             msg_sent: "تم الارسال",
-            msg_sent_details: "تم ارسال الرسالة بنجاح .."
+            msg_sent_details: "تم ارسال الرسالة بنجاح ..",
+            blog: "المدونة",
+            blog_title: "المدونة"
+
+
 
         }
     }

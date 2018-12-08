@@ -13634,3 +13634,19 @@ textarea.form-control {
 .rtl .store-download{
     text-align: left !important;
 }
+
+
+/* Blog Style */
+.RklinicBlog .post img{
+
+    position: absolute;
+    top: 20px;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  .post {
+    overflow: hidden;
+    padding-left: 80px;
+    
+  }

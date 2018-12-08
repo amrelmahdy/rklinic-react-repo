@@ -19,31 +19,23 @@ import SingleDoctor from "./views/SingleDoctor";
 import {withTranslate} from 'react-redux-multilingual';
 import NoMatch from "./views/NoMatch";
 import Terms from "./views/Terms";
+import Blog from './components/Blog'
 
 
-/*
-const fakeAuth = {
-    isAuthenticated: false,
-    login(cb){
-        this.isAuthenticated = true
-    },
-    logout(cb){
-        this.isAuthenticated = false
-    },
-}*/
+
 
 class App extends Component {
 
 
-    componentDidMount() {
+    // componentDidMount() {
 
-        console.log(this.props.match);
-        if (localStorage.getItem("lang")  === 'ar') {
-            document.getElementById("body").classList.add("rtl");
-        } else {
-            document.getElementById("body").classList.remove("rtl");
-        }
-    }
+    //     console.log(this.props.match);
+    //     if (localStorage.getItem("lang")  === 'ar') {
+    //         document.getElementById("body").classList.add("rtl");
+    //     } else {
+    //         document.getElementById("body").classList.remove("rtl");
+    //     }
+    // }
 
     render() {
         return (
@@ -91,6 +83,11 @@ class App extends Component {
                                 }
                             }/>
 
+                            <Route path="/blog" render={
+                                ()=> {
+                                    return (<Blog title= { this.props.translate("blog_title")} /> )
+                                }
+                            }/>
 
 
                             <Route path="/specialty/:id" component={SingleSpecialty}/>
@@ -98,6 +95,7 @@ class App extends Component {
                             <Route component={NoMatch} />
                         </Switch>
                     </div>
+
                 </Router>
                 <Footer/>
             </div>

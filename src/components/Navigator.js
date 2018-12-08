@@ -57,6 +57,14 @@ class Navigator extends Component {
                             </li>
 
                             <li className="nav-item">
+                                <NavLink className="nav-link" to="/blog">
+                                    {
+                                        this.props.translate("blog")
+                                    }
+                                </NavLink>
+                            </li>
+
+                            <li className="nav-item">
                                 <ChangeLang />
                             </li>
                             <li className="nav-item cta">

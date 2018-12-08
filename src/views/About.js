@@ -7,6 +7,7 @@ import globalMiddleware from "./../hocs/globalMiddleware";
 
 
 class About extends Component{
+    
     render() {
 
         const history = [

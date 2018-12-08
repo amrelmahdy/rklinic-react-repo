@@ -17,7 +17,7 @@ class Navigator extends Component {
                     </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                             aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="oi oi-menu"></span> Menu
+                        <span className="oi oi-menu"></span> { this.props.translate("menu") }
                     </button>
 
                     <div className="collapse navbar-collapse" id="ftco-nav">

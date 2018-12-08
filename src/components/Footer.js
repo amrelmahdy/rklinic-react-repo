@@ -7,8 +7,12 @@ import { withTranslate } from 'react-redux-multilingual';
 class Footer extends Component {
     componentDidMount() {
         this.props.getAllSpecialtiesList();
-
     }
+
+
+
+
+
 
     render() {
 
@@ -102,7 +106,7 @@ class Footer extends Component {
                                         </li>
 
                                         <li className="float-right-rtl">
-                                            <a href="/" className="with-padding">
+                                            <a href="tel://00222713872" className="with-padding">
                                                 <span className="icon icon-phone"></span><span  className="text">+02 22713871 - +02 22713872</span></a>
                                         </li>
 
@@ -114,7 +118,7 @@ class Footer extends Component {
 
                                     </ul>
 
-                                    <p className="store-download no-margin">
+                                    <p className="store-download no-margin pull-right">
                                         <a href="https://itunes.apple.com/us/app/rklinic-manager/id1382204506?mt=8" target="_blank">
                                             <img src="/images/ios.svg" style={{ marginRight: '10px' }}  alt="ios" />
                                         </a>
@@ -128,7 +132,7 @@ class Footer extends Component {
                     </div>
                     <div className="row">
                         <div className="col-md-12">
-                            <ul className="ftco-footer-social list-unstyled float-md-left float-lft float-right-rtl text-center full-width" >
+                            <ul className="ftco-footer-social list-unstyled float-md-left float-lft float-right-rtl text-center full-width mt-25" >
                                 <li className="ftco-animate"><a href="https://twitter.com/rklinic1"
                                                                 target="_blank"><span
                                     className="icon-twitter"></span></a></li>

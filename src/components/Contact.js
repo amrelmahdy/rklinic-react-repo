@@ -20,21 +20,19 @@ class Contact extends Component {
         errors: null,
         gcaptcha : null
     };
-
-
+    // update capcha value
     onChangeCapcha = (value) =>{
         this.setState({
             gcaptcha : value
         });
     }
-
-
+    // update status on change
     handleInputChange = (e) => {
         this.setState({
             [e.target.id]: e.target.value
         });
     };
-
+    // handle submitting the form
     handleFormSubmission = (e) => {
         // prevent default behavior
         e.preventDefault();
@@ -73,8 +71,7 @@ class Contact extends Component {
             console.log(error)
         })
     };
-
-
+    // handle form errors
     handleErrors(field) {
         if (this.state.errors) {
             return this.state.errors[field]
@@ -82,20 +79,19 @@ class Contact extends Component {
 
         return false
     }
-
+    // record errors
     handleRecordErrors = (errors) => {
         this.setState({
             errors: errors
         });
     };
-
+    // reset errors
     resetErrors = () => {
         this.setState({
             errors: null
         })
     }
-
-
+    // show toast in success
     showToast(title, msg) {
         izitoast.show({
             title: title,
@@ -124,18 +120,14 @@ class Contact extends Component {
     render() {
         return (
             <section className="ftco-section contact-section ftco-degree-bg">
-
                 <div className="container">
-
-
                     <h2 className="h4 mb-4">{this.props.translate("Contact_Information")}</h2>
-
                     <div className="row mb-40">
                             <div className="col-md-4">
                                 <p><span>{this.props.translate("address")} : </span><a target="_blank" href="https://www.google.com.eg/maps/place/RK+Anjel/@30.0522316,31.3506658,15z/data=!4m2!3m1!1s0x0:0xf29994b6f5aa58bc?ved=2ahUKEwi5hOLbvoPfAhXbTxUIHZQBBz4Q_BIwCnoECAYQBg"> {this.props.translate("address_details")}</a></p>
                             </div>
                             <div className="col-md-4">
-                                <p><span>{this.props.translate("phone")} : </span> <a href="tel://1234567920">
+                                <p><span>{this.props.translate("phone")} : </span> <a href="tel://00222713872">
                                     <span className="phone">(+02) 22713871</span> - <span className="phone">(+02) 22713872</span>
                                 </a></p>
                             </div>
@@ -143,12 +135,8 @@ class Contact extends Component {
                                 <p><span className="contact-email">{this.props.translate("contact_email")} &nbsp;</span> <a href="mailto:info@yoursite.com">info@rklinic.com</a></p>
                             </div>
                     </div>
-
-
-
-
+                    {/* -----------------------------  Contact Form  ------------  */}
                     <div className="row">
-
                         <div className="col-md-6">
                             <form action="#" id="contact-form" onSubmit={this.handleFormSubmission}>
                                 <div className="form-group">
@@ -186,8 +174,6 @@ class Contact extends Component {
                                     <span className="error-msg">{this.handleErrors("message")}</span>
                                 </div>
 
-
-
                                 <div className="google-capcha">
                                     <ReCAPTCHA
                                         ref={this.state.recaptchaRef}
@@ -195,9 +181,6 @@ class Contact extends Component {
                                         onChange={this.onChangeCapcha}
                                     />
                                 </div>
-
-
-
 
                                 <div className="capcha-error">
                                     <span style={{  marginLeft: '12px' }} className="error-msg">{this.handleErrors("g-recaptcha-response")}</span>
